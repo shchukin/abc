@@ -1,0 +1,12 @@
+.low-class {
+    display: flex;
+    align-items: flex-end;
+}
+    .low-class__sonorant {
+
+    }
+
+    .low-class__dead {
+        margin-left: 20px;
+        margin-bottom: -116px;
+    }
