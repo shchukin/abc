@@ -1,0 +1,75 @@
+/* stylelint-disable declaration-colon-space-after */
+:root {
+    --color_text_primary:      #000000;
+    --color_text_secondary:    #222222;
+    --color_text_tertiary:     #333333;
+
+    --color_muted_primary:     #999999;
+    --color_muted_secondary:   #AAAAAA;
+    --color_muted_tertiary:    #BBBBBB;
+
+    --color_link_primary:      #1A0DAB;
+    --color_link_secondary:    #2B1EBC;
+    --color_link_tertiary:     #3C2FCD;
+
+    --color_action_primary:    #0000FF;
+    --color_action_secondary:  #0000DD;
+    --color_action_tertiary:   #0000CC;
+
+    --color_neutral_primary:   #FFFFFF;
+    --color_neutral_secondary: #EEEEEE;
+    --color_neutral_tertiary:  #DDDDDD;
+
+    --color_danger_primary:    #FF0000;
+    --color_danger_secondary:  #FF2222;
+    --color_danger_tertiary:   #FF3333;
+
+    --color_warning_primary:   #FFFF00;
+    --color_warning_secondary: #FFFF22;
+    --color_warning_tertiary:  #FFFF33;
+
+    --color_success_primary:   #00FF00;
+    --color_success_secondary: #22FF22;
+    --color_success_tertiary:  #33FF33;
+
+
+    --font_family_default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font_family_heading: Georgia, Times, "Times New Roman", serif;
+
+
+    --font_weight_default: 300;
+    --font_weight_strong:  400;
+
+
+    --font_size_largest-title:  40px;
+    --font_line_largest-title:  46px;
+
+    --font_size_larger-title:   36px;
+    --font_line_larger-title:   42px;
+
+    --font_size_default-title:  32px;
+    --font_line_default-title:  38px;
+
+    --font_size_smaller-title:  28px;
+    --font_line_smaller-title:  34px;
+
+    --font_size_smallest-title: 24px;
+    --font_line_smallest-title: 30px;
+
+
+    --font_size_largest-text:  20px;
+    --font_line_largest-text:  24px;
+
+    --font_size_larger-text:   18px;
+    --font_line_larger-text:   22px;
+
+    --font_size_default-text:  16px;
+    --font_line_default-text:  20px;
+
+    --font_size_smaller-text:  14px;
+    --font_line_smaller-text:  18px;
+
+    --font_size_smallest-text: 12px;
+    --font_line_smallest-text: 16px;
+}
+/* stylelint-enable declaration-colon-space-after */
