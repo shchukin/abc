@@ -1,0 +1,76 @@
+.letter {
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 193px;
+    border: 2px solid var(--font-color);
+    padding-top: 18px;
+    text-decoration: none;
+    color: inherit;
+}
+    .letter__title {
+        display: block;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .letter__sound {
+        margin-top: 10px;
+        display: block;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--font-faded);
+        text-align: center;
+    }
+
+    .letter__name {
+        position: absolute;
+        left: 12px;
+        bottom: 26px;
+        display: block;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .letter__script {
+        position: absolute;
+        left: 12px;
+        bottom: 10px;
+        display: block;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--font-faded);
+    }
+
+    .letter__translation {
+        position: absolute;
+        right: 12px;
+        bottom: 10px;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .letter__key {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        display: block;
+        min-width: 20px;
+        padding: 2px 5px;
+        background-color: #F5F5F5;
+        border: 1px solid #EDEDED;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #BBBBBB;
+        text-align: center;
+    }

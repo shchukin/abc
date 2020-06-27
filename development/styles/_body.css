@@ -1,9 +1,8 @@
-.body {
+body {
     margin: 0;
     background-color: #FFFFFF;
-    font-family: var(--font_family_default);
-    font-weight: var(--font_weight_default);
-    font-size: var(--font_size_default-text);
-    line-height: var(--font_line_default-text);
-    color: var(--color_text_primary);
+    font-family: var(--font-default);
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
 }

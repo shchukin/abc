@@ -1,0 +1,21 @@
+.consonants {
+    display: inline-flex;
+    align-items: stretch;
+}
+    .consonants__sound {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .consonants__sound:first-child {
+        margin-left: 0;
+    }
+        .consonants__item {
+            margin-top: 20px;
+        }
+
+        .consonants__item:first-child {
+            margin-top: 0;
+        }
