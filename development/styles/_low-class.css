@@ -1,6 +1,7 @@
 .low-class {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 116px;
 }
     .low-class__sonorant {
 
