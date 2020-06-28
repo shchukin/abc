@@ -10,8 +10,23 @@
     text-decoration: none;
     color: inherit;
 }
+
+.letter--not-available {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #EAEAEA;
+    color: #999999;
+}
+
     .letter__title {
-        display: block;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         font-weight: normal;
         font-size: 42px;
         line-height: 42px;
@@ -75,4 +90,15 @@
         line-height: 12px;
         color: #BBBBBB;
         text-align: center;
+    }
+
+
+    .letter__note {
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        bottom: 7px;
+        min-height: 33px;
+        font-size: 11px;
+        line-height: 11px;
     }

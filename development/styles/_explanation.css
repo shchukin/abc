@@ -1,0 +1,30 @@
+.explanation {
+    display: flex;
+    align-items: center;
+}
+    .explanation__term {
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .explanation__description {
+
+    }
+
+
+.explanation-ro {
+
+}
+    .explanation-ro::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 28px;
+        height: 28px;
+        background-image: url("../vectors/ro-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }

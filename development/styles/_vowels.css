@@ -1,0 +1,22 @@
+.vowels {
+
+}
+    .vowels__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .vowels__content {
+
+    }
+        .vowels__list {
+            margin: 30px -10px -10px;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 340px;
+        }
+            .vowels__item {
+                margin: 10px;
+            }
+

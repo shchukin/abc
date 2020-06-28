@@ -1,6 +1,6 @@
 /* stylelint-disable declaration-colon-space-after */
 :root {
-    --font-default: Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-default: "Sarabun", sans-serif;
     --font-color: #333333;
     --font-faded: #666666;
 }

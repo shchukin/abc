@@ -10,8 +10,13 @@
 @import url("_consonants.css");
 @import url("_alphabet.css");
 @import url("_highlight-wrap.css");
-@import url("_low-class.css");
 @import url("_wysiwyg.css");
 @import url("_title.css");
-
-
+@import url("_vowels.css");
+@import url("_placeholder.css");
+@import url("_vowel-short.css");
+@import url("_vowel-long.css");
+@import url("_explanation.css");
+@import url("_note.css");
+@import url("_highlight-wrap2.css");
+@import url("_sound.css");
