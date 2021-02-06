@@ -5,13 +5,14 @@
     .vowels::after {
         content: "";
         position: absolute;
-        top: 120px;
+        top: 134px;
         left: 100%;
         margin-left: 39px;
         width: 2px;
-        height: 1384px;
+        height: 1374px;
         display: block;
         background-color: #D8D8D8;
+        border-radius: 1px;
         opacity: 0.2;
     }
 
