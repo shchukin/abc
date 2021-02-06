@@ -97,10 +97,11 @@
 
     .letter__note {
         position: absolute;
-        left: 8px;
-        right: 8px;
-        bottom: 7px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
         min-height: 33px;
         font-size: 11px;
         line-height: 11px;
     }
+

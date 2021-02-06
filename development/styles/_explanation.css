@@ -9,23 +9,66 @@
         font-size: 16px;
     }
 
-    .explanation__description {
-        margin-left: 4px;
+    .explanation__arrow {
+        margin-left: 3px;
+        margin-top: 2px;
     }
+
+    .explanation__description {
+        margin-left: 3px;
+        white-space: nowrap; /* все переносы делаем вручную, чтобы контролировать строки */
+    }
+
+.explanation + .explanation {
+    margin-top: 4px;
+}
+
+
+.explanation--o {
+
+}
+    .explanation--o .explanation__arrow {
+        position: absolute;
+        left: 3px;
+        top: -3px;
+        width: 20px;
+        height: 11px;
+        background-image: url("../vectors/o-arrow.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        pointer-events: none;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .explanation--o .explanation__description {
+        margin-left: 8px;
+    }
+
 
 
 .explanation-ro {
 
 }
-    .explanation-ro::before {
-        content: "";
+    .explanation-ro .explanation__arrow {
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 1px;
+        top: -4px;
         width: 28px;
         height: 28px;
         background-image: url("../vectors/ro-arrow.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
+        pointer-events: none;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
     }
+
+    .explanation-ro .explanation__description {
+        margin-left: 12px;
+    }
+
