@@ -1,6 +1,9 @@
 /* stylelint-disable declaration-colon-space-after */
 :root {
-    --font-default: "Sarabun", sans-serif;
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica Neue, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-thai: Sarabun;
+    --font-placeholder: "Tahoma";
+
     --font-color: #333333;
     --font-faded: #666666;
 }

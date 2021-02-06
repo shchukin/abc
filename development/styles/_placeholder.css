@@ -1,3 +1,7 @@
 .placeholder {
+    /*margin-top: ;*/
+    /*margin-left: -2px;*/
+    /*margin-right: -2px;*/
+    font-family: var(--font-placeholder);
     color: #D8D8D8;
 }

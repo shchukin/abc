@@ -27,6 +27,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        font-family: var(--font-thai);
         font-weight: normal;
         font-size: 42px;
         line-height: 42px;
@@ -48,6 +49,7 @@
         left: 8px;
         bottom: 18px;
         display: block;
+        font-family: var(--font-thai);
         font-weight: normal;
         font-size: 17px;
         line-height: 21px;

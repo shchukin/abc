@@ -5,11 +5,12 @@
     .explanation__term {
         display: flex;
         align-items: flex-start;
+        font-family: var(--font-thai);
         font-size: 16px;
     }
 
     .explanation__description {
-
+        margin-left: 4px;
     }
 
 
