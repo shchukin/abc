@@ -21,25 +21,34 @@
         text-align: center;
     }
 
-    .vowels__classes {
+    .vowels__table-head {
         display: flex;
         align-items: flex-start;
         margin-top: 50px;
         margin-left: -10px;
         margin-right: -10px;
     }
-        .vowels__sub-heading {
+        .vowels__hgroup {
             width: 50%;
-            text-align: center;
             padding-left: 10px;
             padding-right: 10px;
         }
+            .vowels__sub-heading {
+                text-align: center;
+            }
+
+            .vowels__sub-note {
+                margin-top: 8px;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+            }
 
     .vowels__content {
 
     }
         .vowels__list {
-            margin: 10px -10px -10px;
+            margin: 0 -10px -10px;
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
