@@ -105,7 +105,12 @@
         color: #BBBBBB;
         text-align: center;
     }
-
+        .letter__key .hint {
+            position: absolute;
+            right: 100%;
+            top: 0;
+            margin-right: 4px;
+        }
 
     .letter__note {
         position: absolute;
