@@ -24,6 +24,7 @@
             left: 100%;
             top: 50%;
             margin-top: -6px;
+            margin-left: 4px;
         }
 
 .explanation + .explanation {
@@ -62,10 +63,10 @@
 }
     .explanation-ro .explanation__arrow {
         position: absolute;
-        left: 1px;
-        top: -4px;
-        width: 28px;
-        height: 28px;
+        left: 3px;
+        top: 0;
+        width: 21px;
+        height: 12px;
         background-image: url("../vectors/ro-arrow.svg");
         background-size: contain;
         background-repeat: no-repeat;
