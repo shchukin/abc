@@ -16,8 +16,15 @@
 
     .explanation__description {
         margin-left: 3px;
+        position: relative;
         white-space: nowrap; /* все переносы делаем вручную, чтобы контролировать строки */
     }
+        .explanation__description .hint {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            margin-top: -6px;
+        }
 
 .explanation + .explanation {
     margin-top: 4px;
@@ -49,6 +56,7 @@
 
 
 
+
 .explanation-ro {
 
 }
@@ -72,3 +80,9 @@
         margin-left: 12px;
     }
 
+    .explanation-ro .explanation__description .hint {
+        left: auto;
+        top: auto;
+        right: 6px;
+        bottom: 1px;
+    }

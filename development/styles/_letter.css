@@ -33,9 +33,16 @@
         line-height: 42px;
         text-align: center;
     }
+        .letter__title .hint {
+            margin-top: 18px;
+            margin-bottom: -1px;
+            margin-left: 4px;
+            margin-right: -20px;
+        }
 
     .letter__sound {
         margin-top: 7px;
+        position: relative;
         display: block;
         font-style: normal;
         font-size: 13px;
@@ -43,6 +50,11 @@
         color: var(--font-faded);
         text-align: center;
     }
+        .letter__sound .hint {
+            margin-top: 1px;
+            margin-bottom: -1px;
+            margin-right: -20px;
+        }
 
     .letter__name {
         position: absolute;

@@ -1,0 +1,14 @@
+.hint {
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    background-image: url("../vectors/hint.svg");
+    background-size: 12px 12px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: help;
+}
