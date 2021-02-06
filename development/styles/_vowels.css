@@ -1,16 +1,45 @@
 .vowels {
-
+    position: relative;
+    width: 320px;
 }
+    .vowels::after {
+        content: "";
+        position: absolute;
+        top: 120px;
+        left: 100%;
+        margin-left: 39px;
+        width: 2px;
+        height: 1384px;
+        display: block;
+        background-color: #D8D8D8;
+        opacity: 0.2;
+    }
+
     .vowels__heading {
         margin-top: 0;
         margin-bottom: 0;
+        text-align: center;
     }
+
+    .vowels__classes {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 50px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+        .vowels__sub-heading {
+            width: 50%;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
     .vowels__content {
 
     }
         .vowels__list {
-            margin: 30px -10px -10px;
+            margin: 10px -10px -10px;
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
