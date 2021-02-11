@@ -6,14 +6,15 @@
     display: inline-block;
     vertical-align: top;
     padding: 16px;
-    background-color: #323232;
+    background-color: rgba(252, 252, 252, 0.9);
+    box-shadow: 0 2px 4px 1px #EAEAEA;
     border-radius: 4px;
     font-family: var(--font-default);
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
     line-height: 18px;
-    color: #ffffff;
+    color: #333333;
     text-transform: none;
     text-align: left;
     text-indent: 0;
@@ -27,15 +28,16 @@
         position: absolute;
         left: 50%;
         top: 100%;
-        margin-left: -4px;
+        margin-top: 2px;
+        margin-left: -6px;
         display: block;
-        border-top: 4px solid #323232;
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
+        border-top: 6px solid #EAEAEA;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
     }
 
     .bubble-trigger:hover .bubble {
-        opacity: 0.9;
+        opacity: 1;
         visibility: visible;
         margin-bottom: 9px;
         transition: opacity 0.3s ease 0.5s,
