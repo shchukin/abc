@@ -1,0 +1,58 @@
+.bubble {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    display: inline-block;
+    vertical-align: top;
+    padding: 16px;
+    background-color: #323232;
+    border-radius: 4px;
+    font-family: var(--font-default);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: none;
+    text-align: left;
+    text-indent: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 100;
+}
+    .bubble::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        margin-left: -4px;
+        display: block;
+        border-top: 4px solid #323232;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+    }
+
+    .bubble-trigger:hover .bubble {
+        opacity: 0.9;
+        visibility: visible;
+        margin-bottom: 9px;
+        transition: opacity 0.3s ease 0.5s,
+                    visibility 0.3s ease 0.5s,
+                    margin-bottom 0.3s ease 0.5s;
+    }
+
+
+/*[title][data-size^="big"]::after {*/
+/*    width: 350px;*/
+/*}*/
+
+/*[title][data-size^="small"]::after {*/
+/*    width: 250px;*/
+/*}*/
+
+/*[title][data-size^="left-small"]::after {*/
+/*    width: 250px;*/
+/*    left: -232px;*/
+/*}*/

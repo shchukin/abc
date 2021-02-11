@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Тайский Алфавит</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+<!--        <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">-->
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
@@ -43,7 +43,13 @@
                         <div class="consonants__sound">
                             <div class="consonants__item letter">
                                 <b class="letter__title consonant-high">ฉ</b>
-                                <i class="letter__sound">ч <abbr class="hint" title="Технически ฉ читается с предыханием, и звук бы должен записываться как “чх”. Но русский “ч” и так звучит мягко, и при чтении ฉ дополнительно добавлять предыхание не нужно. “х”, соответственно, в транскрипцию не записываем.">Посдказка</abbr></i>
+                                <i class="letter__sound">
+                                    ч
+                                    <span class="hint bubble-trigger">
+                                        <b class="visuallyhidden">Подсказка:</b>
+                                        <i class="bubble" style="width: 300px;">Технически ฉ читается с предыханием, и звук бы должен записываться как “чх”. Но русский “ч” и так звучит мягко, и при чтении ฉ дополнительно добавлять предыхание не нужно. “х”, соответственно, в транскрипцию не записываем.</i>
+                                    </span>
+                                </i>
                                 <b class="letter__name">ฉิ่ง</b>
                                 <i class="letter__script">чинг¹</i>
                                 <span class="letter__translation">«кастаньеты» —<br> муз. инструмент</span>
@@ -338,11 +344,23 @@
                                         <div class="consonants__item letter">
                                             <b class="letter__title consonant-low">
                                                 ว
-                                                <abbr class="hint" title="Таким же символом записывается одна из вариация гласного дифтонга ัว /у:а/, а именно его форма в закрытом слоге ◌ว◌.&#10;&#10;Этот дифтонг смотри в табличке гласных. Здесь иной случай.">Подсказка</abbr>
+                                                <span class="hint bubble-trigger">
+                                                    <b class="visuallyhidden">Подсказка:</b>
+                                                    <i class="bubble" style="width: 320px;">
+                                                        Таким же символом записывается одна из вариация гласного дифтонга <span class="thai"><span class="placeholder">◌</span>ัว</span> /у:а/, а именно его форма в закрытом слоге <span class="placeholder">◌</span><span class="thai">ว</span><span class="placeholder">◌</span>.<br>
+                                                        <br>Этот дифтонг смотри в табличке гласных. Здесь иной случай.
+                                                    </i>
+                                                </span>
                                             </b>
                                             <i class="letter__sound">
                                                 в
-                                                <abbr class="hint" title="В конце слога даёт звук /у/, аналогично английскому “w”: Wow, Moscow!&#10;&#10;Пример: ข้าว /кха:у²/ — рис">Подсказка</abbr>
+                                                <span class="hint bubble-trigger">
+                                                    <b class="visuallyhidden">Подсказка:</b>
+                                                    <i class="bubble" style="width: 300px;">
+                                                        В конце слога даёт звук /у/, аналогично английскому “w”: Wow, Moscow!<br>
+                                                        <br>Пример: <span class="thai">ข้าว</span> /кха:у²/ — рис
+                                                    </i>
+                                                </span>
                                             </i>
                                             <b class="letter__name">แหวน</b>
                                             <i class="letter__script">вэ:н⁴</i>
@@ -610,7 +628,15 @@
                             <div class="vowels__item letter">
                                 <b class="letter__title vowel-long">แ<span class="placeholder">◌</span></b>
                                 <i class="letter__sound">э:</i>
-                                <kbd class="letter__key">c <abbr title="Несмотря на то, что запись идентична двум เ, на клавиатуре это все же отдельный символ แ." class="hint">Подсказка</abbr></kbd>
+                                <kbd class="letter__key">c
+                                    <span class="hint bubble-trigger">
+                                        <b class="visuallyhidden">Подсказка:</b>
+                                        <i class="bubble" style="width: 370px;">
+                                            Несмотря на то, что запись идентична двум “<span class="thai">เ</span>”, на клавиатуре это все же отдельный символ “<span class="thai">แ</span>”.<br>
+                                            <br>Хоть внешне результат и выглядит одинакого, всё же следует использовать именно этот символ, чтобы букву правильно считывали приложения для перевода, автодополнение, поиск и так далее.
+                                        </i>
+                                    </span>
+                                </kbd>
                             </div>
                             <div class="vowels__item letter">
                                 <b class="letter__title vowel-short">โ<span class="placeholder">◌</span>ะ</b>
@@ -792,7 +818,13 @@
                                                 ←
                                             </span>
                                             <span class="explanation__description">
-                                                в закрытом<br> слоге <abbr class="hint" title="Пример: เรียน -- учиться&#10;Должно читаться /ри:ан⁰/,&#10;но читается /ри:ен⁰/">Подсказка</abbr>
+                                                в закрытом<br> слоге
+                                                <span class="hint bubble-trigger">
+                                                    <b class="visuallyhidden">Подсказка:</b>
+                                                    <i class="bubble" style="width: 210px;">
+                                                        Пример: <span class="thai">เรียน</span> -- учиться<br>Должно читаться /ри:ан⁰/,<br>но читается /ри:ен⁰/
+                                                    </i>
+                                                </span>
                                             </span>
                                         </div>
                                         <kbd class="letter__key">g◌utp</kbd>
