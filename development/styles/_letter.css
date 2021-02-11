@@ -5,7 +5,6 @@
     height: 136px;
     background-color: #FBFBFB;
     box-shadow: 0 2px 4px 1px #EAEAEA;
-
     border-radius: 4px;
     padding-top: 13px;
     text-decoration: none;
@@ -36,10 +35,7 @@
         text-align: center;
     }
         .letter__title .hint {
-            margin-top: 18px;
-            margin-bottom: -1px;
-            margin-left: 4px;
-            margin-right: -20px;
+            margin: 18px -20px -1px 4px;
         }
 
     .letter__sound {

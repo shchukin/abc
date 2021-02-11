@@ -43,17 +43,3 @@
                     visibility 0.3s ease 0.5s,
                     margin-bottom 0.3s ease 0.5s;
     }
-
-
-/*[title][data-size^="big"]::after {*/
-/*    width: 350px;*/
-/*}*/
-
-/*[title][data-size^="small"]::after {*/
-/*    width: 250px;*/
-/*}*/
-
-/*[title][data-size^="left-small"]::after {*/
-/*    width: 250px;*/
-/*    left: -232px;*/
-/*}*/

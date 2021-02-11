@@ -91,29 +91,29 @@
 
 
 
-.wysiwyg h2 {
-    font-weight: var(--font_weight_strong);
-    font-size: var(--font_size_default-title);
-    line-height: var(--font_line_default-title);
-    margin-top: var(--font_line_default-title);
-    margin-bottom: var(--font_line_default-title);
-}
+/*.wysiwyg h2 {*/
+/*    font-weight: var(--font_weight_strong);*/
+/*    font-size: var(--font_size_default-title);*/
+/*    line-height: var(--font_line_default-title);*/
+/*    margin-top: var(--font_line_default-title);*/
+/*    margin-bottom: var(--font_line_default-title);*/
+/*}*/
 
-.wysiwyg h3 {
-    font-weight: var(--font_weight_strong);
-    font-size: var(--font_size_smaller-title);
-    line-height: var(--font_line_smaller-title);
-    margin-top: var(--font_line_smaller-title);
-    margin-bottom: var(--font_line_smaller-title);
-}
+/*.wysiwyg h3 {*/
+/*    font-weight: var(--font_weight_strong);*/
+/*    font-size: var(--font_size_smaller-title);*/
+/*    line-height: var(--font_line_smaller-title);*/
+/*    margin-top: var(--font_line_smaller-title);*/
+/*    margin-bottom: var(--font_line_smaller-title);*/
+/*}*/
 
-.wysiwyg h4 {
-    font-weight: var(--font_weight_strong);
-    font-size: var(--font_size_smallest-title);
-    line-height: var(--font_line_smallest-title);
-    margin-top: var(--font_line_smallest-title);
-    margin-bottom: var(--font_line_smallest-title);
-}
+/*.wysiwyg h4 {*/
+/*    font-weight: var(--font_weight_strong);*/
+/*    font-size: var(--font_size_smallest-title);*/
+/*    line-height: var(--font_line_smallest-title);*/
+/*    margin-top: var(--font_line_smallest-title);*/
+/*    margin-bottom: var(--font_line_smallest-title);*/
+/*}*/
 
 .wysiwyg h2:first-child,
 .wysiwyg h3:first-child,
@@ -141,5 +141,5 @@
 
 .wysiwyg b,
 .wysiwyg strong {
-    font-weight: var(--font_weight_strong);
+    /*font-weight: var(--font_weight_strong);*/
 }
