@@ -6,7 +6,7 @@
     display: inline-block;
     vertical-align: top;
     padding: 16px;
-    background-color: rgba(252, 252, 252, 0.9);
+    background-color: rgba(252, 252, 252, 1);
     box-shadow: 0 2px 4px 1px #EAEAEA;
     border-radius: 4px;
     font-family: var(--font-default);
@@ -28,12 +28,11 @@
         position: absolute;
         left: 50%;
         top: 100%;
-        margin-top: 2px;
-        margin-left: -6px;
+        margin-left: -8px;
         display: block;
-        border-top: 6px solid #EAEAEA;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
+        border-top: 8px solid #EAEAEA;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
     }
 
     .bubble-trigger:hover .bubble {

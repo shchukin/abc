@@ -4,3 +4,7 @@
     font-family: var(--font-placeholder);
     color: #D8D8D8;
 }
+
+.placeholder--text-alike {
+    color: inherit;
+}
