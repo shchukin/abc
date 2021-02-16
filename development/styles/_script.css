@@ -1,4 +1,12 @@
 .script {
-    font-style: italic;
     color: var(--color-script);
+    white-space: nowrap;
+}
+
+.script::before {
+    content: "/";
+}
+
+.script::after {
+    content: "/";
 }
