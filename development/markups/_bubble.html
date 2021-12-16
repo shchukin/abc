@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.bubble</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+
+    <body class="body">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.bubble</h1>
+            <p>
+                Смотри так же <a href="_explain.html">.explain</a>
+            </p>
+
+            <span class="bubble" style="visibility: visible; opacity: 1;">
+                <span class="bubble__body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur cum dignissimos dolorem dolores eos exercitationem facilis impedit non numquam, officiis praesentium provident, quisquam recusandae sapiente tempora temporibus vero. Blanditiis commodi cumque debitis eos expedita incidunt ipsam magnam maxime mollitia nam optio quibusdam unde, veniam! Expedita, ipsam ipsum magni necessitatibus neque placeat repellat velit. Accusamus atque cupiditate nisi quaerat!
+                </span>
+                <i class="bubble__angle"></i>
+            </span>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Разметка внутри</h2>
+            <p>
+                Предполагается, что внутри будут большие многострочные тексты, которые должны сами собой переноситься
+                на новые строки. Этими переносами можно управлять при помощи инлайновой ширины или <b>&lt;br&gt;</b>.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>Показ бабла</h2>
+            <p>
+                Клик по <b>.bubble-handler</b> ищет и показывает соответствующий бабл.
+                Соответствующий этот тот, который находится внутри <b>.bubble-context</b> вместе с тем
+                <b>.bubble-handler</b> на который кликнули. Это нужно главным образом для мобилок без ховера.
+            </p>
+            <p>
+                Ещё бабл показывается обычным CSS-ным наведением на <b>.bubble-context</b>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <h2>Позиционирование</h2>
+            <p>
+                В этом компоненте нет позиционирования. В каждом месте используется
+                своё позиционирование. Смотри, например, <a href="_explain.html">.explain</a>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../scripts/_hint.js"></script>
+
+
+    </body>
+</html>

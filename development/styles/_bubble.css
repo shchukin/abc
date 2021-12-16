@@ -1,58 +1,71 @@
 .bubble {
-    position: absolute;
-    left: 50%;
-    bottom: 100%;
-    transform: translateX(-50%);
+    position: relative;
+    z-index: 100;
     display: inline-block;
     vertical-align: top;
-    padding: 16px;
-    background-color: rgba(252, 252, 252, 1);
-    box-shadow: 0 2px 4px 1px #EAEAEA;
-    border-radius: 4px;
-    font-family: var(--font-default);
-    font-weight: normal;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: #333333;
-    text-transform: none;
-    text-align: left;
-    text-indent: 0;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-    z-index: 100;
 }
-    .bubble::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 100%;
-        margin-left: -8px;
+    .bubble__body {
+        position: relative;
+        z-index: 20;
         display: block;
-        border-top: 8px solid #EAEAEA;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
+        padding: 12px 16px 16px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 4px 1px #EAEAEA;
+        border-radius: 4px;
+        font-family: var(--font-default);
+        font-weight: normal;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333333;
+        text-transform: none;
+        text-align: left;
+        text-indent: 0;
     }
 
+    .bubble__angle {
+
+    }
+        .bubble__angle::before {
+            content: "";
+            position: absolute;
+            z-index: 10;
+            left: 50%;
+            top: 100%;
+            margin-top: -5px;
+            margin-left: -5px;
+            width: 10px;
+            height: 10px;
+            box-shadow: 0 2px 4px 1px #EAEAEA;
+            transform: rotate(45deg);
+        }
+
+        .bubble__angle::after {
+            content: "";
+            position: absolute;
+            z-index: 30;
+            left: 50%;
+            top: 100%;
+            margin-top: -5px;
+            margin-left: -5px;
+            width: 10px;
+            height: 10px;
+            background-color: #FFFFFF;
+            transform: rotate(45deg);
+        }
 
 
 
-.bubble-hover-handler:hover .bubble {
-    opacity: 1;
-    visibility: visible;
-    margin-bottom: 9px;
-    transition: opacity 0.3s ease 0.3s,
-                visibility 0.3s ease 0.3s,
-                margin-bottom 0.3s ease 0.3s;
-}
 
 
+.bubble-context:hover .bubble,
 .bubble--visible {
     opacity: 1;
     visibility: visible;
-    margin-bottom: 9px;
-    transition: opacity 0.3s ease,
-                visibility 0.3s ease,
-                margin-bottom 0.3s ease;
+    margin-bottom: 9px; /* эффект выезжания (9) */
+    transition: opacity 0.3s ease 0.3s,
+                visibility 0.3s ease 0.3s,
+                margin-bottom 0.3s ease 0.3s;
 }

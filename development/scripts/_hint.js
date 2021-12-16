@@ -1,7 +1,7 @@
 (function($) {
 
-    $('.bubble-click-handler').on('click', function () {
-        $(this).siblings('.bubble').toggleClass('bubble--visible');
+    $('.bubble-handler').on('click', function () {
+        $(this).parents('.bubble-context').find('.bubble').toggleClass('bubble--visible');
     });
 
 
@@ -9,7 +9,7 @@
     /* hide bubble by overlay click ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.bubble, .bubble-hover-handler').length) {
+        if (!$(event.target).closest('.bubble, .bubble-handler').length) {
             $('.bubble--visible').removeClass('bubble--visible');
         }
     });

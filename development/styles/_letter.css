@@ -34,8 +34,8 @@
         line-height: 42px;
         text-align: center;
     }
-        .letter__title .hint {
-            margin: 18px -20px -1px 4px;
+        .letter__title .explain {
+            margin: 6px -32px -6px -8px;
         }
 
     .letter__sound {
@@ -48,10 +48,8 @@
         color: var(--font-faded);
         text-align: center;
     }
-        .letter__sound .hint {
-            margin-top: 1px;
-            margin-bottom: -1px;
-            margin-right: -20px;
+        .letter__sound .explain {
+            margin: -11px -32px -13px -12px;
         }
 
     .letter__name {
@@ -103,11 +101,12 @@
         color: #BBBBBB;
         text-align: center;
     }
-        .letter__key .hint {
+        .letter__key .explain {
             position: absolute;
             right: 100%;
             top: 0;
-            margin-right: 4px;
+            margin-right: -9px;
+            margin-top: -12px;
         }
 
     .letter__note {
