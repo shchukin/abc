@@ -54,7 +54,7 @@
 
     .letter__name {
         position: absolute;
-        left: 8px;
+        left: 10px;
         bottom: 18px;
         display: block;
         font-family: var(--font-thai);
@@ -65,7 +65,7 @@
 
     .letter__script {
         position: absolute;
-        left: 8px;
+        left: 10px;
         bottom: 7px;
         display: block;
         font-style: normal;
@@ -76,13 +76,18 @@
 
     .letter__translation {
         position: absolute;
-        right: 8px;
+        right: 10px;
         bottom: 7px;
         min-height: 33px;
         display: flex;
         align-items: center;
         font-size: 11px;
         line-height: 11px;
+    }
+
+    .letter__translation--smaller {
+        margin-bottom: -1px;
+        font-size: 10px;
     }
 
     .letter__key {
@@ -111,7 +116,7 @@
 
     .letter__note {
         position: absolute;
-        left: 6px;
+        left: 8px;
         right: 6px;
         bottom: 6px;
         min-height: 33px;
