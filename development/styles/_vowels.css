@@ -2,20 +2,6 @@
     position: relative;
     width: 320px;
 }
-    .vowels::after {
-        content: "";
-        position: absolute;
-        top: 134px;
-        left: 100%;
-        margin-left: 39px;
-        width: 2px;
-        height: 1374px;
-        display: block;
-        background-color: #D8D8D8;
-        border-radius: 1px;
-        opacity: 0.2;
-    }
-
     .vowels__heading {
         margin-top: 0;
         margin-bottom: 0;
