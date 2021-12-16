@@ -2,11 +2,29 @@
     position: relative; /* для баблов внутри */
     display: inline-block;
     vertical-align: top;
-    width: 16px;
-    height: 16px;
-    background-image: url("../vectors/hint.svg");
-    background-size: 12px 12px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    cursor: help;
 }
+    .hint__trigger {
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        padding: 0;
+        width: 16px;
+        height: 16px;
+        background-color: transparent;
+        background-image: url("../vectors/hint.svg");
+        background-size: 12px 12px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: help;
+    }
+
+
+.hint--question {
+
+}
+    .hint--question .hint__trigger {
+        background-image: url("../vectors/hint-question.svg");
+    }

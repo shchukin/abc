@@ -35,11 +35,24 @@
         border-right: 8px solid transparent;
     }
 
-    .bubble-trigger:hover .bubble {
-        opacity: 1;
-        visibility: visible;
-        margin-bottom: 9px;
-        transition: opacity 0.3s ease 0.5s,
-                    visibility 0.3s ease 0.5s,
-                    margin-bottom 0.3s ease 0.5s;
-    }
+
+
+
+.bubble-hover-handler:hover .bubble {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 9px;
+    transition: opacity 0.3s ease 0.3s,
+                visibility 0.3s ease 0.3s,
+                margin-bottom 0.3s ease 0.3s;
+}
+
+
+.bubble--visible {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 9px;
+    transition: opacity 0.3s ease,
+                visibility 0.3s ease,
+                margin-bottom 0.3s ease;
+}

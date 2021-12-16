@@ -45,8 +45,8 @@
                                 <b class="letter__title consonant-high">ฉ</b>
                                 <i class="letter__sound">
                                     ч
-                                    <span class="hint bubble-trigger">
-                                        <b class="visuallyhidden">Подсказка:</b>
+                                    <span class="hint bubble-hover-handler">
+                                        <button class="hint__trigger bubble-click-handler" type="button">Подсказка</button>
                                         <i class="bubble" style="width: 300px;">Технически <span class="thai">ฉ</span> читается с предыханием, и звук бы должен записываться как <span class="script">“чх”</span>. Но русский <span class="script">“ч”</span> и так звучит мягко, и при чтении <span class="thai">ฉ</span> дополнительно добавлять предыхание не нужно. Соответственно <span class="script">“х”</span> в транскрипцию не записываем.</i>
                                     </span>
                                 </i>
@@ -124,11 +124,9 @@
                             <div class="consonants__item letter">
                                 <b class="letter__title consonant-high">
                                     ห
-                                    <span class="hint bubble-trigger">
-                                        <b class="visuallyhidden">Подсказка:</b>
-                                        <i class="bubble" style="width: 300px;">
-                                            Так же может выступать в роли значка для перевода последующей согласной в высокий класс.
-                                        </i>
+                                    <span class="hint bubble-hover-handler">
+                                        <button class="hint__trigger bubble-click-handler" type="button">Подсказка</button>
+                                        <i class="bubble" style="width: 300px;">Так же может выступать в роли значка для перевода последующей согласной в высокий класс.</i>
                                     </span>
                                 </b>
                                 <i class="letter__sound">х</i>
@@ -226,8 +224,10 @@
                             <div class="consonants__item letter">
                                 <b class="letter__title consonant-middle">
                                     อ
-                                    <span class="hint bubble-trigger">
-                                        <b class="visuallyhidden">Подсказка:</b>
+                                    <span class="hint bubble-hover-handler">
+                                        <button class="hint__trigger bubble-click-handler" type="button">
+                                            Подсказка
+                                        </button>
                                         <i class="bubble" style="width: 340px;">
                                             • Подобно <span class="thai">ห</span> может использоваться для перевода последующей согласной в средний класс. Таких слов всего четыре:<br>
                                             - <span class="thai">อยู่</span> <span class="script">йу:¹</span> — быть где-то<br>
@@ -241,9 +241,9 @@
                                 </b>
                                 <i class="letter__sound">
                                     -
-                                    <span class="hint bubble-trigger">
-                                        <b class="visuallyhidden">Подсказка:</b>
-                                        <i class="bubble" style="width: 380px;">
+                                    <span class="hint hint--question bubble-hover-handler">
+                                        <button class="hint__trigger bubble-click-handler" type="button">Подсказка</button>
+                                        <i class="bubble" style="width: 300px;">
                                             Беззвучная согласная. В тайском письме гласные буквы не могут идти без согласных, т.е. не могут сами образовать слог. Но с гласного звука слог начинаться может. В таких случаях используется <span class="thai">อ</span>, и соответствующая гласная привязывается к нему. Пример: <span class="thai">อะไร</span> <span class="script">а¹рай⁰</span> — вопрос “какой?”.<br>
                                             <br>
                                             По этой же причине, при записи записи гласных в алфавите, букву <span class="thai">อ</span> зачастую используют вместо символа плейсхолдера <span class="placeholder placeholder--text-alike">◌</span>.
@@ -283,7 +283,7 @@
                                             <b class="letter__title consonant-low">ร</b>
                                             <i class="letter__sound">
                                                 р
-                                                <span class="hint bubble-trigger">
+                                                <span class="hint bubble-hover-handler">
                                                     <b class="visuallyhidden">Подсказка:</b>
                                                     <i class="bubble" style="width: 330px;">
                                                         • Комбинация <span class="thai">ทร</span> иногда читается как <span class="script">с</span>.
@@ -401,7 +401,7 @@
                                         <div class="consonants__item letter">
                                             <b class="letter__title consonant-low">
                                                 ว
-                                                <span class="hint bubble-trigger">
+                                                <span class="hint bubble-hover-handler">
                                                     <b class="visuallyhidden">Подсказка:</b>
                                                     <i class="bubble" style="width: 320px;">
                                                         Таким же символом записывается одна из вариация гласного дифтонга <span class="thai"><span class="placeholder">◌</span>ัว</span> /у:а/, а именно его форма в закрытом слоге <span class="placeholder">◌</span><span class="thai">ว</span><span class="placeholder">◌</span>.<br>
@@ -411,7 +411,7 @@
                                             </b>
                                             <i class="letter__sound">
                                                 в
-                                                <span class="hint bubble-trigger">
+                                                <span class="hint bubble-hover-handler">
                                                     <b class="visuallyhidden">Подсказка:</b>
                                                     <i class="bubble" style="width: 300px;">
                                                         В конце слога даёт звук <span class="script">/у/</span>, аналогично английскому “w”: Wow, Moscow!<br>
@@ -686,7 +686,7 @@
                                 <b class="letter__title vowel-long">แ<span class="placeholder">◌</span></b>
                                 <i class="letter__sound">э:</i>
                                 <kbd class="letter__key">c
-                                    <span class="hint bubble-trigger">
+                                    <span class="hint bubble-hover-handler">
                                         <b class="visuallyhidden">Подсказка:</b>
                                         <i class="bubble" style="width: 370px;">
                                             Несмотря на то, что запись идентична двум “<span class="thai">เ</span>”, на клавиатуре это все же отдельный символ “<span class="thai">แ</span>”.<br>
@@ -708,7 +708,7 @@
                                         </span>
                                         <span class="explanation__description">
                                             невидима в<br> закрытом слоге<br> с терминалью<br> отличной от <span class="thai">ร</span>.
-                                            <span class="hint bubble-trigger">
+                                            <span class="hint bubble-hover-handler">
                                                 <b class="visuallyhidden">Подсказка:</b>
                                                 <i class="bubble">
                                                     Пример: <span class="thai">นม</span> <span class="script">ном⁰</span> — молоко
@@ -752,7 +752,7 @@
                                     </span>
                                     <span class="explanation__description" style="margin-right: -8px">
                                         невидима<br> в закрытом слоге<br> с терминалью <span class="thai">ร</span>
-                                        <span class="hint bubble-trigger">
+                                        <span class="hint bubble-hover-handler">
                                             <b class="visuallyhidden">Подсказка:</b>
                                             <i class="bubble">
                                                 Пример: <span class="thai">ละคร</span> <span class="script">ла³кхɔ:н⁰</span> — сериал
@@ -875,7 +875,7 @@
                                             </span>
                                             <span class="explanation__description">
                                                 в закрытом<br> слоге
-                                                <span class="hint bubble-trigger">
+                                                <span class="hint bubble-hover-handler">
                                                     <b class="visuallyhidden">Подсказка:</b>
                                                     <i class="bubble" style="width: 210px;">
                                                         Пример: <span class="thai">เรียน</span> — учиться<br>Должно читаться <span class="script">ри:ан⁰</span>,<br>но читается <span class="script">ри:əн⁰</span>.
@@ -954,7 +954,7 @@
         <!-- Scripts -->
         <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
-        <script src="scripts/temp.js"></script>
+        <script src="scripts/_hint.js"></script>
 
     </body>
 </html>
