@@ -4,53 +4,60 @@
     align-items: flex-start;
     padding: calc(2% + 20px) 4%;
 }
-    .alphabet__set {
-
+    .alphabet__relative-context {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
     }
 
-    .alphabet__set--consonants {
-
-    }
-
-    .alphabet__set--vowels {
-        margin-right: 60px;
-        order: -1;
-    }
-        .alphabet__sub-heading {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .alphabet__class {
+        .alphabet__set {
 
         }
 
-        .alphabet__class + .alphabet__class {
-            margin-top: 65px;
+        .alphabet__set--consonants {
+
         }
 
-        .alphabet__class--high { }
-        .alphabet__class--middle { }
-        .alphabet__class--low { }
-
-            .alphabet__section-heading {
+        .alphabet__set--vowels {
+            margin-right: 60px;
+            order: -1;
+        }
+            .alphabet__sub-heading {
                 margin-top: 0;
                 margin-bottom: 0;
             }
 
-            .alphabet__widget {
-                margin-top: 30px;
+            .alphabet__class {
+
             }
-                .alphabet__low-class {
-                    display: flex;
-                    align-items: flex-end;
-                    padding-bottom: 116px;
+
+            .alphabet__class + .alphabet__class {
+                margin-top: 65px;
+            }
+
+            .alphabet__class--high { }
+            .alphabet__class--middle { }
+            .alphabet__class--low { }
+
+                .alphabet__section-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
                 }
-                    .alphabet__sonorant {
 
+                .alphabet__widget {
+                    margin-top: 30px;
+                }
+                    .alphabet__low-class {
+                        display: flex;
+                        align-items: flex-end;
+                        padding-bottom: 116px;
                     }
+                        .alphabet__sonorant {
 
-                    .alphabet__low-dead {
-                        margin-left: 20px;
-                        margin-bottom: -116px;
-                    }
+                        }
+
+                        .alphabet__low-dead {
+                            margin-left: 20px;
+                            margin-bottom: -116px;
+                        }
+

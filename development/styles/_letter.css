@@ -52,6 +52,11 @@
             margin: -11px -32px -13px -12px;
         }
 
+    .letter__sound + .letter__sound {
+        margin-top: 0;
+    }
+
+
     .letter__name {
         position: absolute;
         left: 10px;
@@ -123,4 +128,3 @@
         font-size: 11px;
         line-height: 11px;
     }
-

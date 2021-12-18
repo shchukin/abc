@@ -1,0 +1,28 @@
+.marks {
+    position: absolute;
+    left: 1610px;
+    top: 0;
+}
+    .marks__section {
+        margin-top: 91px;
+    }
+
+    .marks__section:first-child {
+        margin-top: 0;
+    }
+        .marks__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .marks__list {
+            margin: 20px -10px -10px;
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 850px;
+        }
+            .marks__item {
+                margin: 10px;
+            }
+
