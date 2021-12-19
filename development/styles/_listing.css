@@ -1,11 +1,13 @@
 .listing {
-    margin: -10px;
+    margin-left: -20px;
+    margin-top: -20px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
 }
     .listing__item {
-        margin: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     .listing__item--forced-line-break {

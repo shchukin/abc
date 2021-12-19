@@ -4,7 +4,13 @@
     line-height: 30px;
 }
 
-.title--secondary {
+.title--column {
     font-size: 18px;
     line-height: 20px;
+}
+
+
+.title--secondary {
+    font-size: 20px;
+    line-height: 28px;
 }

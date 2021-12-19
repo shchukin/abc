@@ -3,6 +3,11 @@
     line-height: 20px;
 }
 
+.wysiwyg--smaller {
+    font-size: 12px;
+    line-height: 16px;
+}
+
 /* stylelint-disable function-parentheses-space-inside */
 .wysiwyg p,
 .wysiwyg ul,
@@ -13,6 +18,16 @@
 
 }
 /* stylelint-enable */
+
+.wysiwyg--smaller p,
+.wysiwyg--smaller ul,
+.wysiwyg--smaller ol,
+.wysiwyg--smaller hr,
+.wysiwyg--smaller figure,
+.wysiwyg--smaller blockquote {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
