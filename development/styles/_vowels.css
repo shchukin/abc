@@ -36,7 +36,6 @@
     }
         .vowels__list {
             margin-top: 20px;
-            transition: margin-top var(--transition-show);
         }
 
         .vowels__list:first-child {
@@ -47,30 +46,21 @@
 
         }
             .vowels__highlight-push {
-                transition: padding var(--transition-show);
+
             }
                 .vowels__highlighted-panel {
-                    display: inline-flex;
-                    vertical-align: top;
-                    padding: 20px;
-                    margin: -20px -200px -20px -20px;
+                    padding: 0 20px 20px;
+                    margin: -20px;
                 }
-                    .vowels__back-to-list {
-                        width: 320px;
+                    .vowels__comment {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        display: none;
                     }
 
-                    .vowels__comment {
-                        margin-left: 20px;
-                        padding-top: 6px;
-                        width: 0;
-                        overflow: hidden;
-                        opacity: 0;
-                        transition: width var(--transition-show),
-                                    opacity var(--transition-show);
+                    .vowels__back-to-list {
+
                     }
-                        .vowels__comment-strut {
-                            width: 200px;
-                        }
 
 
     .vowels__body {
@@ -81,7 +71,7 @@
         }
 
         .highlights-shown .vowels__list:first-child {
-            margin-top: 0;
+
         }
             .highlights-shown .vowels__highlight-push {
                 padding-top: 20px;
@@ -95,7 +85,5 @@
                     }
 
                     .highlights-shown .vowels__comment {
-                        width: 200px;
-                        opacity: 1;
-                        visibility: visible;
+                        display: block;
                     }

@@ -11,10 +11,8 @@
             margin: 0 -10px -20px -20px;
         }
             .low-class__comment {
-                height: 0;
-                opacity: 0;
-                transition: height var(--transition-show),
-                            opacity var(--transition-show);
+                height: 125px;
+                display: none;
             }
 
             .low-class__sonorants {
@@ -25,7 +23,6 @@
         margin-left: 20px;
         margin-top: -136px;
         margin-bottom: -136px;
-        transition: margin-top var(--transition-show);
     }
 
 
@@ -41,8 +38,7 @@
 
         }
             .highlights-shown .low-class__comment {
-                height: 125px;
-                opacity: 1;
+                display: block;
             }
 
             .highlights-shown .low-class__sonorants {

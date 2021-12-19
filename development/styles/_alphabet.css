@@ -27,9 +27,4 @@
         .alphabet__settings {
             margin-top: 85px;
             width: 954px;
-            transition: margin-left var(--transition-show);
-        }
-
-        .highlights-shown .alphabet__settings {
-            margin-left: 240px;
         }
