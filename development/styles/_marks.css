@@ -23,6 +23,10 @@
                 margin-bottom: var(--heading-margin);
             }
 
+            html:not(.headings-shown) .marks__sub-heading {
+                display: none;
+            }
+
             .marks__list {
 
             }

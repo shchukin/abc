@@ -8,6 +8,10 @@
         margin: 30px;
     }
 
+    html:not(.vowels-shown) .alphabet__vowels {
+        display: none;
+    }
+
     .alphabet__consonants-and-marks {
         margin: 30px;
     }
@@ -19,7 +23,3 @@
             margin-top: 64px;
         }
 
-        .alphabet__settings {
-            margin-top: 64px;
-            width: 954px;
-        }

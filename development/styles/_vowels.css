@@ -7,6 +7,10 @@
         margin-bottom: var(--heading-margin);
     }
 
+    html:not(.headings-shown) .vowels__heading {
+        display: none;
+    }
+
     .vowels__table-head {
         display: flex;
         align-items: flex-start;
@@ -14,21 +18,23 @@
         margin-left: -10px;
         margin-right: -10px;
     }
+
+    html:not(.subheadings-shown) .vowels__table-head {
+        display: none;
+    }
         .vowels__hgroup {
-            width: 50%;
-            padding-left: 10px;
-            padding-right: 10px;
+
         }
             .vowels__column-heading {
+                width: 50%;
+                padding-left: 10px;
+                padding-right: 10px;
                 text-align: center;
             }
+                .vowels__column-heading .heading-note {
+                    display: block;
+                }
 
-            .vowels__column-note {
-                margin-top: 8px;
-                font-size: 12px;
-                line-height: 16px;
-                text-align: center;
-            }
 
     .vowels__body {
 
@@ -51,37 +57,19 @@
                 padding-bottom: 20px;
             }
 
+            html:not(.subheadings-shown) .vowels__sub-heading {
+                display: none;
+            }
+
             .vowels__comment {
                 margin-top: -12px;
                 padding-bottom: 12px;
             }
 
+            html:not(.comments-shown) .vowels__comment {
+                display: none;
+            }
+
             .vowels__list {
 
             }
-
-
-    /*.highlights-shown .vowels__body {*/
-
-    /*}*/
-    /*    .highlights-shown .vowels__section {*/
-
-    /*    }*/
-
-    /*    .highlights-shown .vowels__section:first-child {*/
-
-    /*    }*/
-    /*        .highlights-shown .vowels__highlight-push {*/
-    /*            padding-top: 20px;*/
-    /*            padding-bottom: 20px;*/
-    /*        }*/
-    /*            .highlights-shown .vowels__highlighted-panel {*/
-
-    /*            }*/
-    /*                .highlights-shown .vowels__list {*/
-
-    /*                }*/
-
-    /*                .highlights-shown .vowels__comment {*/
-    /*                    display: block;*/
-    /*                }*/

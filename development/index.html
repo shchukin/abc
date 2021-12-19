@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="headings-shown subheadings-shown comments-shown" lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,21 +25,13 @@
                         Гласные
                     </h2>
                     <div class="vowels__table-head">
-                        <div class="vowels__hgroup vowels__hgroup--short">
-                            <div class="vowels__column-heading title title--column">
-                                Краткие
-                            </div>
-                            <div class="vowels__column-note">
-                                Мёртвый слог
-                            </div>
+                        <div class="vowels__column-heading title title--column">
+                            Краткие
+                            <span class="heading-note">(Мёртвый слог)</span>
                         </div>
-                        <div class="vowels__hgroup vowels__hgroup--long">
-                            <div class="vowels__column-heading title title--column">
-                                Долгие
-                            </div>
-                            <div class="vowels__column-note">
-                                Живой слог
-                            </div>
+                        <div class="vowels__column-heading title title--column">
+                            Долгие
+                            <span class="heading-note">(Живой слог)</span>
                         </div>
                     </div>
                     <div class="vowels__body">
@@ -511,7 +503,7 @@
                         <div class="consonants__body">
                             <section class="consonants__section">
                                 <h3 class="consonants__sub-heading title">
-                                    Согласные высокого класса
+                                    Согласные высокого класса <span class="heading-note">(мёртвый слог)</span>
                                 </h3>
                                 <div class="consonants__list">
                                     <div class="vlisting">
@@ -648,7 +640,7 @@
                             </section>
                             <section class="consonants__section">
                                 <h3 class="consonants__sub-heading title">
-                                    Согласные среднего класса
+                                    Согласные среднего класса <span class="heading-note">(мёртвый слог)</span>
                                 </h3>
                                 <div class="consonants__list">
                                     <div class="vlisting">
@@ -794,7 +786,7 @@
                                 <div class="consonants__list">
                                     <section class="consonants__sub-class">
                                         <h4 class="consonants__alt-heading title title--secondary">
-                                            Сонорные
+                                            Сонорные <span class="heading-note">(живой слог)</span>
                                         </h4>
                                         <span class="explain bubble-context">
                                             <button class="explain__icon bubble-handler" type="button">
@@ -989,7 +981,7 @@
                                     </section>
                                     <section class="consonants__sub-class">
                                         <h4 class="consonants__alt-heading title title--secondary">
-                                            Глухие
+                                            Глухие <span class="heading-note">(мёртвый слог)</span>
                                         </h4>
                                         <div class="consonants__alt-list">
                                             <div class="vlisting">
@@ -1304,75 +1296,89 @@
                         </div>
                     </section>
                 </div>
-                <div class="alphabet__settings">
-                    <div class="settings">
-                        <h2 class="settings__heading title">
-                            Настройки
-                        </h2>
-                        <div class="settings__list">
-                            <div class="settings__item">
+                <div class="settings">
+                    <h2 class="settings__heading title">
+                        Настройки
+                    </h2>
+                    <div class="settings__list">
+                        <div class="settings__section">
 
-                                <div class="checklist">
-                                    <div class="checklist__column">
-                                        <label class="checklist__head choice choice--full-width">
+                            <div class="checklist">
+                                <div class="checklist__column">
+                                    <label class="checklist__head choice choice--full-width">
+                                        <input class="choice__widget vowels-handler" type="checkbox" checked>
+                                        <i class="choice__icon"></i>
+                                        <span class="choice__label">Гласные</span>
+                                    </label>
+                                </div>
+                                <div class="checklist__column">
+                                    <label class="checklist__head choice choice--full-width">
+                                        <input class="choice__widget" type="checkbox" checked>
+                                        <i class="choice__icon"></i>
+                                        <span class="choice__label">Согласные</span>
+                                    </label>
+                                    <div class="checklist__list">
+                                        <label class="checklist__item choice choice--full-width">
                                             <input class="choice__widget" type="checkbox" checked>
                                             <i class="choice__icon"></i>
-                                            <span class="choice__label">Гласные</span>
+                                            <span class="choice__label">Высокий класс</span>
+                                        </label>
+                                        <label class="checklist__item choice choice--full-width">
+                                            <input class="choice__widget" type="checkbox" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label">Средний класс</span>
+                                        </label>
+                                        <label class="checklist__item choice choice--full-width">
+                                            <input class="choice__widget" type="checkbox" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label">Низкий класс</span>
                                         </label>
                                     </div>
-                                    <div class="checklist__column">
-                                        <label class="checklist__head choice choice--full-width">
+                                </div>
+                                <div class="checklist__column">
+                                    <label class="checklist__head choice choice--full-width">
+                                        <input class="choice__widget" type="checkbox" checked>
+                                        <i class="choice__icon"></i>
+                                        <span class="choice__label">Значки</span>
+                                    </label>
+                                    <div class="checklist__list">
+                                        <label class="checklist__item choice choice--full-width">
                                             <input class="choice__widget" type="checkbox" checked>
                                             <i class="choice__icon"></i>
-                                            <span class="choice__label">Согласные</span>
+                                            <span class="choice__label">Цифры</span>
                                         </label>
-                                        <div class="checklist__list">
-                                            <label class="checklist__item choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
-                                                <i class="choice__icon"></i>
-                                                <span class="choice__label">Высокий класс</span>
-                                            </label>
-                                            <label class="checklist__item choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
-                                                <i class="choice__icon"></i>
-                                                <span class="choice__label">Средний класс</span>
-                                            </label>
-                                            <label class="checklist__item choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
-                                                <i class="choice__icon"></i>
-                                                <span class="choice__label">Низкий класс</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="checklist__column">
-                                        <label class="checklist__head choice choice--full-width">
+                                        <label class="checklist__item choice choice--full-width">
                                             <input class="choice__widget" type="checkbox" checked>
                                             <i class="choice__icon"></i>
-                                            <span class="choice__label">Значки</span>
+                                            <span class="choice__label">Тоны</span>
                                         </label>
-                                        <div class="checklist__list">
-                                            <label class="checklist__item choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
-                                                <i class="choice__icon"></i>
-                                                <span class="choice__label">Цифры</span>
-                                            </label>
-                                            <label class="checklist__item choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
-                                                <i class="choice__icon"></i>
-                                                <span class="choice__label">Тоны</span>
-                                            </label>
-                                            <label class="checklist__item choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
-                                                <i class="choice__icon"></i>
-                                                <span class="choice__label">Разное</span>
-                                            </label>
-                                        </div>
+                                        <label class="checklist__item choice choice--full-width">
+                                            <input class="choice__widget" type="checkbox" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label">Разное</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="settings__section">
                             <div class="settings__item">
                                 <label class="choice">
-                                    <input class="choice__widget highlights-handler" type="checkbox" checked>
+                                    <input class="choice__widget headings-handler" type="checkbox" checked>
+                                    <i class="choice__icon"></i>
+                                    <span class="choice__label">Заголовки</span>
+                                </label>
+                            </div>
+                            <div class="settings__item">
+                                <label class="choice">
+                                    <input class="choice__widget subheadings-handler" type="checkbox" checked>
+                                    <i class="choice__icon"></i>
+                                    <span class="choice__label">Под-заголовки</span>
+                                </label>
+                            </div>
+                            <div class="settings__item">
+                                <label class="choice">
+                                    <input class="choice__widget comments-handler" type="checkbox" checked>
                                     <i class="choice__icon"></i>
                                     <span class="choice__label">Подсказки к секциям</span>
                                 </label>
@@ -1388,7 +1394,7 @@
         <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
         <script src="scripts/_hint.js"></script>
-        <script src="scripts/_highlights.js"></script>
+        <script src="scripts/_handlers.js"></script>
 
     </body>
 </html>

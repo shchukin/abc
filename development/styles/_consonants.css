@@ -22,6 +22,10 @@
                 margin-bottom: var(--heading-margin);
             }
 
+            html:not(.headings-shown) .consonants__sub-heading {
+                display: none;
+            }
+
             .consonants__list {
 
             }
@@ -36,6 +40,10 @@
                         margin-top: 0;
                         margin-bottom: 0;
                         padding-bottom: 12px;
+                    }
+
+                    html:not(.subheadings-shown) .consonants__alt-heading {
+                        display: none;
                     }
 
                     .consonants__alt-list {
