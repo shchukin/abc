@@ -25,3 +25,19 @@
             .consonants__list {
 
             }
+                .consonants__sub-class {
+                    margin-top: 30px;
+                }
+
+                .consonants__sub-class:first-child {
+                    margin-top: 0;
+                }
+                    .consonants__alt-heading {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        padding-bottom: 12px;
+                    }
+
+                    .consonants__alt-list {
+
+                    }
