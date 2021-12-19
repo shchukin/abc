@@ -1,4 +1,10 @@
 .highlight {
+
+}
+
+
+.highlights-shown .highlight {
     background-color: #FEFFDA;
     border-radius: 10px;
+    transition: background-color var(--transition-show);
 }

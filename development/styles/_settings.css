@@ -9,3 +9,6 @@
     .settings__list {
         margin-top: 30px;
     }
+        .settings__item {
+            margin-top: 20px;
+        }

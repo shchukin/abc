@@ -35,25 +35,64 @@
 
     }
         .vowels__list {
-            margin-top: 20px;
+            margin-top: 10px;
+            transition: margin-top var(--transition-show);
         }
 
         .vowels__list:first-child {
             margin-top: 0;
         }
+
+        .vowels__list:first-child {
+
+        }
             .vowels__highlighted-panel {
+
+            }
+                .vowels__back-to-list {
+
+                }
+
+                /* Здесь хотим анимировать прозрачность (правда только при показе, смотри ниже).
+                   Так что display: none невозможен. По-этому используем opacity, и visibility.
+                   Но из-за них весь элемент остаётся на странице и будучи невидимым ломает разметку.
+                   По-этому ещё и position: absolute, чтобы он вышел из потока.
+                */
+                .vowels__comment {
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+
+    .vowels__body {
+
+    }
+        .highlights-shown .vowels__list {
+            margin-top: 20px;
+        }
+
+        .highlights-shown .vowels__list:first-child {
+            margin-top: 0;
+        }
+            .highlights-shown .vowels__highlighted-panel {
                 display: inline-flex;
                 vertical-align: top;
                 padding: 20px;
                 margin-left: -20px;
                 margin-right: -200px;
             }
-                .vowels__back-to-list {
+                .highlights-shown .vowels__back-to-list {
                     width: 320px;
                 }
 
-                .vowels__comment {
+                .highlights-shown .vowels__comment {
+                    position: static;
                     margin-left: 20px;
                     width: 200px;
                     padding-top: 6px;
+                    opacity: 1;
+                    visibility: visible;
+                    transition: visibility var(--transition-show),
+                                opacity var(--transition-show);
                 }

@@ -11,7 +11,10 @@
             margin: 0 -10px -20px -20px;
         }
             .low-class__comment {
-                height: 125px;
+                height: 0;
+                opacity: 0;
+                transition: height var(--transition-show),
+                            opacity var(--transition-show);
             }
 
             .low-class__sonorants {
@@ -20,7 +23,33 @@
 
     .low-class__dead {
         margin-left: 20px;
-        margin-top: -5px;
+        margin-top: -136px;
         margin-bottom: -136px;
+        transition: margin-top var(--transition-show);
+    }
+
+
+
+
+.highlights-shown .low-class {
+
+}
+    .highlights-shown .low-class__sonorants-with-comment {
+
+    }
+        .highlights-shown .low-class__highlighted-panel {
+
+        }
+            .highlights-shown .low-class__comment {
+                height: 125px;
+                opacity: 1;
+            }
+
+            .highlights-shown .low-class__sonorants {
+
+            }
+
+    .highlights-shown .low-class__dead {
+        margin-top: -5px;
     }
 

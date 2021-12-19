@@ -1,0 +1,19 @@
+.choice {
+    display: inline-flex;
+    align-items: flex-start;
+    vertical-align: top;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.choice--full-width {
+    width: 100%;
+}
+    .choice__widget {
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+    .choice__label {
+        display: block;
+    }
