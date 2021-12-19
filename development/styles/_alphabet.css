@@ -4,60 +4,28 @@
     align-items: flex-start;
     padding: calc(2% + 20px) 4%;
 }
-    .alphabet__relative-context {
-        position: relative;
-        display: flex;
-        align-items: flex-start;
+    .alphabet__vowels {
+        margin-right: 60px;
     }
 
-        .alphabet__set {
+    .alphabet__consonants-marks-and-settings {
 
+    }
+        .alphabet__consonants-and-marks {
+            position: relative;
         }
-
-        .alphabet__set--consonants {
-
-        }
-
-        .alphabet__set--vowels {
-            margin-right: 60px;
-            order: -1;
-        }
-            .alphabet__sub-heading {
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-
-            .alphabet__class {
+            .alphabet__consonants {
 
             }
 
-            .alphabet__class + .alphabet__class {
-                margin-top: 65px;
+            .alphabet__marks {
+                position: absolute;
+                left: 1230px;
+                top: 0
             }
 
-            .alphabet__class--high { }
-            .alphabet__class--middle { }
-            .alphabet__class--low { }
-
-                .alphabet__section-heading {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-
-                .alphabet__widget {
-                    margin-top: 30px;
-                }
-                    .alphabet__low-class {
-                        display: flex;
-                        align-items: flex-end;
-                        padding-bottom: 116px;
-                    }
-                        .alphabet__sonorant {
-
-                        }
-
-                        .alphabet__low-dead {
-                            margin-left: 20px;
-                            margin-bottom: -116px;
-                        }
-
+        .alphabet__settings {
+            margin-top: 64px;
+            margin-left: 226px;
+            width: 954px;
+        }

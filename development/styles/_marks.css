@@ -1,16 +1,14 @@
 .marks {
-    position: absolute;
-    left: 1610px;
-    top: 0;
+
 }
     .marks__section {
-        margin-top: 91px;
+        margin-top: 85px;
     }
 
     .marks__section:first-child {
         margin-top: 0;
     }
-        .marks__heading {
+        .marks__sub-heading {
             margin-top: 0;
             margin-bottom: 0;
         }

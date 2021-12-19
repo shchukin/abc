@@ -1,0 +1,26 @@
+.low-class {
+    display: flex;
+    align-items: flex-start;
+}
+
+    .low-class__sonorants-with-comment {
+
+    }
+        .low-class__highlighted-panel {
+            padding: 20px 10px 20px 20px;
+            margin: 0 -10px -20px -20px;
+        }
+            .low-class__comment {
+                height: 115px;
+            }
+
+            .low-class__sonorants {
+                margin-top: 13px;
+            }
+
+    .low-class__dead {
+        margin-left: 20px;
+        margin-top: -5px;
+        margin-bottom: -136px;
+    }
+

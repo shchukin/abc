@@ -1,0 +1,11 @@
+.settings {
+
+}
+    .settings__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .settings__list {
+        margin-top: 30px;
+    }
