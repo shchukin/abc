@@ -1,28 +1,30 @@
 .low-class {
-    display: flex;
-    align-items: flex-start;
+    
 }
 
     .low-class__sonorants-with-comment {
 
     }
         .low-class__highlighted-panel {
-            padding: 20px 10px 20px 20px;
-            margin: 0 -10px -20px -20px;
+            display: inline-block;
+            visibility: top;
+            padding: 20px;
+            margin: -20px;
         }
             .low-class__comment {
-                height: 125px;
+                margin-bottom: 20px;
                 display: none;
             }
 
             .low-class__sonorants {
-                margin-top: 13px;
+                /*margin-top: 13px;*/
             }
 
     .low-class__dead {
-        margin-left: 20px;
-        margin-top: -136px;
-        margin-bottom: -136px;
+        margin-top: 64px;
+        /*margin-left: 20px;*/
+        /*margin-top: -136px;*/
+        /*margin-bottom: -136px;*/
     }
 
 
@@ -46,6 +48,6 @@
             }
 
     .highlights-shown .low-class__dead {
-        margin-top: -5px;
+        /*margin-top: -5px;*/
     }
 

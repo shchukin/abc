@@ -2,14 +2,14 @@
     display: inline-flex;
     vertical-align: top;
     align-items: flex-start;
-    padding: calc(2% + 20px) 4%;
+    padding: 15px 30px;
 }
     .alphabet__vowels {
-        margin-right: 60px;
+        margin: 30px;
     }
 
-    .alphabet__consonants-marks-and-settings {
-
+    .alphabet__consonants-and-marks {
+        margin: 30px;
     }
         .alphabet__consonants {
 
