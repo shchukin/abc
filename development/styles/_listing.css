@@ -7,3 +7,8 @@
     .listing__item {
         margin: 10px;
     }
+
+    .listing__item--forced-line-break {
+        width: 100%;
+        margin: 0;
+    }
