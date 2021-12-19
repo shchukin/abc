@@ -1,21 +1,9 @@
 .listing {
-    display: inline-flex;
-    align-items: stretch;
+    margin: -10px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-    .listing__column {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .listing__item {
+        margin: 10px;
     }
-
-    .listing__column:first-child {
-        margin-left: 0;
-    }
-        .listing__item {
-            margin-top: 20px;
-        }
-
-        .listing__item:first-child {
-            margin-top: 0;
-        }

@@ -1,0 +1,21 @@
+.vlisting {
+    display: inline-flex;
+    align-items: stretch;
+}
+    .vlisting__column {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .vlisting__column:first-child {
+        margin-left: 0;
+    }
+        .vlisting__item {
+            margin-top: 20px;
+        }
+
+        .vlisting__item:first-child {
+            margin-top: 0;
+        }

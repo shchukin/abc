@@ -10,17 +10,10 @@
     }
         .marks__sub-heading {
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 30px;
         }
 
         .marks__list {
-            margin: 20px -10px -10px;
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
             width: 850px;
         }
-            .marks__item {
-                margin: 10px;
-            }
 

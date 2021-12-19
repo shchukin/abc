@@ -4,14 +4,14 @@
 }
     .vowels__heading {
         margin-top: 0;
-        margin-bottom: 0;
-        text-align: center;
+        margin-bottom: 30px;
     }
 
     .vowels__table-head {
         display: flex;
         align-items: flex-start;
-        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 10px;
         margin-left: -10px;
         margin-right: -10px;
     }
@@ -31,17 +31,29 @@
                 text-align: center;
             }
 
-    .vowels__content {
+    .vowels__body {
 
     }
         .vowels__list {
-            margin: 0 -10px -10px;
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 340px;
+            margin-top: 20px;
         }
-            .vowels__item {
-                margin: 10px;
-            }
 
+        .vowels__list:first-child {
+            margin-top: 0;
+        }
+            .vowels__highlighted-panel {
+                display: inline-flex;
+                vertical-align: top;
+                padding: 20px;
+                margin-left: -20px;
+                margin-right: -200px;
+            }
+                .vowels__back-to-list {
+                    width: 320px;
+                }
+
+                .vowels__comment {
+                    margin-left: 20px;
+                    width: 200px;
+                    padding-top: 6px;
+                }
