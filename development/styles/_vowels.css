@@ -35,7 +35,7 @@
 
     }
         .vowels__list {
-            margin-top: 0;
+            margin-top: 20px;
             transition: margin-top var(--transition-show);
         }
 
@@ -46,55 +46,56 @@
         .vowels__list:first-child {
 
         }
-            .vowels__highlighted-panel {
-                display: inline-flex;
-                vertical-align: top;
-                padding: 20px;
-                margin-left: -20px;
-                margin-right: -200px;
+            .vowels__highlight-push {
+                transition: padding var(--transition-show);
             }
-                .vowels__back-to-list {
-                    width: 320px;
+                .vowels__highlighted-panel {
+                    display: inline-flex;
+                    vertical-align: top;
+                    padding: 20px;
+                    margin: -20px -200px -20px -20px;
                 }
-
-                /* Здесь хотим анимировать прозрачность (правда только при показе, смотри ниже).
-                   Так что display: none невозможен. По-этому используем opacity, и visibility.
-                   Но из-за них весь элемент остаётся на странице и будучи невидимым ломает разметку.
-                   По-этому ещё и position: absolute, чтобы он вышел из потока.
-                */
-                .vowels__comment {
-                    margin-left: 20px;
-                    padding-top: 6px;
-                    width: 0;
-                    overflow: hidden;
-                    opacity: 0;
-                    transition: width var(--transition-show),
-                                opacity var(--transition-show);
-                }
-                    .vowels__comment-strut {
-                        width: 200px;
+                    .vowels__back-to-list {
+                        width: 320px;
                     }
+
+                    .vowels__comment {
+                        margin-left: 20px;
+                        padding-top: 6px;
+                        width: 0;
+                        overflow: hidden;
+                        opacity: 0;
+                        transition: width var(--transition-show),
+                                    opacity var(--transition-show);
+                    }
+                        .vowels__comment-strut {
+                            width: 200px;
+                        }
 
 
     .vowels__body {
 
     }
         .highlights-shown .vowels__list {
-            margin-top: 20px;
+
         }
 
         .highlights-shown .vowels__list:first-child {
             margin-top: 0;
         }
-            .highlights-shown .vowels__highlighted-panel {
-
+            .highlights-shown .vowels__highlight-push {
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
-                .highlights-shown .vowels__back-to-list {
+                .highlights-shown .vowels__highlighted-panel {
 
                 }
+                    .highlights-shown .vowels__back-to-list {
 
-                .highlights-shown .vowels__comment {
-                    width: 200px;
-                    opacity: 1;
-                    visibility: visible;
-                }
+                    }
+
+                    .highlights-shown .vowels__comment {
+                        width: 200px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
