@@ -1,16 +1,17 @@
+/* идентично .marks (править параллельное) */
+
 .consonants {
 
 }
     .consonants__heading {
-        margin-top: 0;
-        margin-bottom: 0;
+
     }
 
     .consonants__body {
 
     }
         .consonants__section {
-            margin-top: 64px;
+            margin-top: var(--section-margin);
         }
 
         .consonants__section:first-child {
@@ -18,7 +19,9 @@
         }
             .consonants__sub-heading {
                 margin-top: 0;
-                margin-bottom: 30px;
+                margin-bottom: var(--heading-margin);
             }
 
+            .consonants__list {
 
+            }

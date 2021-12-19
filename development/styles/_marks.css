@@ -1,19 +1,29 @@
+/* идентично .consonants (править параллельное) */
+
+
 .marks {
 
 }
-    .marks__section {
-        margin-top: 64px;
+    .marks__heading {
+
     }
 
-    .marks__section:first-child {
-        margin-top: 0;
+    .marks__body {
+
     }
-        .marks__sub-heading {
+        .marks__section {
+            margin-top: var(--section-margin);
+        }
+
+        .marks__section:first-child {
             margin-top: 0;
-            margin-bottom: 30px;
         }
+            .marks__sub-heading {
+                margin-top: 0;
+                margin-bottom: var(--heading-margin);
+            }
 
-        .marks__list {
+            .marks__list {
 
-        }
+            }
 
