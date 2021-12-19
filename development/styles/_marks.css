@@ -2,15 +2,7 @@
 
 }
     .marks__section {
-        margin-top: 51px;
-    }
-
-    /* Когда раскрыты подсказки .highlights у согласных низкого класса
-       высвобождается больше места. Это даёт больше своды блоку .marks,
-       можно его немнго разрядлить увеличив маргин:
-    */
-    .highlights-shown .marks__section {
-        margin-top: 85px;
+        margin-top: 64px;
     }
 
     .marks__section:first-child {

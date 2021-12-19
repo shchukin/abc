@@ -11,20 +11,15 @@
     .alphabet__consonants-marks-and-settings {
 
     }
-        .alphabet__consonants-and-marks {
-            position: relative;
+        .alphabet__consonants {
+
         }
-            .alphabet__consonants {
 
-            }
-
-            .alphabet__marks {
-                position: absolute;
-                left: 1230px;
-                top: 0
-            }
+        .alphabet__marks {
+            margin-top: 64px;
+        }
 
         .alphabet__settings {
-            margin-top: 85px;
+            margin-top: 64px;
             width: 954px;
         }
