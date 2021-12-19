@@ -12,6 +12,10 @@
 
     --transition-show: 0.5s ease;
 
-    --color-separator: #EEE;
+    --color-separator: #EEEEEE;
+
+    --section-margin: 60px;
+
+    --heading-margin: 30px;
 }
 /* stylelint-enable declaration-colon-space-after */
