@@ -10,12 +10,8 @@
     --color-script: #666666;
     --color-thai: #000000;
 
-    --transition-show: 0.3s ease;
-    --animations-show: show 0.3s ease;
+    --transition-show: 0.5s ease;
+
+    --color-separator: #EEE;
 }
 /* stylelint-enable declaration-colon-space-after */
-
-@keyframes show {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}

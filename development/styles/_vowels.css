@@ -35,7 +35,7 @@
 
     }
         .vowels__list {
-            margin-top: 10px;
+            margin-top: 0;
             transition: margin-top var(--transition-show);
         }
 
@@ -47,10 +47,14 @@
 
         }
             .vowels__highlighted-panel {
-
+                display: inline-flex;
+                vertical-align: top;
+                padding: 20px;
+                margin-left: -20px;
+                margin-right: -200px;
             }
                 .vowels__back-to-list {
-
+                    width: 320px;
                 }
 
                 /* Здесь хотим анимировать прозрачность (правда только при показе, смотри ниже).
@@ -59,10 +63,17 @@
                    По-этому ещё и position: absolute, чтобы он вышел из потока.
                 */
                 .vowels__comment {
-                    position: absolute;
+                    margin-left: 20px;
+                    padding-top: 6px;
+                    width: 0;
+                    overflow: hidden;
                     opacity: 0;
-                    visibility: hidden;
+                    transition: width var(--transition-show),
+                                opacity var(--transition-show);
                 }
+                    .vowels__comment-strut {
+                        width: 200px;
+                    }
 
 
     .vowels__body {
@@ -76,23 +87,14 @@
             margin-top: 0;
         }
             .highlights-shown .vowels__highlighted-panel {
-                display: inline-flex;
-                vertical-align: top;
-                padding: 20px;
-                margin-left: -20px;
-                margin-right: -200px;
+
             }
                 .highlights-shown .vowels__back-to-list {
-                    width: 320px;
+
                 }
 
                 .highlights-shown .vowels__comment {
-                    position: static;
-                    margin-left: 20px;
                     width: 200px;
-                    padding-top: 6px;
                     opacity: 1;
                     visibility: visible;
-                    transition: visibility var(--transition-show),
-                                opacity var(--transition-show);
                 }

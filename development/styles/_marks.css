@@ -2,7 +2,7 @@
 
 }
     .marks__section {
-        margin-top: 64px;
+        margin-top: 51px;
         transition: margin-top var(--transition-show);
     }
 
