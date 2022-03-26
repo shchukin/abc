@@ -119,6 +119,10 @@
             margin-top: -12px;
         }
 
+        .letter__key .placeholder {
+            color: inherit;
+        }
+
     .letter__note {
         position: absolute;
         left: 8px;
