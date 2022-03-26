@@ -1,9 +1,9 @@
-(function($) {
+(function ($) {
 
-    $('input[type="checkbox"]').change(function(e) {
+    $('input[type="checkbox"]').change(function (e) {
 
         var checked = $(this).prop("checked"),
-            container = $(this).parent(),
+            container = $(this).parent().parent(),
             siblings = container.siblings();
 
         container.find('input[type="checkbox"]').prop({
@@ -11,43 +11,44 @@
             checked: checked
         });
 
-//   function checkSiblings(el) {
 
-//     var parent = el.parent().parent(),
-//         all = true;
+        function checkSiblings(el) {
 
-//     el.siblings().each(function() {
-//       let returnValue = all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
-//       return returnValue;
-//     });
+            var parent = el.parent().parent(),
+                all = true;
 
-//     if (all && checked) {
+            el.siblings().each(function () {
+                let returnValue = all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+                return returnValue;
+            });
 
-//       parent.children('input[type="checkbox"]').prop({
-//         indeterminate: false,
-//         checked: checked
-//       });
+            if (all && checked) {
 
-//       checkSiblings(parent);
+                parent.children('input[type="checkbox"]').prop({
+                    indeterminate: false,
+                    checked: checked
+                });
 
-//     } else if (all && !checked) {
+                checkSiblings(parent);
 
-//       parent.children('input[type="checkbox"]').prop("checked", checked);
-//       parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
-//       checkSiblings(parent);
+            } else if (all && !checked) {
 
-//     } else {
+                parent.children('input[type="checkbox"]').prop("checked", checked);
+                parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+                checkSiblings(parent);
 
-//       el.parents("li").children('input[type="checkbox"]').prop({
-//         indeterminate: true,
-//         checked: false
-//       });
+            } else {
 
-//     }
+                el.parents("li").children('input[type="checkbox"]').prop({
+                    indeterminate: true,
+                    checked: false
+                });
 
-//   }
+            }
 
-//   checkSiblings(container);
+        }
+
+        checkSiblings(container);
     });
 
 })(jQuery);

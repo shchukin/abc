@@ -1,23 +1,23 @@
-.checklist {
-    display: inline-flex;
-    align-items: flex-start;
-}
-    .checklist__column {
-        margin-left: 40px;
-    }
+/*.checklist {*/
+/*    display: inline-flex;*/
+/*    align-items: flex-start;*/
+/*}*/
+/*    .checklist__column {*/
+/*        margin-left: 40px;*/
+/*    }*/
 
-    .checklist__column:first-child {
-        margin-left: 0;
-    }
-        .checklist__head {
-            font-weight: bold;
-        }
+/*    .checklist__column:first-child {*/
+/*        margin-left: 0;*/
+/*    }*/
+/*        .checklist__head {*/
+/*            font-weight: bold;*/
+/*        }*/
 
-        .checklist__list {
-            display: flex;
-            flex-direction: column;
-            margin-left: 20px;
-        }
-            .checklist__item {
+/*        .checklist__list {*/
+/*            display: flex;*/
+/*            flex-direction: column;*/
+/*            margin-left: 20px;*/
+/*        }*/
+/*            .checklist__item {*/
 
-            }
+/*            }*/
