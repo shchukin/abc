@@ -2,10 +2,10 @@
     display: inline-flex;
     vertical-align: top;
     align-items: flex-start;
-    padding: 15px 30px;
+    padding-bottom: 60px;
 }
     .alphabet__vowels {
-        margin: 30px;
+        margin: 30px 20px;
     }
 
     html:not(.vowels-shown) .alphabet__vowels {
@@ -13,7 +13,7 @@
     }
 
     .alphabet__consonants-and-marks {
-        margin: 30px;
+        margin: 30px 20px;
     }
         .alphabet__consonants {
 
@@ -24,27 +24,27 @@
         }
 
 
-/*        */
-/*@media (min-width: 600px) {*/
-/*    .alphabet {*/
-/*        padding: 15px 30px;*/
-/*    }*/
-/*        .alphabet__vowels {*/
-/*            margin: 30px;*/
-/*        }*/
 
-/*        html:not(.vowels-shown) .alphabet__vowels {*/
+@media (min-width: 600px) {
+    .alphabet {
+        padding: 15px 30px 90px;
+    }
+        .alphabet__vowels {
+            margin: 30px;
+        }
 
-/*        }*/
+        html:not(.vowels-shown) .alphabet__vowels {
 
-/*        .alphabet__consonants-and-marks {*/
-/*            margin: 30px;*/
-/*        }*/
-/*            .alphabet__consonants {*/
+        }
 
-/*            }*/
+        .alphabet__consonants-and-marks {
+            margin: 30px;
+        }
+            .alphabet__consonants {
 
-/*            .alphabet__marks {*/
-/*                margin-top: 64px;*/
-/*            }*/
-/*}*/
+            }
+
+            .alphabet__marks {
+                margin-top: 64px;
+            }
+}
