@@ -1,9 +1,9 @@
 (function($) {
 
     $('.bubble-handler').on('click', function () {
+        $('.bubble--visible').removeClass('bubble--visible');
         $(this).parents('.bubble-context').find('.bubble').toggleClass('bubble--visible');
     });
-
 
 
     /* hide bubble by overlay click ( goo.gl/SJG2Hw ) */
