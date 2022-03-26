@@ -18,13 +18,13 @@
                 all = true;
 
             el.siblings().each(function () {
-                let returnValue = all = ($(this).children('input[type="checkbox"]').prop("checked") === checked);
+                let returnValue = all = ($(this).children().children('input[type="checkbox"]').prop("checked") === checked);
                 return returnValue;
             });
 
             if (all && checked) {
 
-                parent.children('input[type="checkbox"]').prop({
+                parent.children().children('input[type="checkbox"]').prop({
                     indeterminate: false,
                     checked: checked
                 });
@@ -33,13 +33,13 @@
 
             } else if (all && !checked) {
 
-                parent.children('input[type="checkbox"]').prop("checked", checked);
-                parent.children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+                parent.children().children('input[type="checkbox"]').prop("checked", checked);
+                parent.children().children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
                 checkSiblings(parent);
 
             } else {
 
-                el.parents("li").children('input[type="checkbox"]').prop({
+                el.parents("li").children().children('input[type="checkbox"]').prop({
                     indeterminate: true,
                     checked: false
                 });
