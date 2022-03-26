@@ -20,6 +20,31 @@
         }
 
         .alphabet__marks {
-            margin-top: 64px;
+            margin-top: var(--section-margin);
         }
 
+
+/*        */
+/*@media (min-width: 600px) {*/
+/*    .alphabet {*/
+/*        padding: 15px 30px;*/
+/*    }*/
+/*        .alphabet__vowels {*/
+/*            margin: 30px;*/
+/*        }*/
+
+/*        html:not(.vowels-shown) .alphabet__vowels {*/
+
+/*        }*/
+
+/*        .alphabet__consonants-and-marks {*/
+/*            margin: 30px;*/
+/*        }*/
+/*            .alphabet__consonants {*/
+
+/*            }*/
+
+/*            .alphabet__marks {*/
+/*                margin-top: 64px;*/
+/*            }*/
+/*}*/
