@@ -1,8 +1,10 @@
 (function($) {
 
+    /* Клик на смартфонах слишком медленно работает, по-этому: touchstart mousedown keydown */
     $('.bubble-handler').on('click', function () {
-        $('.bubble--visible').removeClass('bubble--visible');
-        $(this).parents('.bubble-context').find('.bubble').toggleClass('bubble--visible');
+        var $target = $(this).parents('.bubble-context').find('.bubble');
+        $('.bubble--visible').not($target).removeClass('bubble--visible'); /* закрываем все остальные */
+        $target.toggleClass('bubble--visible');
     });
 
 

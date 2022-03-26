@@ -61,20 +61,19 @@
 
 
 
-.bubble-context:hover .bubble,
 .bubble--visible {
     opacity: 1;
     visibility: visible;
-    margin-bottom: 9px; /* эффект выезжания (9) */
-    transition: opacity 0.3s ease,
-                visibility 0.3s ease,
-                margin-bottom 0.3s ease;
+    margin-bottom: 9px; /* эффект выезжания */
 }
 
 
-/* Если работаем мышью, то показываем по таймауту */
+/* Если работаем мышью, то показываем c анимациями и по таймауту */
 @media (hover: hover) {
     .bubble-context:hover .bubble {
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 9px; /* эффект выезжания */
         transition: opacity 0.3s ease 0.3s,
                     visibility 0.3s ease 0.3s,
                     margin-bottom 0.3s ease 0.3s;
