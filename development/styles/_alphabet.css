@@ -8,7 +8,7 @@
         margin: 30px 20px;
     }
 
-    html:not(.vowels-shown) .alphabet__vowels {
+    html:not(.display-vowels) .alphabet__vowels {
         display: none;
     }
 
@@ -33,7 +33,7 @@
             margin: 30px;
         }
 
-        html:not(.vowels-shown) .alphabet__vowels {
+        html:not(.display-vowels) .alphabet__vowels {
 
         }
 

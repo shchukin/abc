@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="vowels-shown headings-shown subheadings-shown comments-shown" lang="ru">
+<html class="display-vowels display-headings display-subheadings display-comments" lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -1301,7 +1301,10 @@
                         </div>
                     </section>
                 </div>
-                <div class="settings" style="display: none;">
+
+
+
+                <div class="settings">
                     <h2 class="settings__heading title">
                         Настройки
                     </h2>
@@ -1382,7 +1385,7 @@
                             <div class="checklist">
                                 <div class="checklist__column">
                                     <label class="checklist__head choice choice--full-width">
-                                        <input class="choice__widget vowels-handler" type="checkbox" checked>
+                                        <input class="choice__widget display" type="checkbox" value="vowels" checked>
                                         <i class="choice__icon"></i>
                                         <span class="choice__label">Гласные</span>
                                     </label>
@@ -1440,21 +1443,21 @@
                         <div class="settings__section">
                             <div class="settings__item">
                                 <label class="choice">
-                                    <input class="choice__widget headings-handler" type="checkbox" checked>
+                                    <input class="choice__widget display" type="checkbox" value="headings" checked>
                                     <i class="choice__icon"></i>
                                     <span class="choice__label">Заголовки</span>
                                 </label>
                             </div>
                             <div class="settings__item">
                                 <label class="choice">
-                                    <input class="choice__widget subheadings-handler" type="checkbox" checked>
+                                    <input class="choice__widget display" type="checkbox" value="subheadings" checked>
                                     <i class="choice__icon"></i>
                                     <span class="choice__label">Под-заголовки</span>
                                 </label>
                             </div>
                             <div class="settings__item">
                                 <label class="choice">
-                                    <input class="choice__widget comments-handler" type="checkbox" checked>
+                                    <input class="choice__widget display" type="checkbox" value="comments" checked>
                                     <i class="choice__icon"></i>
                                     <span class="choice__label">Подсказки к секциям</span>
                                 </label>
@@ -1470,7 +1473,7 @@
         <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
         <script src="scripts/_bubble.js"></script>
-        <script src="scripts/_handlers.js"></script>
+        <script src="scripts/_display.js"></script>
 
     </body>
 </html>

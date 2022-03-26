@@ -5,6 +5,8 @@
     background-color: #FFFFFF;
     box-shadow: 0 1px 10px 4px #EAEAEA;
     border-radius: 10px;
+    overflow-y: auto;
+    max-height: 90vh;
     padding: 30px;
 }
     .settings__heading {

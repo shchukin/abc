@@ -22,7 +22,7 @@
                 margin-bottom: var(--heading-margin);
             }
 
-            html:not(.headings-shown) .consonants__sub-heading {
+            html:not(.display-headings) .consonants__sub-heading {
                 display: none;
             }
 
@@ -41,7 +41,7 @@
                         align-items: flex-start;
                     }
 
-                    html:not(.subheadings-shown) .consonants__sub-head {
+                    html:not(.display-subheadings) .consonants__sub-head {
                         display: none;
                     }
                         .consonants__alt-heading {
