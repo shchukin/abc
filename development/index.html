@@ -1305,152 +1305,120 @@
 
 
                 <div class="settings">
-                    <h2 class="settings__heading title">
-                        Настройки
-                    </h2>
-
-                    <style>
-                        label {
-                            display: block;
-                        }
-                    </style>
-                    <ul>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="tall" id="tall">
-                                <span for="tall">Tall Things</span>
-                            </label>
-
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="tall-1" id="tall-1">
-                                        <span for="tall-1">Buildings</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="tall-2" id="tall-2">
-                                        <span for="tall-2">Giants</span>
-                                    </label>
-
-                                    <ul>
-                                        <li>
-                                            <label>
-                                                <input type="checkbox" name="tall-2-1" id="tall-2-1">
-                                                <span for="tall-2-1">Andre</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label>
-                                                <input type="checkbox" name="tall-2-2" id="tall-2-2">
-                                                <span for="tall-2-2">Paul Bunyan</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="tall-3" id="tall-3">
-                                        <span for="tall-3">Two sandwiches</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox" name="short" id="short">
-                                <span for="short">Short Things</span>
-                            </label>
-
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="short-1" id="short-1">
-                                        <span for="short-1">Smurfs</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="short-2" id="short-2">
-                                        <span for="short-2">Mushrooms</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="short-3" id="short-3">
-                                        <span for="short-3">One Sandwich</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
+                    <h2 class="visuallyhidden">Настройки</h2>
+                    <h3 class="settings__heading title">
+                        Показывать на странице
+                    </h3>
                     <div class="settings__list">
                         <div class="settings__section">
-
-                            <ul class="checklist">
-                                <li class="checklist__column">
-                                    <label class="checklist__head choice choice--full-width">
+                            <ul class="checklist checklist--horizontal">
+                                <li class="checklist__item">
+                                    <label class="choice choice--full-width">
                                         <input class="choice__widget display" type="checkbox" value="vowels" checked>
                                         <i class="choice__icon"></i>
                                         <span class="choice__label">Гласные</span>
                                     </label>
+                                    <ul class="checklist">
+                                        <li class="checklist__item">
+                                            <label class="choice choice--full-width">
+                                                <input class="choice__widget display" type="checkbox" value="vowels-basic" checked>
+                                                <i class="choice__icon"></i>
+                                                <span class="choice__label">Базовые</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice--full-width">
+                                                <input class="choice__widget display" type="checkbox" value="vowels-short-sound" checked>
+                                                <i class="choice__icon"></i>
+                                                <span class="choice__label">Короткий звук</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice--full-width">
+                                                <input class="choice__widget display" type="checkbox" value="vowels-diftongs" checked>
+                                                <i class="choice__icon"></i>
+                                                <span class="choice__label">Дифтонги</span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <label class="choice choice--full-width">
+                                                <input class="choice__widget display" type="checkbox" value="vowels-quasi" checked>
+                                                <i class="choice__icon"></i>
+                                                <span class="choice__label">Квазибуквы</span>
+                                            </label>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="checklist__column">
-                                    <label class="checklist__head choice choice--full-width">
-                                        <input class="choice__widget" type="checkbox" checked>
+                                <li class="checklist__item">
+                                    <label class="choice choice--full-width">
+                                        <input class="choice__widget display" type="checkbox" value="consonants" checked>
                                         <i class="choice__icon"></i>
                                         <span class="choice__label">Согласные</span>
                                     </label>
                                     <ul class="checklist">
                                         <li class="checklist__item">
                                             <label class="choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
+                                                <input class="choice__widget display" type="checkbox" value="consonants-high" checked>
                                                 <i class="choice__icon"></i>
                                                 <span class="choice__label">Высокий класс</span>
                                             </label>
                                         </li>
                                         <li class="checklist__item">
                                             <label class="choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
+                                                <input class="choice__widget display" type="checkbox" value="consonants-middle" checked>
                                                 <i class="choice__icon"></i>
                                                 <span class="choice__label">Средний класс</span>
                                             </label>
                                         </li>
                                         <li class="checklist__item">
                                             <label class="choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
+                                                <input class="choice__widget display" type="checkbox" value="consonants-low" checked>
                                                 <i class="choice__icon"></i>
                                                 <span class="choice__label">Низкий класс</span>
                                             </label>
+                                            <ul class="checklist">
+                                                <li class="checklist__item">
+                                                    <label class="choice choice--full-width">
+                                                        <input class="choice__widget display" type="checkbox" value="consonants-low-sonorant" checked>
+                                                        <i class="choice__icon"></i>
+                                                        <span class="choice__label">Сонорные</span>
+                                                    </label>
+                                                </li>
+                                                <li class="checklist__item">
+                                                    <label class="choice choice--full-width">
+                                                        <input class="choice__widget display" type="checkbox" value="consonants-low-dead" checked>
+                                                        <i class="choice__icon"></i>
+                                                        <span class="choice__label">Глухие</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="checklist__column">
-                                    <label class="checklist__head choice choice--full-width">
-                                        <input class="choice__widget" type="checkbox" checked>
+                                <li class="checklist__item">
+                                    <label class="choice choice--full-width">
+                                        <input class="choice__widget display" type="checkbox" value="marks" checked>
                                         <i class="choice__icon"></i>
                                         <span class="choice__label">Значки</span>
                                     </label>
                                     <ul class="checklist">
                                         <li class="checklist__item">
                                             <label class="choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
+                                                <input class="choice__widget display" type="checkbox" value="marks-digits" checked>
                                                 <i class="choice__icon"></i>
                                                 <span class="choice__label">Цифры</span>
                                             </label>
                                         </li>
                                         <li class="checklist__item">
                                             <label class="choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
+                                                <input class="choice__widget display" type="checkbox" value="marks-tones" checked>
                                                 <i class="choice__icon"></i>
                                                 <span class="choice__label">Тоны</span>
                                             </label>
                                         </li>
                                         <li class="checklist__item">
                                             <label class="choice choice--full-width">
-                                                <input class="choice__widget" type="checkbox" checked>
+                                                <input class="choice__widget display" type="checkbox" value="marks-other" checked>
                                                 <i class="choice__icon"></i>
                                                 <span class="choice__label">Разное</span>
                                             </label>
@@ -1458,7 +1426,6 @@
                                     </ul>
                                 </li>
                             </ul>
-
                         </div>
                         <div class="settings__section">
                             <div class="settings__item">
