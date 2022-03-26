@@ -36,15 +36,23 @@
                 .consonants__sub-class:first-child {
                     margin-top: 0;
                 }
-                    .consonants__alt-heading {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        padding-bottom: 12px;
+                    .consonants__sub-head {
+                        display: flex;
+                        align-items: flex-start;
                     }
 
-                    html:not(.subheadings-shown) .consonants__alt-heading {
+                    html:not(.subheadings-shown) .consonants__sub-head {
                         display: none;
                     }
+                        .consonants__alt-heading {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            padding-bottom: 12px;
+                        }
+
+                        .consonants__heading-hint {
+                            margin: -6px;
+                        }
 
                     .consonants__alt-list {
 
