@@ -7,13 +7,13 @@
 
     $('.checklist .choice__widget').change(function (e) {
 
-        var checked = $(this).prop("checked"),
-            $checklistItem = $(this).parent().parent(),
-            $checkilistItemSiblings = $checklistItem.siblings();
+        var isChecked = $(this).prop("checked");
+        var $checklistItem = $(this).parent('.choice').parent('.checklist__item');
 
+        /* Сразу чекаем всех потомков (ну или анчекаем, в общем переводим их все в тот же статус, как чекбокс на который только что кликнули) */
         $checklistItem.find('.choice__widget').prop({
             indeterminate: false,
-            checked: checked
+            checked: isChecked
         });
 
 
@@ -23,22 +23,22 @@
                 all = true;
 
             el.siblings().each(function () {
-                let returnValue = all = ($(this).children().children('input[type="checkbox"]').prop("checked") === checked);
+                let returnValue = all = ($(this).children().children('input[type="checkbox"]').prop("checked") === isChecked);
                 return returnValue;
             });
 
-            if (all && checked) {
+            if (all && isChecked) {
 
                 parent.children().children('input[type="checkbox"]').prop({
                     indeterminate: false,
-                    checked: checked
+                    checked: isChecked
                 });
 
                 checkSiblings(parent);
 
-            } else if (all && !checked) {
+            } else if (all && !isChecked) {
 
-                parent.children().children('input[type="checkbox"]').prop("checked", checked);
+                parent.children().children('input[type="checkbox"]').prop("checked", isChecked);
                 parent.children().children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
                 checkSiblings(parent);
 
