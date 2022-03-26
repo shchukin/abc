@@ -1,12 +1,17 @@
 (function ($) {
 
-    $('input[type="checkbox"]').change(function (e) {
+    /* Немного адаптированный вот этот сэмпл:
+     * https://codepen.io/chriscoyier/pen/JYyXjX
+     * (в некоторых местах удвоенны .parent() и .children()
+     */
+
+    $('.checklist .choice__widget').change(function (e) {
 
         var checked = $(this).prop("checked"),
-            container = $(this).parent().parent(),
-            siblings = container.siblings();
+            $checklistItem = $(this).parent().parent(),
+            $checkilistItemSiblings = $checklistItem.siblings();
 
-        container.find('input[type="checkbox"]').prop({
+        $checklistItem.find('.choice__widget').prop({
             indeterminate: false,
             checked: checked
         });
@@ -39,7 +44,7 @@
 
             } else {
 
-                el.parents("li").children().children('input[type="checkbox"]').prop({
+                el.parents(".checklist__item").children().children('.choice__widget').prop({
                     indeterminate: true,
                     checked: false
                 });
@@ -48,7 +53,7 @@
 
         }
 
-        checkSiblings(container);
+        checkSiblings($checklistItem);
     });
 
 })(jQuery);
