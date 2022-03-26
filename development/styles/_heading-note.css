@@ -1,7 +1,7 @@
 .heading-note {
     font-size: 13px;
     line-height: 18px;
-    color: #666;
+    color: #666666;
 }
 
 html:not(.subheadings-shown) .heading-note {
