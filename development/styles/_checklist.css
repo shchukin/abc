@@ -1,25 +1,40 @@
 .checklist {
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
+    padding-left: 0;
 }
-    .checklist__column {
+    .checklist__item {
+
+    }
+
+
+/* recursive checklists */
+.checklist__item .checklist {
+
+}
+    /* recursive checklists items */
+    .checklist__item .checklist__item {
+        margin-left: 6px;
+        border-left: 1px solid var(--color-separator);
+        padding-left: 18px;
+    }
+
+
+
+.checklist--horizontal {
+    display: flex;
+    align-items: flex-start;
+}
+    .checklist--horizontal > .checklist__item {
         margin-left: 40px;
     }
 
-    .checklist__column:first-child {
+    .checklist--horizontal > .checklist__item:first-child {
         margin-left: 0;
     }
-        .checklist__head {
+        .checklist--horizontal > .checklist__item > .choice {
             font-weight: bold;
         }
 
-        .checklist {
-            display: flex;
-            flex-direction: column;
-            margin-left: 20px;
-            margin-top: 0;
-            margin-bottom: 0;
 
-        }
-            .checklist__item {
-
-            }

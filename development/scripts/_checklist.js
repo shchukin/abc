@@ -17,19 +17,19 @@
         });
 
 
-        function checkSiblings(el) {
+        function checkSiblings($checklistItem) {
 
-            var parent = el.parent().parent(),
+            var parent = $checklistItem.parent('.checklist').parent('.checklist__item'),
                 all = true;
 
-            el.siblings().each(function () {
-                let returnValue = all = ($(this).children().children('input[type="checkbox"]').prop("checked") === isChecked);
+            $checklistItem.siblings().each(function () {
+                let returnValue = all = ($(this).children().children('.choice__widget').prop("checked") === isChecked);
                 return returnValue;
             });
 
             if (all && isChecked) {
 
-                parent.children().children('input[type="checkbox"]').prop({
+                parent.children().children('.choice__widget').prop({
                     indeterminate: false,
                     checked: isChecked
                 });
@@ -38,13 +38,13 @@
 
             } else if (all && !isChecked) {
 
-                parent.children().children('input[type="checkbox"]').prop("checked", isChecked);
-                parent.children().children('input[type="checkbox"]').prop("indeterminate", (parent.find('input[type="checkbox"]:checked').length > 0));
+                parent.children('.choice').children('.choice__widget').prop("checked", isChecked);
+                parent.children('.choice').children('.choice__widget').prop("indeterminate", (parent.find('.choice__widget:checked').length > 0));
                 checkSiblings(parent);
 
             } else {
 
-                el.parents(".checklist__item").children().children('.choice__widget').prop({
+                $checklistItem.parents(".checklist__item").children('.choice').children('.choice__widget').prop({
                     indeterminate: true,
                     checked: false
                 });
