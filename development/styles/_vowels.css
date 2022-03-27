@@ -47,9 +47,13 @@
             margin-top: 0;
         }
 
-        .vowels__section:first-child {
 
-        }
+        html:not(.display-vowels-basic)       .vowels__section--basic       { display: none; }
+        html:not(.display-vowels-short-sound) .vowels__section--short-sound { display: none; }
+        html:not(.display-vowels-diftongs)    .vowels__section--diftongs    { display: none; }
+        html:not(.display-vowels-quasi)       .vowels__section--quasi       { display: none; }
+
+
             .vowels__sub-heading {
                 margin-top: 0;
                 margin-bottom: 0;
