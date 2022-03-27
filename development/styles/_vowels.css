@@ -40,13 +40,12 @@
 
     }
         .vowels__section {
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        .vowels__section:first-child {
-            margin-top: 0;
+        .vowels__section:last-child {
+            margin-bottom: 0;
         }
-
 
         html:not(.display-vowels-basic)       .vowels__section--basic       { display: none; }
         html:not(.display-vowels-short-sound) .vowels__section--short-sound { display: none; }

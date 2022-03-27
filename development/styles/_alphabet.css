@@ -16,25 +16,27 @@
         margin: 30px 20px;
     }
         .alphabet__consonants {
-
+            margin-bottom: var(--section-margin);
         }
 
+        html:not(.display-consonants) .alphabet__consonants {
+            display: none;
+        }
+
+
         .alphabet__marks {
-            margin-top: var(--section-margin);
+
         }
 
 
 
 @media (min-width: 600px) {
+
     .alphabet {
         padding: 15px 30px 90px;
     }
         .alphabet__vowels {
             margin: 30px;
-        }
-
-        html:not(.display-vowels) .alphabet__vowels {
-
         }
 
         .alphabet__consonants-and-marks {

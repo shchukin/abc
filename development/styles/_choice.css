@@ -13,6 +13,7 @@
     .choice__widget {
         margin-top: 4px;
         margin-right: 8px;
+        cursor: inherit;
     }
 
     .choice__icon {

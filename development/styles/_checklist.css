@@ -26,12 +26,12 @@
     display: flex;
     align-items: flex-start;
 }
-    .checklist--horizontal > .checklist__item {
-        margin-left: 40px;
+    .checklist--horizontal > .checklist__item .choice__label {
+        padding-right: 30px;
     }
 
     .checklist--horizontal > .checklist__item:first-child {
-        margin-left: 0;
+
     }
         .checklist--horizontal > .checklist__item > .choice {
             font-weight: bold;
