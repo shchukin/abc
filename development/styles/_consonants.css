@@ -11,18 +11,23 @@
 
     }
         .consonants__section {
-            margin-top: var(--section-margin);
+            margin-bottom: var(--section-margin);
         }
 
-        .consonants__section:first-child {
-            margin-top: 0;
+        .consonants__section:last-child {
+            margin-bottom: 0;
         }
+
+        html:not(.display-consonants-high)   .consonants__section--high   { display: none }
+        html:not(.display-consonants-middle) .consonants__section--middle { display: none }
+        html:not(.display-consonants-low)    .consonants__section--low    { display: none }
+
             .consonants__sub-heading {
                 margin-top: 0;
                 margin-bottom: var(--heading-margin);
             }
 
-            html:not(.display-headings) .consonants__sub-heading {
+            html:not(.display-captions-headings) .consonants__sub-heading {
                 display: none;
             }
 
@@ -30,18 +35,22 @@
 
             }
                 .consonants__sub-class {
-                    margin-top: 30px;
+                    margin-bottom: 30px;
                 }
 
-                .consonants__sub-class:first-child {
-                    margin-top: 0;
+                .consonants__sub-class:last-child {
+                    margin-bottom: 0;
                 }
+
+                html:not(.display-consonants-low-sonorant) .consonants__sub-class--sonorant { display: none; }
+                html:not(.display-consonants-low-dead) .consonants__sub-class--dead     { display: none; }
+
                     .consonants__sub-head {
                         display: flex;
                         align-items: flex-start;
                     }
 
-                    html:not(.display-subheadings) .consonants__sub-head {
+                    html:not(.display-captions-subheadings) .consonants__sub-head {
                         display: none;
                     }
                         .consonants__alt-heading {

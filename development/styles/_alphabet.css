@@ -28,6 +28,9 @@
 
         }
 
+        html:not(.display-marks) .alphabet__marks {
+            display: none;
+        }
 
 
 @media (min-width: 600px) {
@@ -47,6 +50,6 @@
             }
 
             .alphabet__marks {
-                margin-top: 64px;
+
             }
 }

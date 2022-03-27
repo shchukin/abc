@@ -4,6 +4,6 @@
     color: #666666;
 }
 
-html:not(.display-subheadings) .heading-note {
+html:not(.display-captions-subheadings) .heading-note {
     display: none;
 }

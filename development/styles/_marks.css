@@ -18,12 +18,17 @@
         .marks__section:first-child {
             margin-top: 0;
         }
+
+            html:not(.display-marks-digits) .marks__section--digits { display: none; }
+            html:not(.display-marks-tones)  .marks__section--tones { display: none; }
+            html:not(.display-marks-other)  .marks__section--other { display: none; }
+
             .marks__sub-heading {
                 margin-top: 0;
                 margin-bottom: var(--heading-margin);
             }
 
-            html:not(.display-headings) .marks__sub-heading {
+            html:not(.display-captions-headings) .marks__sub-heading {
                 display: none;
             }
 

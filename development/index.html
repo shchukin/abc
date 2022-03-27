@@ -15,9 +15,10 @@
              display-marks-digits
              display-marks-tones
              display-marks-other
-             display-headings
-             display-subheadings
-             display-comments
+             display-captions
+             display-captions-headings
+             display-captions-subheadings
+             display-captions-comments
       "
 >
     <head>
@@ -112,7 +113,7 @@
                                         <i class="letter__sound">ы:</i>
                                         <div class="letter__note explanation">
                                             <span class="explanation__term vowel-long">
-                                                <span class="placeholder">◌</span>ื
+                                                <span class="placeholder">◌</span>ื<span class="placeholder">◌</span>
                                             </span>
                                             <span class="explanation__arrow">
                                                 ←
@@ -523,7 +524,7 @@
                                 Согласные
                             </h2>
                             <div class="consonants__body">
-                                <section class="consonants__section">
+                                <section class="consonants__section consonants__section--high">
                                     <h3 class="consonants__sub-heading title">
                                         Согласные высокого класса <span class="heading-note">(мёртвый слог)</span>
                                     </h3>
@@ -660,7 +661,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="consonants__section">
+                                <section class="consonants__section consonants__section--middle">
                                     <h3 class="consonants__sub-heading title">
                                         Согласные среднего класса <span class="heading-note">(мёртвый слог)</span>
                                     </h3>
@@ -801,12 +802,12 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="consonants__section">
+                                <section class="consonants__section consonants__section--low">
                                     <h3 class="consonants__sub-heading title">
                                         Согласные низкого класса
                                     </h3>
                                     <div class="consonants__list">
-                                        <section class="consonants__sub-class">
+                                        <section class="consonants__sub-class consonants__sub-class--sonorant">
                                             <div class="consonants__sub-head">
                                                 <h4 class="consonants__alt-heading title title--secondary">
                                                     Сонорные <span class="heading-note">(живой слог)</span>
@@ -865,11 +866,11 @@
                                                                             <br>
                                                                             • Комбинация <span class="thai">รร</span> даёт гласный звук:<br>
                                                                             <span style="display: block; margin-top: 4px;">
-                                                                                - <span class="placeholder">◌</span>รร<span class="placeholder">◌</span> ← в закрытом слоге даёт звук <span class="script">а</span>.<br>
+                                                                                - <span class="placeholder placeholder--text-alike">◌</span>รร<span class="placeholder placeholder--text-alike">◌</span> ← в закрытом слоге даёт звук <span class="script">а</span>.<br>
                                                                                 Пример: <span class="thai">กรรม</span> <span class="script">кам⁰</span> — карма.<br>
                                                                             </span>
                                                                             <span style="display: block; margin-top: 4px;">
-                                                                                - <span class="placeholder">◌</span>รร ← в открытом слоге даёт звук <span class="script">ан</span>.<br>
+                                                                                - <span class="placeholder placeholder--text-alike">◌</span>รร ← в открытом слоге даёт звук <span class="script">ан</span>.<br>
                                                                                 Пример: <span class="thai">กรรไกร</span> <span class="script">кан⁰край⁰</span> — ножницы.
                                                                             </span>
                                                                         </span>
@@ -1003,7 +1004,7 @@
                                                 </div>
                                             </div>
                                         </section>
-                                        <section class="consonants__sub-class">
+                                        <section class="consonants__sub-class consonants__sub-class--dead">
                                             <div class="consonants__sub-head">
                                                 <h4 class="consonants__alt-heading title title--secondary">
                                                     Глухие <span class="heading-note">(мёртвый слог)</span>
@@ -1143,7 +1144,7 @@
                                 Значки
                             </h2>
                             <div class="marks__body">
-                                <section class="marks__section">
+                                <section class="marks__section marks__section--digits">
                                     <h3 class="marks__sub-heading title">
                                         Цифры
                                     </h3>
@@ -1223,7 +1224,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="marks__section">
+                                <section class="marks__section marks__section--tones">
                                     <h3 class="marks__sub-heading title">
                                         Тоны
                                     </h3>
@@ -1260,7 +1261,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section class="marks__section">
+                                <section class="marks__section marks__section--other">
                                     <h3 class="marks__sub-heading title">
                                         Разное
                                     </h3>
@@ -1450,27 +1451,39 @@
                     </ul>
                 </div>
                 <div class="settings__section">
-                    <div class="settings__item">
-                        <label class="choice">
-                            <input class="choice__widget display" type="checkbox" value="headings" checked>
-                            <i class="choice__icon"></i>
-                            <span class="choice__label">Заголовки</span>
-                        </label>
-                    </div>
-                    <div class="settings__item">
-                        <label class="choice">
-                            <input class="choice__widget display" type="checkbox" value="subheadings" checked>
-                            <i class="choice__icon"></i>
-                            <span class="choice__label">Под-заголовки</span>
-                        </label>
-                    </div>
-                    <div class="settings__item">
-                        <label class="choice">
-                            <input class="choice__widget display" type="checkbox" value="comments" checked>
-                            <i class="choice__icon"></i>
-                            <span class="choice__label">Подсказки к секциям</span>
-                        </label>
-                    </div>
+                    <ul class="checklist checklist--horizontal">
+                        <li class="checklist__item">
+                            <label class="choice choice--full-width">
+                                <input class="choice__widget display" type="checkbox" value="captions" checked>
+                                <i class="choice__icon"></i>
+                                <span class="choice__label">Оформление страницы</span>
+                            </label>
+                            <ul class="checklist">
+                                <li class="checklist__item">
+                                    <label class="choice choice--full-width">
+                                        <input class="choice__widget display" type="checkbox" value="captions-headings" checked>
+                                        <i class="choice__icon"></i>
+                                        <span class="choice__label">Заголовки</span>
+                                    </label>
+                                </li>
+                                <li class="checklist__item">
+                                    <label class="choice choice--full-width">
+                                        <input class="choice__widget display" type="checkbox" value="captions-subheadings" checked>
+                                        <i class="choice__icon"></i>
+                                        <span class="choice__label">Под-заголовки</span>
+                                    </label>
+                                </li>
+                                <li class="checklist__item">
+                                    <label class="choice choice--full-width">
+                                        <input class="choice__widget display" type="checkbox" value="captions-comments" checked>
+                                        <i class="choice__icon"></i>
+                                        <span class="choice__label">Подсказки к секциям</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
