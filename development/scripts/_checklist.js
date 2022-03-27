@@ -14,9 +14,20 @@
     });
 
 
+    /* Перепроверяем все чекбоксы и актуализируем соответствующие классы.
+     * Это нужно делать при document.ready
+     * Ещё это нужно делать когда чекбоксы чекаются жаба-скриптом, поскольку
+     * .prop() не вызывает событие onChange.
+     */
+    function displayAll() {
+        $('.display').each(function () {
+            display($(this));
+        });
+    }
+
 
     /* 2. Непосредственно сам чеклист */
-    
+
     /* Немного адаптированный вот этот сэмпл:
      * https://codepen.io/chriscoyier/pen/JYyXjX
      * (в некоторых местах удвоенны .parent() и .children()
@@ -34,9 +45,7 @@
         });
 
         /* Поскольку .prop не вызывает onChange надо перепроверить все чекбоксы и актуализировать классы */
-        $('.display').each(function () {
-            display($(this));
-        });
+        displayAll()
 
         /* возвращаемся к алгоритму */
         function checkSiblings($checklistItem) {
@@ -56,12 +65,22 @@
                     checked: isChecked
                 });
 
+                /* Поскольку .prop не вызывает onChange надо перепроверить все чекбоксы и актуализировать классы */
+                displayAll()
+
+                /* возвращаемся к алгоритму */
                 checkSiblings(parent);
 
             } else if (all && !isChecked) {
 
                 parent.children('.choice').children('.choice__widget').prop("checked", isChecked);
                 parent.children('.choice').children('.choice__widget').prop("indeterminate", (parent.find('.choice__widget:checked').length > 0));
+
+
+                /* Поскольку .prop не вызывает onChange надо перепроверить все чекбоксы и актуализировать классы */
+                displayAll()
+
+                /* возвращаемся к алгоритму */
                 checkSiblings(parent);
 
             } else {
@@ -70,6 +89,9 @@
                     indeterminate: true,
                     checked: false
                 });
+
+                /* Поскольку .prop не вызывает onChange надо перепроверить все чекбоксы и актуализировать классы */
+                displayAll()
 
             }
 
