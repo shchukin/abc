@@ -30,11 +30,12 @@
         padding-right: 30px;
     }
 
-    .checklist--horizontal > .checklist__item:first-child {
 
+.checklist--headings {
+
+}
+    .checklist--headings > .checklist__item > .choice {
+        font-weight: bold;
     }
-        .checklist--horizontal > .checklist__item > .choice {
-            font-weight: bold;
-        }
 
 
