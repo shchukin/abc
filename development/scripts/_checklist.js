@@ -1,5 +1,22 @@
 (function ($) {
 
+    /* 1. Жонглирование классами видимости */
+    function display($this) {
+        if ($this.is(':checked') || $this.is(':indeterminate')) {
+            $('html').addClass('display-' + $this.val());
+        } else {
+            $('html').removeClass('display-' + $this.val());
+        }
+    }
+
+    $('.display').on('change', function () {
+        display($(this));
+    });
+
+
+
+    /* 2. Непосредственно сам чеклист */
+    
     /* Немного адаптированный вот этот сэмпл:
      * https://codepen.io/chriscoyier/pen/JYyXjX
      * (в некоторых местах удвоенны .parent() и .children()
@@ -16,7 +33,12 @@
             checked: isChecked
         });
 
+        /* Поскольку .prop не вызывает onChange надо перепроверить все чекбоксы и актуализировать классы */
+        $('.display').each(function () {
+            display($(this));
+        });
 
+        /* возвращаемся к алгоритму */
         function checkSiblings($checklistItem) {
 
             var parent = $checklistItem.parent('.checklist').parent('.checklist__item'),
