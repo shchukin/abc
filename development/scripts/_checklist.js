@@ -69,19 +69,22 @@
                 displayAll()
 
                 /* возвращаемся к алгоритму */
-                checkSiblings(parent);
+                if ( parent.children().children('.choice__widget').length ) {
+                    checkSiblings(parent);
+                }
 
             } else if (all && !isChecked) {
 
                 parent.children('.choice').children('.choice__widget').prop("checked", isChecked);
                 parent.children('.choice').children('.choice__widget').prop("indeterminate", (parent.find('.choice__widget:checked').length > 0));
 
-
                 /* Поскольку .prop не вызывает onChange надо перепроверить все чекбоксы и актуализировать классы */
                 displayAll()
 
                 /* возвращаемся к алгоритму */
-                checkSiblings(parent);
+                if ( parent.children().children('.choice__widget').length ) {
+                    checkSiblings(parent);
+                }
 
             } else {
 
