@@ -4,6 +4,7 @@
     vertical-align: top;
     padding-top: 6px;
     padding-bottom: 6px;
+    user-select: none;
     cursor: pointer;
 }
 
