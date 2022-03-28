@@ -1,33 +1,168 @@
 .settings {
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 10px 4px #EAEAEA;
-    border-radius: 10px;
-    overflow-y: auto;
-    max-height: 90vh;
-    padding: 30px;
+
 }
-    .settings__heading {
-        margin-top: 0;
-        margin-bottom: 0;
+    .settings__handler {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        display: inline-block;
+        vertical-align: top;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        border: none;
+        background-color: #F3F3F3;
+        box-shadow: 0 1px 2px 1px #eaeaea;
+        border-radius: 50%;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
     }
 
-    .settings__list {
-        margin-top: 16px;
+    .settings__handler:hover {
+        background-color: #EEE;
     }
-        .settings__section {
-            margin-top: 20px;
-            border-top: 1px solid var(--color-separator);
-            padding-top: 20px;
+
+        /* cogwheel */
+        .settings__handler::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            background-image: url("../vectors/cogwheel.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
 
-        .settings__section:first-child {
-            margin-top: 0;
-            border-top: none;
-            padding-top: 0;
+    .settings__panel {
+        position: fixed;
+        right: 30px;
+        bottom: 120px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 10px 4px #EAEAEA;
+        border-radius: 10px;
+        overflow-y: auto;
+        max-height: calc(100vh - 150px);
+        display: none;
+    }
+        .settings__body {
+            width: 570px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
+            padding: 32px;
         }
-            .settings__item {
-
+            .settings__heading {
+                margin-top: 0;
+                margin-bottom: 0;
             }
+
+            .settings__close {
+                position: absolute !important;
+                right: 16px;
+                top: 16px;
+            }
+
+            .settings__list {
+                margin-top: 16px;
+            }
+                .settings__section {
+                    margin-top: 20px;
+                    border-top: 1px solid var(--color-separator);
+                    padding-top: 20px;
+                }
+
+                .settings__section:first-child {
+                    margin-top: 0;
+                    border-top: none;
+                    padding-top: 0;
+                }
+                    .settings__item {
+
+                    }
+
+
+/* Если мало высоты, то позиционируем панельку поверх кнопкиы */
+@media (max-height: 600px) {
+    .settings__panel {
+        bottom: 30px;
+        max-height: calc(100vh - 60px);
+    }
+}
+
+
+.settings-expanded {
+
+}
+    .settings-expanded .settings__panel {
+        display: block;
+    }
+
+
+/* Анимации на десктопах */
+@media (min-width: 600px) {
+
+    @keyframes settings-panel {
+        from { opacity: 0; transform: translateY(30px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes settings-cogwheel {
+        from { transform: rotate(0) }
+        to   { transform: rotate(180deg); }
+    }
+
+    .settings-expanded {
+
+    }
+        .settings-expanded .settings__handler {
+
+        }
+            .settings-expanded .settings__handler::before {
+                animation: settings-cogwheel 0.4s ease forwards;
+                will-change: transform;
+            }
+
+        .settings-expanded .settings__panel {
+            display: block;
+            animation: settings-panel 0.4s var(--easeOutCirc) forwards;
+            will-change: transform, opacity;
+        }
+}
+
+
+
+
+/* Чуть увеличиваем отступы вокруг панели для больших мониторов */
+@media (min-width: 1400px) {
+
+    .settings {
+
+    }
+        .settings__handler {
+            right: 40px;
+            bottom: 40px;
+        }
+
+        .settings__panel {
+            right: 40px;
+            bottom: 140px;
+            max-height: calc(100vh - 180px);
+        }
+
+        /* Если при этом ещё мало высоты, то позиционируем панельку поверх кнопкиы */
+        @media (max-height: 700px) {
+            .settings__panel {
+                bottom: 40px;
+                max-height: calc(100vh - 80px);
+            }
+        }
+
+}
+
+

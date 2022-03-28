@@ -11,11 +11,17 @@
     --color-thai: #000000;
 
     --transition-show: 0.5s ease;
+    --transition-hover: 0.1s ease;
+    --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
 
     --color-separator: #EEEEEE;
 
     --section-margin: 60px;
-
     --heading-margin: 30px;
+
+    --action-color: #808080;
+    --action-hover: #F3F3F3;
+    --action-active: #E8E8E8;
+
 }
 /* stylelint-enable declaration-colon-space-after */
