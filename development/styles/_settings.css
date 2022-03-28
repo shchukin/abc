@@ -55,7 +55,7 @@
     }
         .settings__body {
             width: 570px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
-            padding: 32px;
+            padding: 32px 32px 64px;
         }
             .settings__heading {
                 margin-top: 0;
@@ -173,44 +173,19 @@
 
     }
         .settings__handler {
-            /*position: fixed;*/
-            /*right: 30px;*/
-            /*bottom: 30px;*/
-            /*display: inline-block;*/
-            /*vertical-align: top;*/
-            /*width: 60px;*/
-            /*height: 60px;*/
-            /*padding: 0;*/
-            /*border: none;*/
-            /*background-color: #F3F3F3;*/
-            /*box-shadow: 0 1px 2px 1px #eaeaea;*/
-            /*border-radius: 50%;*/
-            /*text-indent: 200%;*/
-            /*white-space: nowrap;*/
-            /*overflow: hidden;*/
-            /*cursor: pointer;*/
-            /*transition: background-color var(--transition-hover);*/
+
         }
 
         .settings__handler:hover {
-            /*background-color: #EEE;*/
-        }
 
+        }
             /* cogwheel */
             .settings__handler::before {
-                /*content: "";*/
-                /*position: absolute;*/
-                /*left: 0;*/
-                /*top: 0;*/
-                /*right: 0;*/
-                /*bottom: 0;*/
-                /*margin: auto;*/
-                /*width: 30px;*/
-                /*height: 30px;*/
-                /*background-image: url("../vectors/cogwheel.svg");*/
-                /*background-size: contain;*/
-                /*background-repeat: no-repeat;*/
-                /*background-position: center center;*/
+
+            }
+
+            .settings-expanded .settings__handler::before {
+                background-image: url("../vectors/cross.svg");
             }
 
         .settings__panel {
@@ -227,30 +202,22 @@
                 padding-right: 20px;
             }
                 .settings__heading {
-                    /*margin-top: 0;*/
-                    /*margin-bottom: 0;*/
+
                 }
 
                 .settings__close {
-                    /*position: absolute !important;*/
-                    /*right: 16px;*/
-                    /*top: 16px;*/
                     display: none !important;
                 }
 
                 .settings__list {
-                    /*margin-top: 16px;*/
+
                 }
                     .settings__section {
-                        /*margin-top: 20px;*/
-                        /*border-top: 1px solid var(--color-separator);*/
-                        /*padding-top: 20px;*/
+
                     }
 
                     .settings__section:first-child {
-                        /*margin-top: 0;*/
-                        /*border-top: none;*/
-                        /*padding-top: 0;*/
+
                     }
                         .settings__item {
 
