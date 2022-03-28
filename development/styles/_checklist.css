@@ -30,36 +30,11 @@
 
 
 .checklist--horizontal {
-
+    flex-direction: row;
 }
-
-@media (min-width: 600px) {
-
-    .checklist--horizontal {
-        flex-direction: row;
+    .checklist--horizontal > .checklist__item .choice__label {
+        padding-right: 30px;
     }
-        .checklist--horizontal > .checklist__item .choice__label {
-            padding-right: 30px;
-        }
-}
-
-@media (max-width: 599px) {
-
-    .checklist--horizontal {
-
-    }
-        .checklist--horizontal > .checklist__item {
-            margin-top: 16px;
-        }
-
-        .checklist--horizontal > .checklist__item:first-child {
-            margin-top: 0;
-        }
-            .checklist--horizontal > .checklist__item .choice__label {
-                padding-right: 20px; /* Если предполагалось, что это горизонтальный кейс на десктопах,
-                                        то и на смартфонах, вероятно, будет много пустоты справа. */
-            }
-}
 
 .checklist--headings {
 

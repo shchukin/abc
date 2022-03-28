@@ -98,44 +98,33 @@
 }
 
 
+
+@keyframes settings-panel {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes settings-cogwheel {
+    from { transform: rotate(0) }
+    to   { transform: rotate(180deg); }
+}
+
 .settings-expanded {
 
 }
+    .settings-expanded .settings__handler {
+
+    }
+        .settings-expanded .settings__handler::before {
+            animation: settings-cogwheel 0.4s ease forwards;
+            will-change: transform;
+        }
+
     .settings-expanded .settings__panel {
         display: block;
+        animation: settings-panel 0.4s var(--easeOutCirc) forwards;
+        will-change: transform, opacity;
     }
-
-
-/* Анимации на десктопах */
-@media (min-width: 600px) {
-
-    @keyframes settings-panel {
-        from { opacity: 0; transform: translateY(30px); }
-        to   { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes settings-cogwheel {
-        from { transform: rotate(0) }
-        to   { transform: rotate(180deg); }
-    }
-
-    .settings-expanded {
-
-    }
-        .settings-expanded .settings__handler {
-
-        }
-            .settings-expanded .settings__handler::before {
-                animation: settings-cogwheel 0.4s ease forwards;
-                will-change: transform;
-            }
-
-        .settings-expanded .settings__panel {
-            display: block;
-            animation: settings-panel 0.4s var(--easeOutCirc) forwards;
-            will-change: transform, opacity;
-        }
-}
 
 
 
@@ -165,68 +154,6 @@
             }
         }
 
-}
-
-
-
-@media (max-width: 599px) {
-
-    .settings {
-
-    }
-        .settings__handler {
-
-        }
-            /* cogwheel */
-            .settings__handler::before {
-
-            }
-
-            .settings-expanded .settings__handler::before {
-                background-image: url("../vectors/cross.svg");
-            }
-
-        .settings__panel {
-            position: static;
-            background-color: transparent;
-            box-shadow: none;
-            border-radius: 0;
-            overflow-y: visible;
-            max-height: none;
-        }
-            .settings__body {
-                width: auto; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-                .settings__heading {
-
-                }
-
-                .settings__close {
-                    display: none !important;
-                }
-
-                .settings__list {
-
-                }
-                    .settings__section {
-
-                    }
-
-                    .settings__section:first-child {
-
-                    }
-                        .settings__item {
-
-                        }
-
-    .settings-expanded {
-
-    }
-        .settings-expanded .settings__panel {
-            display: block;
-        }
 }
 
 
