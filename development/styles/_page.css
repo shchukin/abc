@@ -1,0 +1,10 @@
+.page {
+
+}
+
+@media (max-width: 599px) {
+
+    .settings-expanded .page {
+        display: none;
+    }
+}
