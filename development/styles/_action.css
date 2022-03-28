@@ -20,13 +20,15 @@
         transition: background-color var(--transition-hover);
     }
 
-    .action:hover::before {
-        background-color: var(--action-hover);
-    }
+    @media (hover: hover) {
+        .action:hover::before {
+            background-color: var(--action-hover);
+        }
 
-    .action:active::before {
-        background-color: var(--action-active);
-        transition: none;
+        .action:active::before {
+            background-color: var(--action-active);
+            transition: none;
+        }
     }
 
     .action::after {

@@ -21,8 +21,10 @@
         transition: background-color var(--transition-hover);
     }
 
-    .settings__handler:hover {
-        background-color: #EEE;
+    @media (hover: hover) {
+        .settings__handler:hover {
+            background-color: #EEE;
+        }
     }
 
         /* cogwheel */
@@ -173,10 +175,6 @@
 
     }
         .settings__handler {
-
-        }
-
-        .settings__handler:hover {
 
         }
             /* cogwheel */

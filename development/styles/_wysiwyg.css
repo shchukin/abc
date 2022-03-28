@@ -149,12 +149,14 @@
     text-decoration: underline;
 }
 
-.wysiwyg a:hover {
-    text-decoration: none;
+@media (hover: hover) {
+    .wysiwyg a:hover {
+        text-decoration: none;
+    }
 }
 
 
 .wysiwyg b,
 .wysiwyg strong {
-    /*font-weight: var(--font_weight_strong);*/
+
 }
