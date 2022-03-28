@@ -28,7 +28,7 @@
     }
 
         /* cogwheel */
-        .settings__handler::after {
+        .settings__handler::before {
             content: "";
             position: absolute;
             left: 0;
@@ -125,7 +125,7 @@
         .settings-expanded .settings__handler {
 
         }
-            .settings-expanded .settings__handler::after {
+            .settings-expanded .settings__handler::before {
                 animation: settings-cogwheel 0.4s ease forwards;
                 will-change: transform;
             }
@@ -178,11 +178,11 @@
 
         }
             /* cogwheel */
-            .settings__handler::after {
+            .settings__handler::before {
 
             }
 
-            .settings-expanded .settings__handler::after {
+            .settings-expanded .settings__handler::before {
                 background-image: url("../vectors/cross.svg");
             }
 
