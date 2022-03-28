@@ -3,9 +3,16 @@
     margin-bottom: 0;
     list-style: none;
     padding-left: 0;
+    /* чтобы все айтемы были одинаковой ширины: */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
 }
     .checklist__item {
-
+        /* чтобы все айтемы были одинаковой ширины: */
+        display: inline-flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
 
@@ -21,28 +28,38 @@
     }
 
 
+
 .checklist--horizontal {
 
 }
-    .checklist--horizontal > .checklist__item {
-        margin-top: 16px;
-    }
-
-    .checklist--horizontal > .checklist__item:first-child {
-        margin-top: 0;
-    }
 
 @media (min-width: 600px) {
 
     .checklist--horizontal {
-        display: flex;
-        align-items: flex-start;
+        flex-direction: row;
     }
         .checklist--horizontal > .checklist__item .choice__label {
             padding-right: 30px;
         }
 }
 
+@media (max-width: 599px) {
+
+    .checklist--horizontal {
+
+    }
+        .checklist--horizontal > .checklist__item {
+            margin-top: 16px;
+        }
+
+        .checklist--horizontal > .checklist__item:first-child {
+            margin-top: 0;
+        }
+            .checklist--horizontal > .checklist__item .choice__label {
+                padding-right: 20px; /* Если предполагалось, что это горизонтальный кейс на десктопах,
+                                        то и на смартфонах, вероятно, будет много пустоты справа. */
+            }
+}
 
 .checklist--headings {
 

@@ -20,6 +20,48 @@
             <ul class="checklist">
                 <li class="checklist__item">
                     <label class="choice choice--full-width">
+                        <input class="choice__widget display" type="checkbox" value="captions" checked>
+                        <i class="choice__icon"></i>
+                        <span class="choice__label">Оформление страницы</span>
+                    </label>
+                    <ul class="checklist">
+                        <li class="checklist__item">
+                            <label class="choice choice--full-width">
+                                <input class="choice__widget display" type="checkbox" value="captions-headings" checked>
+                                <i class="choice__icon"></i>
+                                <span class="choice__label">Заголовки</span>
+                            </label>
+                        </li>
+                        <li class="checklist__item">
+                            <label class="choice choice--full-width">
+                                <input class="choice__widget display" type="checkbox" value="captions-subheadings" checked>
+                                <i class="choice__icon"></i>
+                                <span class="choice__label">Под-заголовки</span>
+                            </label>
+                        </li>
+                        <li class="checklist__item">
+                            <label class="choice choice--full-width">
+                                <input class="choice__widget display" type="checkbox" value="captions-comments" checked>
+                                <i class="choice__icon"></i>
+                                <span class="choice__label">Подсказки к секциям</span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <br>
+            <br>
+            <h2>.checklist в .checklist</h2>
+            <p>
+                Вкладываем компонент в самого себя сколько угодно, рекурсивно.
+                Собсна и алгоритм прохода по чекбоксам тоже рекурсивный.
+            </p>
+
+            <ul class="checklist">
+                <li class="checklist__item">
+                    <label class="choice choice--full-width">
                         <input class="choice__widget display" type="checkbox" value="vowels" checked>
                         <i class="choice__icon"></i>
                         <span class="choice__label">Гласные</span>
@@ -431,7 +473,7 @@
                 Заодно список аллиасов всего что есть в алфавите:
             </p>
 
-            <br>bvowels
+            <br>vowels
             <br>vowels-basic
             <br>vowels-short-sound
             <br>vowels-diftongs
