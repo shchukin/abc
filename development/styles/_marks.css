@@ -12,11 +12,11 @@
 
     }
         .marks__section {
-            margin-top: var(--section-margin);
+            margin-bottom: var(--section-margin);
         }
 
-        .marks__section:first-child {
-            margin-top: 0;
+        .marks__section:last-child {
+            margin-bottom: 0;
         }
 
             html:not(.display-marks-digits) .marks__section--digits { display: none; }
