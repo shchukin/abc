@@ -10,9 +10,6 @@
     .consonants__columns {
         display: none;
     }
-        .consonants__sound {
-            text-align: center;
-        }
 
     .consonants__body {
 
@@ -50,7 +47,7 @@
                 }
 
                 html:not(.display-consonants-low-sonorant) .consonants__sub-class--sonorant { display: none; }
-                html:not(.display-consonants-low-dead) .consonants__sub-class--dead     { display: none; }
+                html:not(.display-consonants-low-dead) .consonants__sub-class--dead         { display: none; }
 
                     .consonants__sub-head {
                         display: flex;
@@ -77,7 +74,10 @@
 
 
 .display-by-sound .consonants {
-
+    background-image: url("../vectors/consonants-by-sound.svg");
+    background-size: 1230px 100px;
+    background-repeat: repeat;
+    background-position: left top;
 }
     .display-by-sound .consonants__heading {
 
@@ -90,18 +90,25 @@
         grid-auto-flow: column;
         margin-bottom: 40px;
     }
-        .consonants__group {
+        .display-by-sound .consonants__group {
             display: grid;
             grid-auto-flow: column;
         }
-            .consonants__sound {
+            .display-by-sound .consonants__sound {
+                position: relative;
+                padding-top: 10px;
+                padding-bottom: 14px;
                 width: 150px;
                 margin-left: 20px;
+                text-align: center;
+                background-color: #F3F3F3;
+                border-radius: 4px 4px 0 0;
             }
 
-            .consonants__sound:first-child {
+            .display-by-sound .consonants__sound:first-child {
                 margin-left: 0;
             }
+
 
     .display-by-sound .consonants__body {
         width: 3550px;
@@ -133,13 +140,13 @@
             grid-row-start: 2;
             grid-row-end: 3;
         }
-            .consonants__sub-class--sonorant {
+            .display-by-sound .consonants__sub-class--sonorant {
                 /*position: absolute;*/
                 /*left: 0;*/
                 /*top: 200px;*/
             }
 
-            .consonants__sub-class--dead {
+            .display-by-sound .consonants__sub-class--dead {
                 /*position: absolute;*/
                 /*left: 1190px;*/
                 /*top: 200px;*/
