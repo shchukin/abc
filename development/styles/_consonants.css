@@ -194,6 +194,11 @@
 
                     }
 
+                    html:not(.display-type-basic).display-by-sound .vlisting__column {
+                        width: 150px;
+                        min-height: 1px;
+                    }
+
     /* фоновые полоски */
     .display-by-sound .consonants .letter::before {
         content: "";
@@ -232,9 +237,7 @@
     }
 
     .display-alphabetically .consonants__body {
-        position: relative;
-        width: 830px;
-        height: 1384px;
+
     }
         .display-alphabetically .consonants__section {
             margin-bottom: 0
@@ -261,52 +264,111 @@
 
                     }
 
-
-
-.display-alphabetically .consonants .letter {
-    position: absolute;
-    margin: 0;
+.display-alphabetically .consonants__body {
+    position: relative;
 }
+    .display-alphabetically .consonants .letter {
+        position: absolute;
+        margin: 0;
+    }
 
-.display-alphabetically .letter--kho-khai     { left: 170px; top: 0; }
-.display-alphabetically .letter--cho-ching    { left: 170px; top: 156px; }
-.display-alphabetically .letter--so-sia       { left: 340px; top: 1092px; }
-.display-alphabetically .letter--so-risi      { left: 170px; top: 1092px; }
-.display-alphabetically .letter--so-sala      { left: 0; top: 1092px; }
-.display-alphabetically .letter--tho-thung    { left: 680px; top: 468px; }
-.display-alphabetically .letter--tho-than     { left: 510px; top: 312px; }
-.display-alphabetically .letter--pho-phing    { left: 0; top: 780px; }
-.display-alphabetically .letter--fo-fa        { left: 170px; top: 780px; }
-.display-alphabetically .letter--ho-hip       { left: 510px; top: 1092px; }
-.display-alphabetically .letter--ko-kai       { left: 0; top: 0; }
-.display-alphabetically .letter--jo-jan       { left: 0; top: 156px; }
-.display-alphabetically .letter--do-dek       { left: 340px; top: 468px; }
-.display-alphabetically .letter--do-chada     { left: 170px; top: 312px; }
-.display-alphabetically .letter--to-tau       { left: 510px; top: 468px; }
-.display-alphabetically .letter--to-patak     { left: 340px; top: 312px; }
-.display-alphabetically .letter--bo-baimai    { left: 510px; top: 624px; }
-.display-alphabetically .letter--po-pla       { left: 680px; top: 624px; }
-.display-alphabetically .letter--o-ang        { left: 0; top: 1248px; }
-.display-alphabetically .letter--ro-ria       { left: 340px; top: 936px; }
-.display-alphabetically .letter--lo-ling      { left: 510px; top: 936px; }
-.display-alphabetically .letter--lo-jula      { left: 680px; top: 1092px; }
-.display-alphabetically .letter--mo-ma        { left: 0; top: 936px; }
-.display-alphabetically .letter--no-nu        { left: 340px; top: 624px; }
-.display-alphabetically .letter--no-nen       { left: 170px; top: 468px; }
-.display-alphabetically .letter--yo-yak       { left: 170px; top: 936px; }
-.display-alphabetically .letter--yo-ying      { left: 0; top: 312px; }
-.display-alphabetically .letter--ngo-ngu      { left: 680px; top: 0; }
-.display-alphabetically .letter--wo-weng      { left: 680px; top: 936px; }
-.display-alphabetically .letter--kho-khwai    { left: 340px; top: 0; }
-.display-alphabetically .letter--kho-rakhang  { left: 510px; top: 0; }
-.display-alphabetically .letter--cho-chang    { left: 340px; top: 156px; }
-.display-alphabetically .letter--cho-cho      { left: 680px; top: 156px; }
-.display-alphabetically .letter--so-so        { left: 510px; top: 156px; }
-.display-alphabetically .letter--tho-thahan   { left: 0; top: 624px; }
-.display-alphabetically .letter--tho-thong    { left: 170px; top: 624px; }
-.display-alphabetically .letter--tho-montho   { left: 680px; top: 312px; }
-.display-alphabetically .letter--tho-phuthau  { left: 0; top: 468px; }
-.display-alphabetically .letter--pho-phan     { left: 340px; top: 780px; }
-.display-alphabetically .letter--pho-samphau  { left: 680px; top: 780px; }
-.display-alphabetically .letter--fo-fan       { left: 510px; top: 780px; }
-.display-alphabetically .letter--ho-nokhu     { left: 170px; top: 1248px; }
+/* Все */
+.display-alphabetically.display-type-basic.display-type-secondary .consonants__body {
+    width: 830px;
+    height: 1384px;
+}
+    .display-alphabetically .letter--kho-khai     { left: 170px; top: 0; }
+    .display-alphabetically .letter--cho-ching    { left: 170px; top: 156px; }
+    .display-alphabetically .letter--so-sia       { left: 340px; top: 1092px; }
+    .display-alphabetically .letter--so-risi      { left: 170px; top: 1092px; }
+    .display-alphabetically .letter--so-sala      { left: 0;     top: 1092px; }
+    .display-alphabetically .letter--tho-thung    { left: 680px; top: 468px; }
+    .display-alphabetically .letter--tho-than     { left: 510px; top: 312px; }
+    .display-alphabetically .letter--pho-phing    { left: 0;     top: 780px; }
+    .display-alphabetically .letter--fo-fa        { left: 170px; top: 780px; }
+    .display-alphabetically .letter--ho-hip       { left: 510px; top: 1092px; }
+    .display-alphabetically .letter--ko-kai       { left: 0;     top: 0; }
+    .display-alphabetically .letter--jo-jan       { left: 0;     top: 156px; }
+    .display-alphabetically .letter--do-dek       { left: 340px; top: 468px; }
+    .display-alphabetically .letter--do-chada     { left: 170px; top: 312px; }
+    .display-alphabetically .letter--to-tau       { left: 510px; top: 468px; }
+    .display-alphabetically .letter--to-patak     { left: 340px; top: 312px; }
+    .display-alphabetically .letter--bo-baimai    { left: 510px; top: 624px; }
+    .display-alphabetically .letter--po-pla       { left: 680px; top: 624px; }
+    .display-alphabetically .letter--o-ang        { left: 0;     top: 1248px; }
+    .display-alphabetically .letter--ro-ria       { left: 340px; top: 936px; }
+    .display-alphabetically .letter--lo-ling      { left: 510px; top: 936px; }
+    .display-alphabetically .letter--lo-jula      { left: 680px; top: 1092px; }
+    .display-alphabetically .letter--mo-ma        { left: 0;     top: 936px; }
+    .display-alphabetically .letter--no-nu        { left: 340px; top: 624px; }
+    .display-alphabetically .letter--no-nen       { left: 170px; top: 468px; }
+    .display-alphabetically .letter--yo-yak       { left: 170px; top: 936px; }
+    .display-alphabetically .letter--yo-ying      { left: 0;     top: 312px; }
+    .display-alphabetically .letter--ngo-ngu      { left: 680px; top: 0; }
+    .display-alphabetically .letter--wo-weng      { left: 680px; top: 936px; }
+    .display-alphabetically .letter--kho-khwai    { left: 340px; top: 0; }
+    .display-alphabetically .letter--kho-rakhang  { left: 510px; top: 0; }
+    .display-alphabetically .letter--cho-chang    { left: 340px; top: 156px; }
+    .display-alphabetically .letter--cho-cho      { left: 680px; top: 156px; }
+    .display-alphabetically .letter--so-so        { left: 510px; top: 156px; }
+    .display-alphabetically .letter--tho-thahan   { left: 0;     top: 624px; }
+    .display-alphabetically .letter--tho-thong    { left: 170px; top: 624px; }
+    .display-alphabetically .letter--tho-montho   { left: 680px; top: 312px; }
+    .display-alphabetically .letter--tho-phuthau  { left: 0;     top: 468px; }
+    .display-alphabetically .letter--pho-phan     { left: 340px; top: 780px; }
+    .display-alphabetically .letter--pho-samphau  { left: 680px; top: 780px; }
+    .display-alphabetically .letter--fo-fan       { left: 510px; top: 780px; }
+    .display-alphabetically .letter--ho-nokhu     { left: 170px; top: 1248px; }
+
+/* Все */
+html.display-alphabetically.display-type-basic:not(.display-type-secondary) .consonants__body {
+    height: 916px;
+}
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--kho-khai     { left: 170px; top: 0; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--cho-ching    { left: 0; top: 156px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--so-sia       { left: 680px; top: 624px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--tho-thung    { left: 0; top: 312px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--pho-phing    { left: 0; top: 468px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--fo-fa        { left: 170px; top: 468px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--ho-hip       { left: 0; top: 780px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--ko-kai       { left: 0; top: 0; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--jo-jan       { left: 680px; top: 0; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--do-dek       { left: 510px; top: 156px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--to-tau       { left: 680px; top: 156px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--bo-baimai    { left: 510px; top: 312px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--po-pla       { left: 680px; top: 312px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--o-ang        { left: 170px; top: 780px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--ro-ria       { left: 170px; top: 624px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--lo-ling      { left: 340px; top: 624px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--mo-ma        { left: 680px; top: 468px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--no-nu        { left: 340px; top: 312px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--yo-yak       { left: 0; top: 624px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--ngo-ngu      { left: 510px; top: 0; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--wo-weng      { left: 510px; top: 624px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--kho-khwai    { left: 340px; top: 0; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--cho-chang    { left: 170px; top: 156px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--so-so        { left: 340px; top: 156px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--tho-thahan   { left: 170px; top: 312px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--pho-phan     { left: 340px; top: 468px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--fo-fan       { left: 510px; top: 468px; }
+    html.display-alphabetically.display-type-basic:not(.display-type-secondary) .letter--ho-nokhu     { left: 340px; top: 780px; }
+
+
+/* Все */
+html.display-alphabetically:not(.display-type-basic).display-type-secondary .consonants__body {
+    height: 448px;
+}
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--so-risi      { left: 340px; top: 312px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--so-sala      { left: 170px; top: 312px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--tho-than     { left: 0; top: 156px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--do-chada     { left: 510px; top: 0; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--to-patak     { left: 680px; top: 0; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--lo-jula      { left: 510px; top: 312px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--no-nen       { left: 510px; top: 156px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--yo-ying      { left: 340px; top: 0; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--kho-rakhang  { left: 0; top: 0; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--cho-cho      { left: 170px; top: 0; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--tho-thong    { left: 680px; top: 156px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--tho-montho   { left: 170px; top: 156px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--tho-phuthau  { left: 340px; top: 156px; }
+    html.display-alphabetically:not(.display-type-basic).display-type-secondary .letter--pho-samphau  { left: 0; top: 312px; }
