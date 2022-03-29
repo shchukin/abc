@@ -20,6 +20,8 @@
              display-captions-subheadings
              display-captions-comments
              display-by-sound
+             display-type-basic
+             display-type-secondary
       "
 >
     <head>
@@ -524,27 +526,33 @@
                                 Согласные
                             </h2>
                             <div class="consonants__columns" role="presentation" aria-hidden="true">
-                                <div class="consonants__sound title">р</div>
-                                <div class="consonants__sound title">л</div>
-                                <div class="consonants__sound title">м</div>
-                                <div class="consonants__sound title">н</div>
-                                <div class="consonants__sound title">й</div>
-                                <div class="consonants__sound title">нг</div>
-                                <div class="consonants__sound title">в</div>
-                                <div class="consonants__sound title">кх</div>
-                                <div class="consonants__sound title">ч</div>
-                                <div class="consonants__sound title">с</div>
-                                <div class="consonants__sound title">тх</div>
-                                <div class="consonants__sound title">пх</div>
-                                <div class="consonants__sound title">ф</div>
-                                <div class="consonants__sound title">х</div>
-                                <div class="consonants__sound title">к</div>
-                                <div class="consonants__sound title">ть</div>
-                                <div class="consonants__sound title">д</div>
-                                <div class="consonants__sound title">т</div>
-                                <div class="consonants__sound title">б</div>
-                                <div class="consonants__sound title">п</div>
-                                <div class="consonants__sound title">—</div>
+                                <div class="consonants__group">
+                                    <div class="consonants__sound title">р</div>
+                                    <div class="consonants__sound title">л</div>
+                                    <div class="consonants__sound title">м</div>
+                                    <div class="consonants__sound title">н</div>
+                                    <div class="consonants__sound title">й</div>
+                                    <div class="consonants__sound title">нг</div>
+                                    <div class="consonants__sound title">в</div>
+                                </div>
+                                <div class="consonants__group">
+                                    <div class="consonants__sound title">кх</div>
+                                    <div class="consonants__sound title">ч</div>
+                                    <div class="consonants__sound title">с</div>
+                                    <div class="consonants__sound title">тх</div>
+                                    <div class="consonants__sound title">пх</div>
+                                    <div class="consonants__sound title">ф</div>
+                                    <div class="consonants__sound title">х</div>
+                                </div>
+                                <div class="consonants__group">
+                                    <div class="consonants__sound title">к</div>
+                                    <div class="consonants__sound title">ть</div>
+                                    <div class="consonants__sound title">д</div>
+                                    <div class="consonants__sound title">т</div>
+                                    <div class="consonants__sound title">б</div>
+                                    <div class="consonants__sound title">п</div>
+                                    <div class="consonants__sound title">—</div>
+                                </div>
                             </div>
                             <div class="consonants__body">
                                 <section class="consonants__section consonants__section--high">
@@ -1511,20 +1519,47 @@
                                         </ul>
                                     </div>
                                     <div class="settings__section">
-                                        <h3 class="settings__sub-heading">
+                                        <h3 class="settings__sub-heading title title--secondary">
+                                            Согласные
+                                        </h3>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="type-basic" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">
+                                                        <b>Базовые</b>
+                                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid architecto beatae delectus, dolores dolorum enim est et iste nesciunt nisi perferendis quasi quia quisquam ratione tempore unde vitae?</div>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="type-secondary" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">
+                                                        <b>Дублирующие</b>
+                                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid architecto beatae delectus, dolores dolorum enim est et iste nesciunt nisi perferendis quasi quia quisquam ratione tempore unde vitae?</div>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="settings__section">
+                                        <h3 class="settings__sub-heading title title--secondary">
                                             Отображать согласные
                                         </h3>
                                         <ul class="checklist">
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-class" checked>
+                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-class">
                                                     <i class="choice__icon"></i>
                                                     <span class="choice__label">По классам</span>
                                                 </label>
                                             </li>
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-sound">
+                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-sound" checked>
                                                     <i class="choice__icon"></i>
                                                     <span class="choice__label">По звукам</span>
                                                 </label>

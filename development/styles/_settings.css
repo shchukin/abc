@@ -37,8 +37,9 @@
                     /*border-top: none;*/
                     /*padding-top: 0;*/
                 }
-                    .settings__item {
-
+                    .settings__sub-heading {
+                        margin-top: 0;
+                        margin-bottom: 10px;
                     }
 
 
@@ -132,11 +133,7 @@
                         padding-top: 0;
                     }
                         .settings__sub-heading {
-                            margin-top: 0;
-                            margin-bottom: 0.5em;
-                            font-weight: bold;
-                            font-size: inherit;
-                            line-height: inherit;
+
                         }
 
     /* Если мало высоты, то позиционируем панельку поверх кнопкиы */

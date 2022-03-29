@@ -84,58 +84,65 @@
     }
 
     .display-by-sound .consonants__columns {
-        display: flex;
-        align-items: flex-start;
+        display: grid;
+        grid-gap: 40px 60px;
+        grid-template-columns: repeat(3, 1170px);
+        grid-auto-flow: column;
+        margin-bottom: 40px;
     }
-        .consonants__sound {
-            width: 150px;
-            margin-left: 20px;
+        .consonants__group {
+            display: grid;
+            grid-auto-flow: column;
         }
+            .consonants__sound {
+                width: 150px;
+                margin-left: 20px;
+            }
 
-        .consonants__sound:first-child {
-            margin-left: 0;
-        }
+            .consonants__sound:first-child {
+                margin-left: 0;
+            }
 
     .display-by-sound .consonants__body {
-        position: relative;
-        width: 3000px;
-        height: 1170px;
+        width: 3550px;
+        display: grid;
+        grid-gap: 40px 60px;
+        grid-template-columns: repeat(3, 1170px);
     }
         .display-by-sound .consonants__section {
-            /*margin-bottom: var(--section-margin);*/
-        }
-
-        .display-by-sound .consonants__section:last-child {
-            /*margin-bottom: 0;*/
+            margin-bottom: 0;
         }
 
         .display-by-sound .consonants__section--high {
-            position: absolute;
-            left: 1190px;
-            top: 40px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
         }
 
         .display-by-sound .consonants__section--middle {
-            position: absolute;
-            left: 2380px;
-            top: 330px;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
         }
 
         .display-by-sound .consonants__section--low {
-            position: absolute;
-            left: 0;
-            top: 330px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
             .consonants__sub-class--sonorant {
-                position: absolute;
-                left: 0;
-                top: 200px;
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 200px;*/
             }
 
             .consonants__sub-class--dead {
-                position: absolute;
-                left: 1190px;
-                top: 200px;
+                /*position: absolute;*/
+                /*left: 1190px;*/
+                /*top: 200px;*/
             }
 
             .display-by-sound .consonants__sub-heading {
@@ -146,12 +153,18 @@
             .display-by-sound .consonants__list {
 
             }
+
+            .display-by-sound .consonants__section--low .consonants__list {
+                display: flex;
+                align-items: flex-start;
+            }
                 .display-by-sound .consonants__sub-class {
-                    /*margin-bottom: 30px;*/
+                    margin-bottom: 0;
+                    margin-right: 60px;
                 }
 
                 .display-by-sound .consonants__sub-class:last-child {
-                    /*margin-bottom: 0;*/
+                    margin-right: 0;
                 }
                     .display-by-sound .consonants__sub-head {
                         /*display: flex;*/
