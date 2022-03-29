@@ -19,6 +19,7 @@
              display-captions-headings
              display-captions-subheadings
              display-captions-comments
+             display-by-class
       "
 >
     <head>
@@ -1322,7 +1323,7 @@
                             </div>
                         </section>
                     </div>
-                    <settings class="settings">
+                    <section class="settings">
                         <button class="settings__handler" type="button">
                             Показать настройки
                         </button>
@@ -1485,12 +1486,39 @@
                                                 </ul>
                                             </li>
                                         </ul>
-
+                                    </div>
+                                    <div class="settings__section">
+                                        <h3 class="settings__sub-heading">
+                                            Отображать согласные
+                                        </h3>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-class" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">По классам</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-sound">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">По звукам</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="alphabetically">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">В алфавитном порядке</span>
+                                                </label>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </settings>
+                    </section>
                 </div>
             </div>
         </div>
