@@ -12,7 +12,7 @@
         display: none;
     }
 
-    .alphabet__consonants-and-marks {
+    .alphabet__consonants-marks-settings {
         margin: 30px 20px;
     }
         .alphabet__consonants {
@@ -25,7 +25,7 @@
 
 
         .alphabet__marks {
-
+            margin-bottom: var(--section-margin);
         }
 
         html:not(.display-marks) .alphabet__marks {
@@ -33,7 +33,7 @@
         }
 
 
-@media (min-width: 600px) {
+@media (min-device-width: 600px) {
 
     .alphabet {
         padding: 15px 30px 90px;
@@ -42,7 +42,7 @@
             margin: 30px;
         }
 
-        .alphabet__consonants-and-marks {
+        .alphabet__consonants-marks-settings {
             margin: 30px;
         }
             .alphabet__consonants {
@@ -50,6 +50,6 @@
             }
 
             .alphabet__marks {
-
+                margin-bottom: 0;
             }
 }
