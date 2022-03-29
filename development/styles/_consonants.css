@@ -3,8 +3,13 @@
 .consonants {
 
 }
+    /* убираем с экрана: */
     .consonants__heading {
-
+        position: fixed;
+        right: 200%;
+        bottom: 200%;
+        margin-top: 0;
+        margin-bottom: var(--heading-margin);
     }
 
     .consonants__columns {
@@ -190,7 +195,7 @@
                     }
 
     /* фоновые полоски */
-    .display-by-sound .vlisting__item::before {
+    .display-by-sound .consonants .letter::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -202,6 +207,7 @@
         height: 3000px;
     }
 
+    /* обрезаем полоски в самом верху */
     .display-by-sound .consonants__columns::after {
         content: "";
         position: absolute;
@@ -211,3 +217,93 @@
         bottom: 100%;
         height: 100px;
     }
+
+
+
+.display-alphabetically .consonants {
+
+}
+    .display-alphabetically .consonants__heading {
+        position: static;
+    }
+
+    .display-alphabetically .consonants__columns {
+
+    }
+
+    .display-alphabetically .consonants__body {
+        position: relative;
+    }
+        .display-alphabetically .consonants__section {
+            margin-bottom: 0
+        }
+            .display-alphabetically .consonants__sub-heading {
+                display: none;
+            }
+
+            .display-alphabetically .consonants__list {
+
+            }
+                .display-alphabetically .consonants__sub-class {
+                    margin-bottom: 0;
+                }
+
+                .display-alphabetically .consonants__sub-class:last-child {
+                    margin-bottom: 0;
+                }
+                    .display-alphabetically .consonants__sub-head {
+                        display: none;
+                    }
+
+                    .display-alphabetically .consonants__alt-list {
+
+                    }
+
+
+
+.display-alphabetically .consonants .letter {
+    margin: 0;
+}
+
+.display-alphabetically .letter--kho-khai { position: absolute; left: 170px; top: 0; }
+.display-alphabetically .letter--cho-ching { position: absolute; left: 170px; top: 156px; }
+/*.display-alphabetically .letter--so-sia*/
+/*.display-alphabetically .letter--so-risi*/
+/*.display-alphabetically .letter--so-sala*/
+/*.display-alphabetically .letter--tho-thung*/
+/*.display-alphabetically .letter--tho-than*/
+/*.display-alphabetically .letter--pho-phing*/
+/*.display-alphabetically .letter--fo-fa*/
+/*.display-alphabetically .letter--ho-hip*/
+.display-alphabetically .letter--ko-kai { position: absolute; left: 0; top: 0; }
+.display-alphabetically .letter--jo-jan { position: absolute; left: 0; top: 156px; }
+/*.display-alphabetically .letter--do-dek*/
+.display-alphabetically .letter--do-chada    { position: absolute; left: 170px; top: 312px; }
+/*.display-alphabetically .letter--to-tau*/
+/*.display-alphabetically .letter--to-patak*/
+/*.display-alphabetically .letter--bo-baimai*/
+/*.display-alphabetically .letter--po-pla*/
+/*.display-alphabetically .letter--o-and*/
+/*.display-alphabetically .letter--ro-ria*/
+/*.display-alphabetically .letter--lo-ling*/
+/*.display-alphabetically .letter--lo-jula*/
+/*.display-alphabetically .letter--mo-ma*/
+/*.display-alphabetically .letter--no-nu*/
+/*.display-alphabetically .letter--no-nen*/
+/*.display-alphabetically .letter--yo-yak*/
+.display-alphabetically .letter--yo-ying      { position: absolute; left: 0; top: 312px; }
+.display-alphabetically .letter--ngo-ngu      { position: absolute; left: 680px; top: 0; }
+/*.display-alphabetically .letter--wo-weng*/
+.display-alphabetically .letter--kho-khwai    { position: absolute; left: 340px; top: 0; }
+.display-alphabetically .letter--kho-rakhang  { position: absolute; left: 510px; top: 0; }
+.display-alphabetically .letter--cho-chang    { position: absolute; left: 340px; top: 156px; }
+.display-alphabetically .letter--cho-cho      { position: absolute; left: 680px; top: 156px; }
+.display-alphabetically .letter--so-so        { position: absolute; left: 510px; top: 156px; }
+/*.display-alphabetically .letter--tho-thahan*/
+/*.display-alphabetically .letter--tho-thong*/
+/*.display-alphabetically .letter--tho-montho*/
+/*.display-alphabetically .letter--tho-phuthau*/
+/*.display-alphabetically .letter--pho-phan*/
+/*.display-alphabetically .letter--pho-samphau*/
+/*.display-alphabetically .letter--fo-fan*/
+/*.display-alphabetically .letter--ho-nokhu*/
