@@ -74,16 +74,14 @@
 
 
 .display-by-sound .consonants {
-    background-image: url("../vectors/consonants-by-sound.svg");
-    background-size: 1230px 100px;
-    background-repeat: repeat;
-    background-position: left top;
+
 }
     .display-by-sound .consonants__heading {
 
     }
 
     .display-by-sound .consonants__columns {
+        position: relative;
         display: grid;
         grid-gap: 40px 60px;
         grid-template-columns: repeat(3, 1170px);
@@ -102,7 +100,7 @@
                 margin-left: 20px;
                 text-align: center;
                 background-color: #F3F3F3;
-                border-radius: 4px 4px 0 0;
+                border-radius: 12px 12px 0 0;
             }
 
             .display-by-sound .consonants__sound:first-child {
@@ -190,3 +188,26 @@
                     .display-by-sound .consonants__alt-list {
 
                     }
+
+    /* фоновые полоски */
+    .display-by-sound .vlisting__item::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        margin-left: -2px;
+        width: 4px;
+        background-color: #F8F8F8;
+        bottom: 0;
+        height: 3000px;
+    }
+
+    .display-by-sound .consonants__columns::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        bottom: 100%;
+        height: 100px;
+    }
