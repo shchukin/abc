@@ -20,8 +20,6 @@
              display-captions-subheadings
              display-captions-comments
              display-by-class
-             display-type-basic
-             display-type-secondary
       "
 >
     <head>
@@ -1519,31 +1517,48 @@
                                         </ul>
                                     </div>
                                     <div class="settings__section">
-                                        <h3 class="settings__sub-heading title title--secondary">
-                                            Согласные
-                                        </h3>
-                                        <ul class="checklist">
+                                        <ul class="checklist checklist--horizontal checklist--headings">
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="checkbox" value="type-basic" checked>
+                                                    <input class="choice__widget display" type="checkbox" value="captions" checked>
                                                     <i class="choice__icon"></i>
-                                                    <span class="choice__label">
-                                                        <b>Базовые</b>
-                                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid architecto beatae delectus, dolores dolorum enim est et iste nesciunt nisi perferendis quasi quia quisquam ratione tempore unde vitae?</div>
-                                                    </span>
+                                                    <span class="choice__label">Оформление страницы</span>
                                                 </label>
-                                            </li>
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="checkbox" value="type-secondary" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">
-                                                        <b>Дублирующие</b>
-                                                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid architecto beatae delectus, dolores dolorum enim est et iste nesciunt nisi perferendis quasi quia quisquam ratione tempore unde vitae?</div>
-                                                    </span>
-                                                </label>
+                                                <ul class="checklist">
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="captions-headings" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Заголовки</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="captions-subheadings" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Под-заголовки</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="captions-comments" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Подсказки к секциям</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
+                                    </div>
+                                    <div class="settings__section">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="checkbox" value="type-secondary" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label">
+                                                <b>Дублирующие</b>
+                                                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid architecto beatae delectus, dolores dolorum enim est et iste nesciunt nisi perferendis quasi quia quisquam ratione tempore unde vitae?</div>
+                                            </span>
+                                        </label>
                                     </div>
                                     <div class="settings__section">
                                         <h3 class="settings__sub-heading title title--secondary">
