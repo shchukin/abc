@@ -264,48 +264,49 @@
 
 
 .display-alphabetically .consonants .letter {
+    position: absolute;
     margin: 0;
 }
 
-.display-alphabetically .letter--kho-khai     { position: absolute; left: 170px; top: 0; }
-.display-alphabetically .letter--cho-ching    { position: absolute; left: 170px; top: 156px; }
-.display-alphabetically .letter--so-sia       { position: absolute; left: 340px; top: 1092px; }
-.display-alphabetically .letter--so-risi      { position: absolute; left: 170px; top: 1092px; }
-.display-alphabetically .letter--so-sala      { position: absolute; left: 0; top: 1092px; }
-.display-alphabetically .letter--tho-thung    { position: absolute; left: 680px; top: 468px; }
-.display-alphabetically .letter--tho-than     { position: absolute; left: 510px; top: 312px; }
-.display-alphabetically .letter--pho-phing    { position: absolute; left: 0; top: 780px; }
-.display-alphabetically .letter--fo-fa        { position: absolute; left: 170px; top: 780px; }
-.display-alphabetically .letter--ho-hip       { position: absolute; left: 510px; top: 1092px; }
-.display-alphabetically .letter--ko-kai       { position: absolute; left: 0; top: 0; }
-.display-alphabetically .letter--jo-jan       { position: absolute; left: 0; top: 156px; }
-.display-alphabetically .letter--do-dek       { position: absolute; left: 340px; top: 468px; }
-.display-alphabetically .letter--do-chada     { position: absolute; left: 170px; top: 312px; }
-.display-alphabetically .letter--to-tau       { position: absolute; left: 510px; top: 468px; }
-.display-alphabetically .letter--to-patak     { position: absolute; left: 340px; top: 312px; }
-.display-alphabetically .letter--bo-baimai    { position: absolute; left: 510px; top: 624px; }
-.display-alphabetically .letter--po-pla       { position: absolute; left: 680px; top: 624px; }
-.display-alphabetically .letter--o-ang        { position: absolute; left: 0; top: 1248px; }
-.display-alphabetically .letter--ro-ria       { position: absolute; left: 340px; top: 936px; }
-.display-alphabetically .letter--lo-ling      { position: absolute; left: 510px; top: 936px; }
-.display-alphabetically .letter--lo-jula      { position: absolute; left: 680px; top: 1092px; }
-.display-alphabetically .letter--mo-ma        { position: absolute; left: 0; top: 936px; }
-.display-alphabetically .letter--no-nu        { position: absolute; left: 340px; top: 624px; }
-.display-alphabetically .letter--no-nen       { position: absolute; left: 170px; top: 468px; }
-.display-alphabetically .letter--yo-yak       { position: absolute; left: 170px; top: 936px; }
-.display-alphabetically .letter--yo-ying      { position: absolute; left: 0; top: 312px; }
-.display-alphabetically .letter--ngo-ngu      { position: absolute; left: 680px; top: 0; }
-.display-alphabetically .letter--wo-weng      { position: absolute; left: 680px; top: 936px; }
-.display-alphabetically .letter--kho-khwai    { position: absolute; left: 340px; top: 0; }
-.display-alphabetically .letter--kho-rakhang  { position: absolute; left: 510px; top: 0; }
-.display-alphabetically .letter--cho-chang    { position: absolute; left: 340px; top: 156px; }
-.display-alphabetically .letter--cho-cho      { position: absolute; left: 680px; top: 156px; }
-.display-alphabetically .letter--so-so        { position: absolute; left: 510px; top: 156px; }
-.display-alphabetically .letter--tho-thahan   { position: absolute; left: 0; top: 624px; }
-.display-alphabetically .letter--tho-thong    { position: absolute; left: 170px; top: 624px; }
-.display-alphabetically .letter--tho-montho   { position: absolute; left: 680px; top: 312px; }
-.display-alphabetically .letter--tho-phuthau  { position: absolute; left: 0; top: 468px; }
-.display-alphabetically .letter--pho-phan     { position: absolute; left: 340px; top: 780px; }
-.display-alphabetically .letter--pho-samphau  { position: absolute; left: 680px; top: 780px; }
-.display-alphabetically .letter--fo-fan       { position: absolute; left: 510px; top: 780px; }
-.display-alphabetically .letter--ho-nokhu     { position: absolute; left: 170px; top: 1248px; }
+.display-alphabetically .letter--kho-khai     { left: 170px; top: 0; }
+.display-alphabetically .letter--cho-ching    { left: 170px; top: 156px; }
+.display-alphabetically .letter--so-sia       { left: 340px; top: 1092px; }
+.display-alphabetically .letter--so-risi      { left: 170px; top: 1092px; }
+.display-alphabetically .letter--so-sala      { left: 0; top: 1092px; }
+.display-alphabetically .letter--tho-thung    { left: 680px; top: 468px; }
+.display-alphabetically .letter--tho-than     { left: 510px; top: 312px; }
+.display-alphabetically .letter--pho-phing    { left: 0; top: 780px; }
+.display-alphabetically .letter--fo-fa        { left: 170px; top: 780px; }
+.display-alphabetically .letter--ho-hip       { left: 510px; top: 1092px; }
+.display-alphabetically .letter--ko-kai       { left: 0; top: 0; }
+.display-alphabetically .letter--jo-jan       { left: 0; top: 156px; }
+.display-alphabetically .letter--do-dek       { left: 340px; top: 468px; }
+.display-alphabetically .letter--do-chada     { left: 170px; top: 312px; }
+.display-alphabetically .letter--to-tau       { left: 510px; top: 468px; }
+.display-alphabetically .letter--to-patak     { left: 340px; top: 312px; }
+.display-alphabetically .letter--bo-baimai    { left: 510px; top: 624px; }
+.display-alphabetically .letter--po-pla       { left: 680px; top: 624px; }
+.display-alphabetically .letter--o-ang        { left: 0; top: 1248px; }
+.display-alphabetically .letter--ro-ria       { left: 340px; top: 936px; }
+.display-alphabetically .letter--lo-ling      { left: 510px; top: 936px; }
+.display-alphabetically .letter--lo-jula      { left: 680px; top: 1092px; }
+.display-alphabetically .letter--mo-ma        { left: 0; top: 936px; }
+.display-alphabetically .letter--no-nu        { left: 340px; top: 624px; }
+.display-alphabetically .letter--no-nen       { left: 170px; top: 468px; }
+.display-alphabetically .letter--yo-yak       { left: 170px; top: 936px; }
+.display-alphabetically .letter--yo-ying      { left: 0; top: 312px; }
+.display-alphabetically .letter--ngo-ngu      { left: 680px; top: 0; }
+.display-alphabetically .letter--wo-weng      { left: 680px; top: 936px; }
+.display-alphabetically .letter--kho-khwai    { left: 340px; top: 0; }
+.display-alphabetically .letter--kho-rakhang  { left: 510px; top: 0; }
+.display-alphabetically .letter--cho-chang    { left: 340px; top: 156px; }
+.display-alphabetically .letter--cho-cho      { left: 680px; top: 156px; }
+.display-alphabetically .letter--so-so        { left: 510px; top: 156px; }
+.display-alphabetically .letter--tho-thahan   { left: 0; top: 624px; }
+.display-alphabetically .letter--tho-thong    { left: 170px; top: 624px; }
+.display-alphabetically .letter--tho-montho   { left: 680px; top: 312px; }
+.display-alphabetically .letter--tho-phuthau  { left: 0; top: 468px; }
+.display-alphabetically .letter--pho-phan     { left: 340px; top: 780px; }
+.display-alphabetically .letter--pho-samphau  { left: 680px; top: 780px; }
+.display-alphabetically .letter--fo-fan       { left: 510px; top: 780px; }
+.display-alphabetically .letter--ho-nokhu     { left: 170px; top: 1248px; }
