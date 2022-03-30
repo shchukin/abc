@@ -24,7 +24,11 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Тайский Алфавит</title>
-        <script>document.querySelector('html').setAttribute('class', localStorage.getItem('display'));</script>
+        <script>
+            if(localStorage.getItem('display')) {
+                document.querySelector('html').setAttribute('class', localStorage.getItem('display'));
+            }
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
 <!--        <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">-->
         <link rel="stylesheet" href="styles/style.css">

@@ -6,11 +6,15 @@
 
     /* 0. При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
 
-    var appState = localStorage.getItem('display').replace('display-', '');
+    var appState = localStorage.getItem('display');
+    if( appState ) {
+        appState.replace('display-', '');
 
-    $dispay.each(function () {
-        $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
-    });
+        $dispay.each(function () {
+            $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
+        });
+    }
+
 
 
     /* 1. Жонглирование классами видимости в зависимости от чекнутости чекбоксов */
