@@ -36,12 +36,6 @@
 
     }
 
-.checklist--headings {
-
-}
-    .checklist--headings > .checklist__item > .choice {
-        font-weight: bold;
-    }
 
 
 .checklist--letters {
