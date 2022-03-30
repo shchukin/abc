@@ -28,7 +28,13 @@
     }
         .choice__heading {
             display: block;
-            margin-bottom: 6px;
+        }
+
+        .choice__description {
+            margin-top: 4px;
+            display: block;
+            font-size: 13px;
+            line-height: 18px;
         }
 
 
