@@ -4,7 +4,7 @@
     var $dispay = $('.display'); /* Все чекбоксы страницы */
 
 
-    /* При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
+    /* 0. При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
 
     var appState = localStorage.getItem('display').replace('display-', '');
 
@@ -15,26 +15,25 @@
 
     /* 1. Жонглирование классами видимости в зависимости от чекнутости чекбоксов */
 
-    function saveDisplay() {
-        localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
-    }
-
     function display($this) {
+        /* Отображаем в <html> */
         if ($this.is(':checked') || $this.is(':indeterminate')) {
             $html.addClass('display-' + $this.val());
         } else {
             $html.removeClass('display-' + $this.val());
         }
-        saveDisplay();
+
+        /* Сохраняем в Local Storage */
+        localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
     }
 
+    /* Клик по чекбоксу */
     $dispay.on('change', function () {
         display($(this));
     });
 
 
-    /* Перепроверяем все чекбоксы и актуализируем соответствующие классы.
-     * Это нужно делать при document.ready и при работе с куки.
+    /* Функция для перепроверки всех чекбоксов и актуализации соответствующих классов.
      * Ещё это нужно делать когда чекбоксы чекаются жаба-скриптом,
      * поскольку .prop() не вызывает событие onChange.
      */
@@ -64,7 +63,7 @@
         });
 
         /* Поскольку .prop не вызывает onChange надо отвлечься и перепроверить все чекбоксы и актуализировать классы */
-        displayAll()
+        displayAll();
 
         /* возвращаемся к алгоритму */
         function checkSiblings($checklistItem) {
@@ -85,7 +84,7 @@
                 });
 
                 /* Поскольку .prop не вызывает onChange надо отвлечься и перепроверить все чекбоксы и актуализировать классы */
-                displayAll()
+                displayAll();
 
                 /* возвращаемся к алгоритму */
                 if ( parent.children().children('.choice__widget').length ) {
@@ -98,7 +97,7 @@
                 parent.children('.choice').children('.choice__widget').prop("indeterminate", (parent.find('.choice__widget:checked').length > 0));
 
                 /* Поскольку .prop не вызывает onChange надо отвлечься и перепроверить все чекбоксы и актуализировать классы */
-                displayAll()
+                displayAll();
 
                 /* возвращаемся к алгоритму */
                 if ( parent.children().children('.choice__widget').length ) {
@@ -113,7 +112,7 @@
                 });
 
                 /* Поскольку .prop не вызывает onChange надо отвлечься и перепроверить все чекбоксы и актуализировать классы */
-                displayAll()
+                displayAll();
 
             }
 
