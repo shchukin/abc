@@ -1,6 +1,10 @@
 (function ($) {
 
-    var $dispay = $('.display');
+    var $html = $('html');
+    var $dispay = $('.display'); /* Все чекбоксы страницы */
+
+
+    /* При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
 
     var appState = localStorage.getItem('display').replace('display-', '');
 
@@ -12,14 +16,14 @@
     /* 1. Жонглирование классами видимости в зависимости от чекнутости чекбоксов */
 
     function saveDisplay() {
-        localStorage.setItem('display', $('html').attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
+        localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
     }
 
     function display($this) {
         if ($this.is(':checked') || $this.is(':indeterminate')) {
-            $('html').addClass('display-' + $this.val());
+            $html.addClass('display-' + $this.val());
         } else {
-            $('html').removeClass('display-' + $this.val());
+            $html.removeClass('display-' + $this.val());
         }
         saveDisplay();
     }
