@@ -21,6 +21,6 @@
         }
 
 /* всё, что не первая строка */
-html:not(.display-type-secondary) .vlisting__item:nth-child(n+2) {
+html:not(.display-sanskrit) .vlisting__item:nth-child(n+2) {
     display: none;
 }

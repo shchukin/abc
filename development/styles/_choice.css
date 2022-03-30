@@ -26,3 +26,7 @@
         font-size: 15px;
         line-height: 20px;
     }
+        .choice__heading {
+            display: block;
+            margin-bottom: 6px;
+        }
