@@ -7,7 +7,7 @@
         margin-bottom: var(--heading-margin);
     }
 
-    html:not(.display-captions-headings) .vowels__heading {
+    html:not(.display-headings) .vowels__heading {
         display: none;
     }
 
@@ -19,7 +19,7 @@
         margin-right: -10px;
     }
 
-    html:not(.display-captions-subheadings) .vowels__table-head {
+    html:not(.display-headings) .vowels__table-head {
         display: none;
     }
         .vowels__hgroup {
@@ -60,7 +60,7 @@
                 padding-bottom: 14px;
             }
 
-            html:not(.display-captions-subheadings) .vowels__sub-heading {
+            html:not(.display-headings) .vowels__sub-heading {
                 display: none;
             }
 

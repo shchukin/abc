@@ -28,7 +28,7 @@
                 margin-bottom: var(--heading-margin);
             }
 
-            html:not(.display-captions-headings) .marks__sub-heading {
+            html:not(.display-headings) .marks__sub-heading {
                 display: none;
             }
 
