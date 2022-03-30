@@ -24,6 +24,10 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Тайский Алфавит</title>
+        <script>
+            /* Как можно быстрее считываем состояние приложения, с чекбоксами будем разбираться потом */
+            document.querySelector('html').setAttribute('class', localStorage.getItem('display'));
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
 <!--        <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">-->
         <link rel="stylesheet" href="styles/style.css">
@@ -1567,7 +1571,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- Scripts -->
         <script src="vendors/jquery/jquery-3.2.1.min.js"></script>

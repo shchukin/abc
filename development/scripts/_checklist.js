@@ -1,15 +1,30 @@
 (function ($) {
 
+    var $dispay = $('.display');
+
+    var appState = localStorage.getItem('display').replace('display-', '');
+
+    $dispay.each(function () {
+        $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
+    });
+
+
     /* 1. Жонглирование классами видимости в зависимости от чекнутости чекбоксов */
+
+    function saveDisplay() {
+        localStorage.setItem('display', $('html').attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
+    }
+
     function display($this) {
         if ($this.is(':checked') || $this.is(':indeterminate')) {
             $('html').addClass('display-' + $this.val());
         } else {
             $('html').removeClass('display-' + $this.val());
         }
+        saveDisplay();
     }
 
-    $('.display').on('change', function () {
+    $dispay.on('change', function () {
         display($(this));
     });
 
@@ -20,7 +35,7 @@
      * поскольку .prop() не вызывает событие onChange.
      */
     function displayAll() {
-        $('.display').each(function () {
+        $dispay.each(function () {
             display($(this));
         });
     }
