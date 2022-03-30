@@ -48,5 +48,5 @@
     width: 100%;
 }
     .checklist--letters > .checklist__item {
-        width: 33.3334%;
+        padding-right: 40px;
     }
