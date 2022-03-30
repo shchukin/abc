@@ -12,7 +12,8 @@
             width: 540px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
         }
             .settings__heading {
-
+                margin-top: 0;
+                margin-bottom: 20px;
             }
 
             @media (max-device-width: 599px) {
@@ -30,15 +31,9 @@
                     border-top: 1px solid var(--color-separator);
                     padding-top: 20px;
                 }
-
-                .settings__section:first-child {
-                    margin-top: 0;
-                    border-top: none;
-                    padding-top: 0;
-                }
                     .settings__sub-heading {
                         margin-top: 0;
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                     }
 
 
@@ -104,7 +99,7 @@
         }
             .settings__body {
                 width: 620px;
-                padding: 40px 40px 60px;
+                padding: 30px 40px 60px;
             }
                 .settings__heading {
 
