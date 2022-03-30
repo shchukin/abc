@@ -6,7 +6,7 @@
     }
 
     .settings__panel {
-
+        will-change: transform, opacity;
     }
         .settings__body {
             width: 540px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
@@ -84,6 +84,7 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
+                will-change: transform;
             }
 
         .settings__panel {
@@ -141,13 +142,11 @@
         }
             .settings-expanded .settings__handler::before {
                 animation: settings-cogwheel 0.4s ease forwards;
-                will-change: transform;
             }
 
         .settings-expanded .settings__panel {
             display: block;
             animation: settings-panel 0.4s var(--easeOutCirc) forwards;
-            will-change: transform, opacity;
         }
 
     /* Чуть увеличиваем отступы вокруг панели для больших мониторов */
