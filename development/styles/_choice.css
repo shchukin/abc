@@ -30,3 +30,11 @@
             display: block;
             margin-bottom: 6px;
         }
+
+
+.choice--as-heading {
+
+}
+    .choice--as-heading .choice__label {
+        font-weight: bold;
+    }
