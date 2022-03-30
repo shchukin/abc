@@ -33,7 +33,7 @@
     flex-direction: row;
 }
     .checklist--horizontal > .checklist__item .choice__label {
-        padding-right: 30px;
+
     }
 
 .checklist--headings {
@@ -44,3 +44,9 @@
     }
 
 
+.checklist--letters {
+    width: 100%;
+}
+    .checklist--letters > .checklist__item {
+        width: 33.3334%;
+    }

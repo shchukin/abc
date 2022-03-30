@@ -21,6 +21,7 @@
              display-captions-comments
              display-by-class
              display-type-secondary
+             settings-expanded
       "
 >
     <head>
@@ -302,11 +303,25 @@
                             <section class="vowels__section vowels__section--short-sound">
                                 <h3 class="vowels__sub-heading title title--secondary">
                                     Краткий звук
+                                    <span class="explain bubble-context">
+                                        <button class="explain__icon bubble-handler" type="button">
+                                            Подсказка:
+                                        </button>
+                                        <span class="explain__popover bubble">
+                                            <span class="bubble__body">
+                                                Это по прежнему долгие буквы,<br>
+                                                и правила чтения по правой колонке.<br>
+                                                Но звук краткий как если бы буква<br>
+                                                была в левой колонке.<br>
+                                                <br>
+                                                Наблюдение: встречаются только<br>
+                                                в открытых слогах. Всегда завершают<br>
+                                                слог. Другими согласной после быть<br> не может.
+                                            </span>
+                                            <i class="bubble__angle"></i>
+                                        </span>
+                                    </span>
                                 </h3>
-                                <div class="vowels__comment wysiwyg wysiwyg--smaller">
-                                    <p>Это по прежнему долгие буквы, и правила чтения по правой колонке. Но звук краткий как если бы буква была в левой колонке.</p>
-                                    <p>Наблюдение: встречаются только в открытых слогах. Всегда завершают слог. Другими согласной после быть не может.</p>
-                                </div>
                                 <div class="vowels__list listing">
                                     <div class="listing__item letter letter--not-available" role="presentation">
                                         N/A
@@ -348,14 +363,6 @@
                                 <h3 class="vowels__sub-heading title title--secondary">
                                     Дифтонги
                                 </h3>
-                                <div class="vowels__comment wysiwyg wysiwyg--smaller">
-                                    <p>
-                                        Сливаются два гласных звука. При произношении один плавно переходит в другой.
-                                    </p>
-                                    <p>
-                                        На правила чтения это никак не влияет. Воспринимать и изучать дифтонги можно как обычные гласные.
-                                    </p>
-                                </div>
                                 <div class="vowels__list listing">
                                     <div class="listing__item letter">
                                         <b class="letter__title vowel-short">เ<span class="placeholder">◌</span>ียะ</b>
@@ -455,10 +462,18 @@
                             <section class="vowels__section vowels__section--quasi">
                                 <h3 class="vowels__sub-heading title title--secondary">
                                     Квазибуквы
+                                    <span class="explain bubble-context">
+                                        <button class="explain__icon bubble-handler" type="button">
+                                            Подсказка:
+                                        </button>
+                                        <span class="explain__popover bubble">
+                                            <span class="bubble__body">
+                                                По-сути обозначают<br> сразу целый слог.
+                                            </span>
+                                            <i class="bubble__angle"></i>
+                                        </span>
+                                    </span>
                                 </h3>
-                                <div class="vowels__comment wysiwyg wysiwyg--smaller">
-                                    <p>Так называемые «квазибуквы». По-сути обозначают сразу целый слог.</p>
-                                </div>
                                 <div class="vowels__list listing">
                                     <div class="listing__item letter">
                                         <b class="letter__title vowel-short">
@@ -1359,7 +1374,7 @@
                         </button>
                         <div class="settings__panel">
                             <div class="settings__body">
-                                <h2 class="settings__heading title">
+                                <h2 class="settings__heading visuallyhidden">
                                     Настройки
                                 </h2>
                                 <button class="settings__close action action--close" type="button">
@@ -1367,7 +1382,44 @@
                                 </button>
                                 <div class="settings__list">
                                     <div class="settings__section">
+                                        <h3 class="settings__sub-heading title">
+                                            Оформление страницы
+                                        </h3>
                                         <ul class="checklist checklist--horizontal checklist--headings">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="captions" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">Все заголовоки</span>
+                                                </label>
+                                                <ul class="checklist">
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="captions-headings" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Заголовки</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="captions-subheadings" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Под-заголовки</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="captions-comments" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Подсказки к секциям</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="settings__section">
+                                        <ul class="checklist checklist--horizontal checklist--headings checklist--letters">
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
                                                     <input class="choice__widget display" type="checkbox" value="vowels" checked>
@@ -1477,40 +1529,6 @@
                                                             <input class="choice__widget display" type="checkbox" value="marks-other" checked>
                                                             <i class="choice__icon"></i>
                                                             <span class="choice__label">Разное</span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="settings__section">
-                                        <ul class="checklist checklist--horizontal checklist--headings">
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="checkbox" value="captions" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">Оформление страницы</span>
-                                                </label>
-                                                <ul class="checklist">
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="captions-headings" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label">Заголовки</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="captions-subheadings" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label">Под-заголовки</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="captions-comments" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label">Подсказки к секциям</span>
                                                         </label>
                                                     </li>
                                                 </ul>

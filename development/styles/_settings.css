@@ -9,11 +9,10 @@
 
     }
         .settings__body {
-
+            width: 540px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
         }
             .settings__heading {
-                /*margin-top: 0;*/
-                /*margin-bottom: 24px;*/
+
             }
 
             @media (max-device-width: 599px) {
@@ -24,22 +23,22 @@
             }
 
             .settings__list {
-                /*margin-top: 16px;*/
+
             }
                 .settings__section {
-                    /*margin-top: 20px;*/
-                    /*border-top: 1px solid var(--color-separator);*/
-                    /*padding-top: 20px;*/
+                    margin-top: 20px;
+                    border-top: 1px solid var(--color-separator);
+                    padding-top: 20px;
                 }
 
                 .settings__section:first-child {
-                    /*margin-top: 0;*/
-                    /*border-top: none;*/
-                    /*padding-top: 0;*/
+                    margin-top: 0;
+                    border-top: none;
+                    padding-top: 0;
                 }
                     .settings__sub-heading {
                         margin-top: 0;
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                     }
 
 
@@ -104,12 +103,11 @@
             display: none;
         }
             .settings__body {
-                width: 570px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
-                padding: 32px 32px 64px;
+                width: 620px;
+                padding: 40px 40px 60px;
             }
                 .settings__heading {
-                    margin-top: 0;
-                    margin-bottom: 24px;
+
                 }
 
                 .settings__close {
@@ -118,23 +116,7 @@
                     top: 16px;
                 }
 
-                .settings__list {
-                    margin-top: 16px;
-                }
-                    .settings__section {
-                        margin-top: 20px;
-                        border-top: 1px solid var(--color-separator);
-                        padding-top: 20px;
-                    }
 
-                    .settings__section:first-child {
-                        margin-top: 0;
-                        border-top: none;
-                        padding-top: 0;
-                    }
-                        .settings__sub-heading {
-
-                        }
 
     /* Если мало высоты, то позиционируем панельку поверх кнопкиы */
     @media (max-height: 600px) {

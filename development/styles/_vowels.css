@@ -64,15 +64,6 @@
                 display: none;
             }
 
-            .vowels__comment {
-                margin-top: -4px;
-                padding-bottom: 12px;
-            }
-
-            html:not(.display-captions-comments) .vowels__comment {
-                display: none;
-            }
-
             .vowels__list {
 
             }
