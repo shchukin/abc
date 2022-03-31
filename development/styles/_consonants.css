@@ -320,35 +320,35 @@
 
 
 /* 2 */
-html.display-alphabetically:not(.display-sanskrit) .consonants__body {
+.display-alphabetically:not(.display-sanskrit) .consonants__body {
     height: 916px;
 }
 
-html.display-alphabetically:not(.display-sanskrit) .letter--ko-kai       { left: 0; top: 0; }
-html.display-alphabetically:not(.display-sanskrit) .letter--kho-khai     { left: 170px; top: 0; }
-html.display-alphabetically:not(.display-sanskrit) .letter--kho-khwai    { left: 340px; top: 0; }
-html.display-alphabetically:not(.display-sanskrit) .letter--ngo-ngu      { left: 510px; top: 0; }
-html.display-alphabetically:not(.display-sanskrit) .letter--jo-jan       { left: 680px; top: 0; }
-html.display-alphabetically:not(.display-sanskrit) .letter--cho-ching    { left: 0; top: 156px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--cho-chang    { left: 170px; top: 156px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--so-so        { left: 340px; top: 156px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--do-dek       { left: 510px; top: 156px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--to-tau       { left: 680px; top: 156px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--tho-thung    { left: 0; top: 312px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--tho-thahan   { left: 170px; top: 312px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--no-nu        { left: 340px; top: 312px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--bo-baimai    { left: 510px; top: 312px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--po-pla       { left: 680px; top: 312px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--pho-phing    { left: 0; top: 468px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--fo-fa        { left: 170px; top: 468px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--pho-phan     { left: 340px; top: 468px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--fo-fan       { left: 510px; top: 468px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--mo-ma        { left: 680px; top: 468px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--yo-yak       { left: 0; top: 624px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--ro-ria       { left: 170px; top: 624px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--lo-ling      { left: 340px; top: 624px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--wo-weng      { left: 510px; top: 624px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--so-sia       { left: 680px; top: 624px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--ho-hip       { left: 0; top: 780px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--o-ang        { left: 170px; top: 780px; }
-html.display-alphabetically:not(.display-sanskrit) .letter--ho-nokhu     { left: 340px; top: 780px; }
+.display-alphabetically:not(.display-sanskrit) .letter--ko-kai       { left: 0; top: 0; }
+.display-alphabetically:not(.display-sanskrit) .letter--kho-khai     { left: 170px; top: 0; }
+.display-alphabetically:not(.display-sanskrit) .letter--kho-khwai    { left: 340px; top: 0; }
+.display-alphabetically:not(.display-sanskrit) .letter--ngo-ngu      { left: 510px; top: 0; }
+.display-alphabetically:not(.display-sanskrit) .letter--jo-jan       { left: 680px; top: 0; }
+.display-alphabetically:not(.display-sanskrit) .letter--cho-ching    { left: 0; top: 156px; }
+.display-alphabetically:not(.display-sanskrit) .letter--cho-chang    { left: 170px; top: 156px; }
+.display-alphabetically:not(.display-sanskrit) .letter--so-so        { left: 340px; top: 156px; }
+.display-alphabetically:not(.display-sanskrit) .letter--do-dek       { left: 510px; top: 156px; }
+.display-alphabetically:not(.display-sanskrit) .letter--to-tau       { left: 680px; top: 156px; }
+.display-alphabetically:not(.display-sanskrit) .letter--tho-thung    { left: 0; top: 312px; }
+.display-alphabetically:not(.display-sanskrit) .letter--tho-thahan   { left: 170px; top: 312px; }
+.display-alphabetically:not(.display-sanskrit) .letter--no-nu        { left: 340px; top: 312px; }
+.display-alphabetically:not(.display-sanskrit) .letter--bo-baimai    { left: 510px; top: 312px; }
+.display-alphabetically:not(.display-sanskrit) .letter--po-pla       { left: 680px; top: 312px; }
+.display-alphabetically:not(.display-sanskrit) .letter--pho-phing    { left: 0; top: 468px; }
+.display-alphabetically:not(.display-sanskrit) .letter--fo-fa        { left: 170px; top: 468px; }
+.display-alphabetically:not(.display-sanskrit) .letter--pho-phan     { left: 340px; top: 468px; }
+.display-alphabetically:not(.display-sanskrit) .letter--fo-fan       { left: 510px; top: 468px; }
+.display-alphabetically:not(.display-sanskrit) .letter--mo-ma        { left: 680px; top: 468px; }
+.display-alphabetically:not(.display-sanskrit) .letter--yo-yak       { left: 0; top: 624px; }
+.display-alphabetically:not(.display-sanskrit) .letter--ro-ria       { left: 170px; top: 624px; }
+.display-alphabetically:not(.display-sanskrit) .letter--lo-ling      { left: 340px; top: 624px; }
+.display-alphabetically:not(.display-sanskrit) .letter--wo-weng      { left: 510px; top: 624px; }
+.display-alphabetically:not(.display-sanskrit) .letter--so-sia       { left: 680px; top: 624px; }
+.display-alphabetically:not(.display-sanskrit) .letter--ho-hip       { left: 0; top: 780px; }
+.display-alphabetically:not(.display-sanskrit) .letter--o-ang        { left: 170px; top: 780px; }
+.display-alphabetically:not(.display-sanskrit) .letter--ho-nokhu     { left: 340px; top: 780px; }
