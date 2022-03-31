@@ -12,6 +12,7 @@
     width: 100%;
 }
     .choice__widget {
+        flex-shrink: 0;
         margin-top: 4px;
         margin-right: 10px;
         cursor: inherit;
