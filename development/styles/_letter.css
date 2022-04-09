@@ -56,6 +56,24 @@
         margin-top: 0;
     }
 
+    .letter__end-sound {
+        position: absolute;
+        right: 12px;
+        top: 62px;
+        display: block;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: var(--font-faded);
+        white-space: nowrap; /* чтобы подсказка внутри не улетала на новую строку */
+    }
+        .letter__end-sound .not-available {
+            margin-right: -2px;
+        }
+        .letter__end-sound .explain {
+            margin: -11px -16px -13px -12px;
+        }
+
 
     .letter__name {
         position: absolute;
