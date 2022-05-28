@@ -12,6 +12,10 @@
         margin-bottom: var(--heading-margin);
     }
 
+    html:not(.display-headings) .consonants__heading {
+        display: none;
+    }
+
     .consonants__columns {
         display: none;
     }
