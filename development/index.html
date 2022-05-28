@@ -2,6 +2,7 @@
 <html lang="ru"
       class="display-vowels
              display-vowels-basic
+             display-vowels-complex
              display-vowels-short-sound
              display-vowels-diftongs
              display-vowels-quasi
@@ -137,6 +138,13 @@
                                         </div>
                                         <kbd class="letter__key">n</kbd>
                                     </div>
+                                </div>
+                            </section>
+                            <section class="vowels__section vowels__section--complex">
+                                <h3 class="vowels__sub-heading title title--secondary">
+                                    Составные
+                                </h3>
+                                <div class="vowels__list listing">
                                     <div class="listing__item letter">
                                         <b class="letter__title vowel-short">เ<span class="placeholder">◌</span>ะ</b>
                                         <i class="letter__sound">е</i>
@@ -326,7 +334,8 @@
                                                 <br>
                                                 Наблюдение: встречаются только<br>
                                                 в открытых слогах. Всегда завершают<br>
-                                                слог. Другими согласной после быть<br> не может.
+                                                слог. Другими словами согласной<br>
+                                                после быть не может.
                                             </span>
                                             <i class="bubble__angle"></i>
                                         </span>
@@ -1578,6 +1587,13 @@
                                                     </li>
                                                     <li class="checklist__item">
                                                         <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="vowels-complex" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Составные</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
                                                             <input class="choice__widget display" type="checkbox" value="vowels-short-sound" checked>
                                                             <i class="choice__icon"></i>
                                                             <span class="choice__label">Короткий звук</span>
@@ -1732,6 +1748,15 @@
         <script src="scripts/_bubble.js"></script>
         <script src="scripts/_checklist.js"></script>
         <script src="scripts/_settings.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFRFYC2DX0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CFRFYC2DX0');
+        </script>
 
     </body>
 </html>
