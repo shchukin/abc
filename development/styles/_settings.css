@@ -36,6 +36,12 @@
                         margin-bottom: 10px;
                     }
 
+                    .settings__sample {
+                        margin-top: 6px;
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
 
 /* device query */
 @media (min-device-width: 600px) {

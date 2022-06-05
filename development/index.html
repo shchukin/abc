@@ -19,6 +19,9 @@
              display-headings
              display-by-class
              display-sanskrit
+             display-language-russian
+             display-notation-russian
+             display-tones-by-marks
       "
 >
     <head>
@@ -1562,6 +1565,37 @@
                                     <span class="visuallyhidden">Закрыть</span>
                                 </button>
                                 <div class="settings__list">
+                                    <div class="settings__section">
+                                        <div class="label">
+                                            Запись тонов
+                                        </div>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-marks" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">Значками: ¯ ` ˆ ´ ˇ</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-digits">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">Числами: ⁰ ¹ ² ³ ⁴</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-letters">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">Буквами: <sup>M</sup> <sup>L</sup> <sup>F</sup> <sup>H</sup> <sup>R</sup></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="settings__sample">
+                                            Пример: <span class="script">кхон`кэ:`тɔ:нгˆсы:´ма:ˇ</span>
+                                        </div>
+                                    </div>
                                     <div class="settings__section">
                                         <label class="choice">
                                             <input class="choice__widget display" type="checkbox" value="headings" checked>
