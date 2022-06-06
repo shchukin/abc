@@ -10,3 +10,9 @@
 .script::after {
     content: "/";
 }
+
+
+.script--no-slashes::before,
+.script--no-slashes::after {
+    display: none;
+}

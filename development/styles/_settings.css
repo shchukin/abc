@@ -43,6 +43,34 @@
                     }
 
 
+                    .settings__row {
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                        .settings__column {
+                            position: relative;
+                            margin-left: 40px;
+                            padding-left: 40px;
+                        }
+
+                        .settings__column:first-child {
+                            margin-left: 0;
+                            padding-left: 0;
+                        }
+                            .settings__column::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 10px;
+                                bottom: 10px;
+                                width: 1px;
+                                background-color: var(--color-separator);
+                            }
+
+                            .settings__column:first-child::before {
+                                display: none;
+                            }
+
 /* device query */
 @media (min-device-width: 600px) {
 

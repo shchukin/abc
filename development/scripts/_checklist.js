@@ -13,6 +13,9 @@
         $dispay.each(function () {
             $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
         });
+
+        /* Триггерим обновление строк в notation  */
+        changeTonesNotation();
     }
 
 
@@ -29,6 +32,11 @@
 
         /* Сохраняем в Local Storage */
         localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
+
+        /* Триггерим обновление строк в notation */
+        if( $this.attr('name') === 'tones' ) {
+            changeTonesNotation();
+        }
     }
 
     /* Клик по чекбоксу */
@@ -124,5 +132,87 @@
 
         checkSiblings($checklistItem);
     });
+
+
+
+    /* Notation -- опции, которые не подхватываются стилями, а которые надо обновлять скриптом внутри DOM */
+
+    function changeTonesNotation() {
+        $('[data-notation]').each(function() {
+
+            /* Берём оригинальный текст (нотация thai.su и тоны символами): */
+            var notation = $(this).data('notation');
+
+            /* И опция за опцией реплейсим в нём символы: */
+
+            if( $html.hasClass('display-letters-by-russian') ) {
+                notation = notation.split('kh').join('кх')
+                    .split('th').join('тх')
+                    .split('ph').join('пх')
+                    .split('ch').join('ч')
+                    .split('ng').join('нг')
+                    .split('j').join('ть')
+                    .split('k').join('к')
+                    .split('t').join('т')
+                    .split('p').join('п')
+                    .split('b').join('б')
+                    .split('w').join('в')
+                    .split('s').join('с')
+                    .split('f').join('ф')
+                    .split('h').join('х')
+                    .split('d').join('д')
+                    .split('r').join('р')
+                    .split('l').join('л')
+                    .split('m').join('м')
+                    .split('n').join('н')
+                    .split('y').join('й')
+                    .split('a').join('а')
+                    .split('i').join('и')
+                    .split('u').join('у')
+                    .split('ɯ').join('ы')
+                    .split('e').join('е')
+                    .split('ɛ').join('э')
+                    .split('o').join('о')
+                    .split('ɔ').join('ɔ')
+                    .split('ə').join('ə')
+            }
+
+            /* default for letters:
+            if( $html.hasClass('display-letters-by-thai.su') ) {
+                notation = notation;
+            }
+            */
+
+            if( $html.hasClass('display-tones-by-digits') ) {
+                notation = notation.split('¯').join('⁰')
+                        .split('`').join('¹')
+                        .split('ˆ').join('²')
+                        .split('´').join('³')
+                        .split('ˇ').join('⁴')
+            }
+
+            if( $html.hasClass('display-tones-by-letters') ) {
+
+                notation = notation.split('¯').join('<sup>M</sup>')
+                        .split('`').join('<sup>L</sup>')
+                        .split('ˆ').join('<sup>F</sup>')
+                        .split('´').join('<sup>H</sup>')
+                        .split('ˇ').join('<sup>R</sup>')
+            }
+
+            /* default for tones:
+
+            if( $html.hasClass('display-tones-by-marks') ) {
+                notation = notation;
+            }
+            */
+
+        /* Сформированную строку выводим в DOM */
+        $(this).html(notation);
+
+    });
+
+
+}
 
 })(jQuery);

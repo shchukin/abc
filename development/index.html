@@ -19,8 +19,8 @@
              display-headings
              display-by-class
              display-sanskrit
-             display-language-russian
-             display-notation-russian
+             display-language-english
+             display-letters-by-thai.su
              display-tones-by-marks
       "
 >
@@ -227,7 +227,7 @@
                                                         </button>
                                                         <span class="explain__popover bubble">
                                                             <span class="bubble__body">
-                                                                Пример: <span class="thai">นม</span> <span class="script">ном⁰</span> — молоко
+                                                                Пример: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — молоко
                                                             </span>
                                                             <i class="bubble__angle"></i>
                                                         </span>
@@ -276,7 +276,7 @@
                                                     </button>
                                                     <span class="explain__popover bubble">
                                                         <span class="bubble__body">
-                                                            Пример: <span class="thai">ละคร</span> <span class="script">ла³кхɔ:н⁰</span> — сериал
+                                                            Пример: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — сериал
                                                         </span>
                                                         <i class="bubble__angle"></i>
                                                     </span>
@@ -835,7 +835,7 @@
                                                     <i class="letter__sound">ть</i>
                                                     <i class="letter__end-sound">т</i>
                                                     <b class="letter__name">จาน</b>
-                                                    <i class="letter__script">тьа:н⁰</i>
+                                                    <i class="letter__script" data-notation="ja:n¯">ja:n¯</i>
                                                     <span class="letter__translation">тарелка</span>
                                                     <kbd class="letter__key">0</kbd>
                                                 </div>
@@ -1566,34 +1566,59 @@
                                 </button>
                                 <div class="settings__list">
                                     <div class="settings__section">
-                                        <div class="label">
-                                            Запись тонов
+                                        <div class="settings__row">
+                                            <div class="settings__column">
+                                                <div class="label">
+                                                    Запись Букв
+                                                </div>
+                                                <ul class="checklist">
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="radio" name="letters" value="letters-by-thai.su" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">thai.su: <span class="script script--no-slashes">k t p i u ɯ</span></span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="radio" name="letters" value="letters-by-russian">
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Russian: <span class="script script--no-slashes">к т п и у ы</span></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="settings__column">
+                                                <div class="label">
+                                                    Запись тонов
+                                                </div>
+                                                <ul class="checklist">
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="radio" name="tones" value="tones-by-marks" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Значками: <span class="script script--no-slashes">¯ ` ˆ ´ ˇ</span></span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="radio" name="tones" value="tones-by-digits">
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Числами: <span class="script script--no-slashes">⁰ ¹ ² ³ ⁴</span></span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="radio" name="tones" value="tones-by-letters">
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label">Буквами: <span class="script script--no-slashes"><sup>M</sup> <sup>L</sup> <sup>F</sup> <sup>H</sup> <sup>R</sup></span></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <ul class="checklist">
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-marks" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">Значками: ¯ ` ˆ ´ ˇ</span>
-                                                </label>
-                                            </li>
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-digits">
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">Числами: ⁰ ¹ ² ³ ⁴</span>
-                                                </label>
-                                            </li>
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-letters">
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">Буквами: <sup>M</sup> <sup>L</sup> <sup>F</sup> <sup>H</sup> <sup>R</sup></span>
-                                                </label>
-                                            </li>
-                                        </ul>
                                         <div class="settings__sample">
-                                            Пример: <span class="script">кхон`кэ:`тɔ:нгˆсы:´ма:ˇ</span>
+                                            Пример: <span class="script script--no-slashes" data-notation="khon¯kɛ:`tɔ:ngˆsɯ:´ma:ˇ">khon¯kɛ:`tɔ:ngˆsɯ:´ma:ˇ</span>
                                         </div>
                                     </div>
                                     <div class="settings__section">
