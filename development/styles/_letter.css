@@ -10,20 +10,6 @@
     text-decoration: none;
     color: inherit;
 }
-
-.letter--not-available {
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0;
-    font-size: 20px;
-    line-height: 20px;
-    background-color: #F3F3F3;
-    box-shadow: none;
-    color: #999999;
-}
-
     .letter__title {
         display: flex;
         align-items: flex-start;
@@ -149,4 +135,22 @@
         min-height: 33px;
         font-size: 11px;
         line-height: 11px;
+    }
+
+
+
+.letter--not-available {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #F3F3F3;
+    box-shadow: none;
+    color: #999999;
+}
+    .letter--not-available .explain {
+        margin: -10px -32px -10px -8px;
     }
