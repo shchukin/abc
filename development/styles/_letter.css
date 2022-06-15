@@ -60,8 +60,7 @@
             margin: -11px -16px -13px -12px;
         }
 
-    /*.letter__sound[data-audio]:hover {*/
-    .letter__sound:hover {
+    .letter__sound[data-audio]:hover {
         background-color: var(--hover-in-letter);
     }
 
@@ -85,8 +84,7 @@
         white-space: nowrap; /* чтобы подсказка внутри не улетала на новую строку */
     }
 
-    /*.letter__end-sound[data-audio]:hover {*/
-    .letter__end-sound:hover {
+    .letter__end-sound[data-audio]:hover {
         background-color: var(--hover-in-letter);
     }
         .letter__end-sound .not-available {
