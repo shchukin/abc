@@ -1,6 +1,7 @@
 .letter {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 150px;
     height: 136px;
     background-color: #FBFBFB;
@@ -9,8 +10,19 @@
     padding-top: 13px;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
 }
+
+@media (hover: hover) {
+    .letter:hover {
+        background-color: #F6F6F6;
+    }
+}
+
     .letter__title {
+        position: relative;
+        z-index: 10; /* higher than hover of .letter__sound */
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -25,18 +37,33 @@
         }
 
     .letter__sound {
-        margin-top: 7px;
+        align-self: center;
+        margin-top: 4px;
         position: relative;
+        min-width: 24px;
+        padding: 3px 8px 5px;
+        border-radius: 2px;
         display: block;
         font-style: normal;
         font-size: 13px;
         line-height: 16px;
         color: var(--font-faded);
         text-align: center;
+        white-space: nowrap;
     }
+
+    .letter__sound--has-hint {
+
+    }
+
         .letter__sound .explain {
-            margin: -11px -32px -13px -12px;
+            margin: -11px -16px -13px -12px;
         }
+
+    /*.letter__sound[data-audio]:hover {*/
+    .letter__sound:hover {
+        background-color: var(--hover-in-letter);
+    }
 
     .letter__sound + .letter__sound {
         margin-top: 0;
@@ -44,14 +71,23 @@
 
     .letter__end-sound {
         position: absolute;
-        right: 12px;
-        top: 62px;
+        right: 4px;
+        top: 59px;
         display: block;
+        padding: 3px 8px 5px;
+        min-width: 24px;
+        border-radius: 2px;
         font-style: normal;
         font-size: 13px;
         line-height: 16px;
         color: var(--font-faded);
+        text-align: center;
         white-space: nowrap; /* чтобы подсказка внутри не улетала на новую строку */
+    }
+
+    /*.letter__end-sound[data-audio]:hover {*/
+    .letter__end-sound:hover {
+        background-color: var(--hover-in-letter);
     }
         .letter__end-sound .not-available {
             margin-right: -2px;
@@ -61,27 +97,34 @@
         }
 
 
-    .letter__name {
-        position: absolute;
-        left: 10px;
-        bottom: 18px;
-        display: block;
-        font-family: var(--font-thai);
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 21px;
-    }
+        .letter__alias {
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+            padding: 5px 6px;
+            border-radius: 3px;
+            transition: background-color var(--transition-hover);
+        }
 
-    .letter__script {
-        position: absolute;
-        left: 10px;
-        bottom: 7px;
-        display: block;
-        font-style: normal;
-        font-size: 11px;
-        line-height: 11px;
-        color: var(--font-faded);
-    }
+        .letter__alias:hover {
+            background-color: var(--hover-in-letter);
+        }
+
+            .letter__name {
+                display: block;
+                font-family: var(--font-thai);
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 21px;
+            }
+
+            .letter__script {
+                display: block;
+                font-style: normal;
+                font-size: 11px;
+                line-height: 11px;
+                color: var(--font-faded);
+            }
 
     .letter__translation {
         position: absolute;
