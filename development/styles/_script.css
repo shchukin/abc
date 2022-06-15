@@ -16,3 +16,6 @@
 .script--no-slashes::after {
     display: none;
 }
+    .script sup {
+        font-size: 0.65em;
+    }
