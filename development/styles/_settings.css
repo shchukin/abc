@@ -79,6 +79,7 @@
     }
         .settings__handler {
             position: fixed;
+            z-index: 100;
             right: 30px;
             bottom: 30px;
             display: inline-block;
@@ -88,7 +89,7 @@
             padding: 0;
             border: none;
             background-color: #F3F3F3;
-            box-shadow: 0 1px 2px 1px #eaeaea;
+            box-shadow: 0 1px 2px 1px #EAEAEA;
             border-radius: 50%;
             text-indent: 200%;
             white-space: nowrap;
@@ -123,6 +124,7 @@
 
         .settings__panel {
             position: fixed;
+            z-index: 100;
             right: 30px;
             bottom: 120px;
             background-color: #FFFFFF;
