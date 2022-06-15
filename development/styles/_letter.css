@@ -96,35 +96,27 @@
             margin: -11px -16px -13px -12px;
         }
 
-
-        .letter__alias {
+        .letter__name {
             position: absolute;
-            left: 3px;
-            bottom: 3px;
-            padding: 5px 6px;
-            border-radius: 3px;
-            transition: background-color var(--transition-hover);
+            left: 10px;
+            bottom: 18px;
+            display: block;
+            font-family: var(--font-thai);
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 21px;
         }
 
-        .letter__alias:hover {
-            background-color: var(--hover-in-letter);
+        .letter__script {
+            position: absolute;
+            left: 10px;
+            bottom: 7px;
+            display: block;
+            font-style: normal;
+            font-size: 11px;
+            line-height: 11px;
+            color: var(--font-faded);
         }
-
-            .letter__name {
-                display: block;
-                font-family: var(--font-thai);
-                font-weight: normal;
-                font-size: 17px;
-                line-height: 21px;
-            }
-
-            .letter__script {
-                display: block;
-                font-style: normal;
-                font-size: 11px;
-                line-height: 11px;
-                color: var(--font-faded);
-            }
 
     .letter__translation {
         position: absolute;
