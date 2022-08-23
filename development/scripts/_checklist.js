@@ -203,8 +203,8 @@
                     .split('e').join('e')
                     .split('ɛ').join('<u>a</u>')
                     .split('o').join('о')
-                    .split('ɔ').join('<u>о</u>̲')
-                    .split('ə').join('<u>e</u>̲')
+                    .split('ɔ').join('<u>о</u>')
+                    .split('ə').join('<u>e</u>')
             }
 
             /* default for letters:
