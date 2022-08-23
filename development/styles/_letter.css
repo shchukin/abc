@@ -96,24 +96,35 @@
 
         .letter__name {
             position: absolute;
-            left: 10px;
-            bottom: 18px;
+            left: 5px;
+            bottom: 16px;
             display: block;
+            padding: 0 5px 2px;
+            border-radius: 2px;
             font-family: var(--font-thai);
             font-weight: normal;
             font-size: 17px;
             line-height: 21px;
         }
 
+        .letter__name[data-audio]:hover {
+            background-color: var(--hover-in-letter);
+        }
+
         .letter__script {
             position: absolute;
-            left: 10px;
-            bottom: 7px;
+            left: 5px;
+            bottom: 5px;
             display: block;
+            padding: 0 2px 2px 5px;
             font-style: normal;
             font-size: 11px;
             line-height: 11px;
             color: var(--font-faded);
+        }
+
+        .letter__script[data-audio]:hover {
+            background-color: var(--hover-in-letter);
         }
 
     .letter__translation {
