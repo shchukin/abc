@@ -15,7 +15,7 @@
 }
 
 @media (hover: hover) {
-    .letter:hover {
+    .letter[data-audio]:not(.letter--not-available):hover {
         background-color: #F6F6F6;
     }
 }
@@ -192,6 +192,7 @@
     background-color: #F3F3F3;
     box-shadow: none;
     color: #999999;
+    cursor: default;
 }
     .letter--not-available .explain {
         margin: -10px -32px -10px -8px;
