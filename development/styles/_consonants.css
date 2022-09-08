@@ -110,6 +110,11 @@
                 text-align: center;
                 background-color: #F3F3F3;
                 border-radius: 12px 12px 0 0;
+                cursor: pointer;
+            }
+
+            .display-by-sound .consonants__sound:hover {
+                background-color: #EBEBEB;
             }
 
             .display-by-sound .consonants__sound:first-child {

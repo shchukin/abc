@@ -50,6 +50,7 @@
         color: var(--font-faded);
         text-align: center;
         white-space: nowrap;
+        transition: background-color var(--transition-hover);
     }
 
     .letter__sound--has-hint {
@@ -102,6 +103,7 @@
             flex-direction: column;
             align-items: flex-start;
             border-radius: 2px;
+            transition: background-color var(--transition-hover);
         }
 
         .letter__word[data-audio]:hover {
