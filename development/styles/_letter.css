@@ -161,6 +161,7 @@
     }
         .letter__key .explain {
             position: absolute;
+            z-index: 20; /* higher than .letter__title */
             right: 100%;
             top: 0;
             margin-right: -9px;
