@@ -188,18 +188,23 @@
     ]);
 
 
+    let voiceover = new Audio();
 
     $('[data-audio]').on('click', function (event) {
-        let base64audio = playlist.get( $(this).data('audio') );
-        let audio = new Audio('data:audio/mpeg;base64,' + base64audio);
-        audio.play();
-        audio = ''; /* destroy? */
+
+        /* If clicked into the bubble over letter, don't play any sound: */
+        if ( $(event.target).closest('.bubble__body').length) {
+            return;
+        }
+
+        /* Play new letter */
+        voiceover.src = 'data:audio/mpeg;base64,' + playlist.get($(this).data('audio'));
+        voiceover.play();
 
         /* If there is a parent that also has an audio, don't let it be plaid together: */
         if ($(this).parents('[data-audio]').length) {
             event.stopPropagation();
         }
-
     });
 
 
