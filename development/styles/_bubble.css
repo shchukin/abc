@@ -5,6 +5,7 @@
     vertical-align: top;
     opacity: 0;
     visibility: hidden;
+    cursor: text;
 }
     .bubble__body {
         position: relative;
@@ -74,9 +75,9 @@
         opacity: 1;
         visibility: visible;
         margin-bottom: 9px; /* эффект выезжания */
-        transition: opacity 0.3s ease 0.3s,
-                    visibility 0.3s ease 0.3s,
-                    margin-bottom 0.3s ease 0.3s;
+        transition: opacity 0.3s ease 0.15s,
+                    visibility 0.3s ease 0.15s,
+                    margin-bottom 0.3s ease 0.15s;
     }
 }
 

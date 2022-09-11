@@ -250,14 +250,14 @@ gulp.task('scripts', function() {
 });
 
 
-// Audio: copy
-
-gulp.task('audio', function() {
-  return gulp.src('development/audio/**/*')
-      .pipe(plumber())
-      .pipe(gulp.dest('production/audio/'))
-  ;
-});
+// // Audio: copy (USING BASE64 in the js/_audio.js)
+//
+// gulp.task('audio', function() {
+//   return gulp.src('development/audio/**/*')
+//       .pipe(plumber())
+//       .pipe(gulp.dest('production/audio/'))
+//   ;
+// });
 
 
 // Symbols
@@ -333,7 +333,7 @@ gulp.task('lint', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'layouts', 'vendors', 'scripts', 'audio', 'symbols', 'styles', 'lint', fn);
+  run('clean', 'manifest', 'favicon', 'temp', 'content', 'images', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
 });
 
 
