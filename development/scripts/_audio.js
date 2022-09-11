@@ -193,16 +193,16 @@
     $('[data-audio]').on('click', function (event) {
 
         /* If clicked into the bubble over letter, don't play any sound: */
-        if ( $(event.target).closest('.bubble__body').length) {
+        if ( $(event.target).closest('.bubble__body').length ) {
             return;
         }
 
         /* Play new letter */
-        voiceover.src = 'data:audio/mpeg;base64,' + playlist.get($(this).data('audio'));
+        voiceover.src = 'data:audio/mpeg;base64,' + playlist.get( $(this).data('audio') );
         voiceover.play();
 
         /* If there is a parent that also has an audio, don't let it be plaid together: */
-        if ($(this).parents('[data-audio]').length) {
+        if ( $(this).parents('[data-audio]').length ) {
             event.stopPropagation();
         }
     });
