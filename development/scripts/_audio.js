@@ -192,8 +192,15 @@
 
     $('[data-audio]').on('click', function (event) {
 
-        /* If clicked into the bubble over letter, don't play any sound: */
+        /* If clicked into the active bubble positioned over letter, don't play any sound: */
         if ( $(event.target).closest('.bubble__body').length ) {
+            return;
+        }
+
+        /* Unsolvable conflict: when clicked into the bubble-handler.
+         * From one side we should play sound wherever click. On antoher hand we should only show bubble.
+         * Let's let disable sound always show bubble except the case of .letter__sound (because clickable area is small) */
+        if ( $(event.target).closest('.bubble-handler').length && !$(event.target).parents('.letter__sound').length ) {
             return;
         }
 
