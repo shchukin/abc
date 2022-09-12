@@ -1,5 +1,5 @@
 .information {
-
+    padding-top: calc(1.5 * var(--section-margin));
 }
     .information__handler {
         display: none;
@@ -13,7 +13,7 @@
         }
             .information__heading {
                 margin-top: 0;
-                margin-bottom: 20px;
+                margin-bottom: 32px;
             }
 
             @media (max-device-width: 599px) {
@@ -38,7 +38,7 @@
 
                     .information__sub-heading {
                         margin-top: 0;
-                        margin-bottom: 10px;
+                        margin-bottom: 16px;
                     }
 
 
