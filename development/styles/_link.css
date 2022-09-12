@@ -1,0 +1,43 @@
+.link {
+    display: inline;
+    vertical-align: baseline;
+    padding: 4px 0 0; /* 4px сверху это:
+                         а) немного увеличиваем область кликабельности
+                         б) решаем проблему когда в многострочной ссылке наведение пропадает когда курсор между строк */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #5454FF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    border-bottom-color: currentColor;
+}
+
+.link:active {
+    color: #491172;
+    border-bottom-color: currentColor;
+}
+
+
+
+
+.link--classic {
+    border-bottom-color: currentColor;
+}
+
+.link--classic:hover {
+    border-bottom-color: transparent;
+}
+
+.link--classic:active {
+    border-bottom-color: transparent;
+}
+
+
+

@@ -1,0 +1,19 @@
+.people {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+    .people__row {
+        margin-top: 6px;
+        padding-left: 4px;
+        font-size: 15px;
+        line-height: 22px;
+        color: #333333;
+    }
+
+    .people__row:first-child {
+        margin-top: 0;
+    }
+        .people__label {
+            font-weight: bold;
+        }

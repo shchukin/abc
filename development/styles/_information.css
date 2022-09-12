@@ -1,81 +1,58 @@
-.settings {
+.information {
 
 }
-    .settings__handler {
+    .information__handler {
         display: none;
     }
 
-    .settings__panel {
+    .information__panel {
         will-change: transform, opacity;
     }
-        .settings__body {
+        .information__body {
             width: 540px; /* скроллбар уровнем выше, так что здесь всегда фикс ширина */
         }
-            .settings__heading {
+            .information__heading {
                 margin-top: 0;
                 margin-bottom: 20px;
             }
 
             @media (max-device-width: 599px) {
 
-                .settings__close {
+                .information__close {
                     display: none !important;
                 }
             }
 
-            .settings__list {
+            .information__content {
 
             }
-                .settings__section {
-                    margin-top: 20px;
-                    border-top: 1px solid var(--color-separator);
-                    padding-top: 20px;
+                .information__section {
+                    margin-top: 30px;
                 }
-                    .settings__sample {
-                        margin-top: 6px;
-                        font-size: 15px;
-                        line-height: 20px;
+
+                .information__section:first-child {
+                    margin-top: 0;
+                    border-top: none;
+                    padding-top: 0;
+                }
+
+                    .information__sub-heading {
+                        margin-top: 0;
+                        margin-bottom: 10px;
                     }
 
 
-                    .settings__row {
-                        display: flex;
-                        align-items: flex-start;
-                    }
-                        .settings__column {
-                            position: relative;
-                            margin-left: 40px;
-                            padding-left: 40px;
-                        }
-
-                        .settings__column:first-child {
-                            margin-left: 0;
-                            padding-left: 0;
-                        }
-                            .settings__column::before {
-                                content: "";
-                                position: absolute;
-                                left: 0;
-                                top: 10px;
-                                bottom: 10px;
-                                width: 1px;
-                                background-color: var(--color-separator);
-                            }
-
-                            .settings__column:first-child::before {
-                                display: none;
-                            }
 
 /* device query */
 @media (min-device-width: 600px) {
 
-    .settings {
+    .information {
 
     }
-        .settings__handler {
+        .information__handler {
             position: fixed;
             z-index: 90;
-            right: 30px;
+            right: 110px;
             bottom: 30px;
             display: inline-block;
             vertical-align: top;
@@ -94,13 +71,13 @@
         }
 
         @media (hover: hover) {
-            .settings__handler:hover {
+            .information__handler:hover {
                 background-color: #EEE;
             }
         }
 
             /* cogwheel */
-            .settings__handler::before {
+            .information__handler::before {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -110,14 +87,14 @@
                 margin: auto;
                 width: 30px;
                 height: 30px;
-                background-image: url("../vectors/cogwheel.svg");
+                background-image: url("../vectors/info.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
                 will-change: transform;
             }
 
-        .settings__panel {
+        .information__panel {
             position: fixed;
             z-index: 100;
             right: 30px;
@@ -129,15 +106,15 @@
             max-height: calc(100vh - 150px);
             display: none;
         }
-            .settings__body {
+            .information__body {
                 width: 620px;
                 padding: 30px 40px 60px;
             }
-                .settings__heading {
+                .information__heading {
 
                 }
 
-                .settings__close {
+                .information__close {
                     position: absolute !important;
                     right: 16px;
                     top: 16px;
@@ -147,7 +124,7 @@
 
     /* Если мало высоты, то позиционируем панельку поверх кнопкиы */
     @media (max-height: 600px) {
-        .settings__panel {
+        .information__panel {
             bottom: 30px;
             max-height: calc(100vh - 60px);
         }
@@ -155,43 +132,49 @@
 
 
 
-    @keyframes settings-panel {
+    @keyframes information-panel {
         from { opacity: 0; transform: translateY(30px); }
         to   { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes settings-cogwheel {
-        from { transform: rotate(0) }
-        to   { transform: rotate(180deg); }
+    /* stylelint-disable */
+    @keyframes information-info {
+          0% { transform: scaleX(0); }
+         20% { transform: rotate(10deg); }
+         40% { transform: rotate(-10deg); }
+         60% { transform: rotate(7deg); }
+         80% { transform: rotate(-7deg); }
+        100% { transform: rotate(0); }
     }
+    /* stylelint-enable */
 
-    .settings-expanded {
+    .information-expanded {
 
     }
-        .settings-expanded .settings__handler {
+        .information-expanded .information__handler {
 
         }
-            .settings-expanded .settings__handler::before {
-                animation: settings-cogwheel 0.4s ease forwards;
+            .information-expanded .information__handler::before {
+                animation: information-info 0.4s ease forwards;
             }
 
-        .settings-expanded .settings__panel {
+        .information-expanded .information__panel {
             display: block;
-            animation: settings-panel 0.4s var(--easeOutCirc) forwards;
+            animation: information-panel 0.4s var(--easeOutCirc) forwards;
         }
 
     /* Чуть увеличиваем отступы вокруг панели для больших мониторов */
     @media (min-width: 1400px) {
 
-        .settings {
+        .information {
 
         }
-            .settings__handler {
-                right: 40px;
+            .information__handler {
+                right: 120px;
                 bottom: 40px;
             }
 
-            .settings__panel {
+            .information__panel {
                 right: 40px;
                 bottom: 140px;
                 max-height: calc(100vh - 180px);
@@ -199,7 +182,7 @@
 
             /* Если при этом ещё мало высоты, то позиционируем панельку поверх кнопкиы */
             @media (max-height: 700px) {
-                .settings__panel {
+                .information__panel {
                     bottom: 40px;
                     max-height: calc(100vh - 80px);
                 }

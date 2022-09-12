@@ -2117,6 +2117,90 @@
                             </div>
                         </div>
                     </section>
+                    <section class="information">
+                        <button class="information__handler" type="button">
+                            Показать информацию
+                        </button>
+                        <div class="information__panel">
+                            <div class="information__body">
+                                <h2 class="information__heading title">
+                                    Информация
+                                </h2>
+                                <button class="information__close action action--close" type="button">
+                                    <span class="visuallyhidden">Закрыть</span>
+                                </button>
+                                <div class="information__content">
+                                    <section class="information__section">
+                                        <h3 class="visuallyhidden">Описание буквы</h3>
+                                        <div class="letter-legend">
+                                            <div class="letter-legend__body">
+                                                <img class="letter-legend__screenshot"
+                                                     srcset="content/letter-hints@2x.png 2x"
+                                                     src="content/letter-hints.png"
+                                                     width="182"
+                                                     height="168"
+                                                     alt=""
+                                                >
+                                                <div class="letter-legend__content">
+                                                    <div class="letter-legend__line">
+                                                        <b class="letter-legend__index">1</b> — Тайская буква
+                                                    </div>
+                                                    <div class="letter-legend__line">
+                                                        <b class="letter-legend__index">2</b> — Клавиша на клавиатуре
+                                                    </div>
+                                                    <div class="letter-legend__line">
+                                                        <b class="letter-legend__index">3</b> — Звук
+                                                    </div>
+                                                    <div class="letter-legend__line">
+                                                        <b class="letter-legend__index">4</b> — Звук, если буква в конце слога
+                                                    </div>
+                                                    <div class="letter-legend__line">
+                                                        <b class="letter-legend__index">5</b> — Название буквы
+                                                    </div>
+                                                    <div class="letter-legend__line">
+                                                        <b class="letter-legend__index">6</b> — Перевод названия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="letter-legend__footer">
+                                                Все элементы интерфейса озвучены носителем языка. Клик по всей плитке читает букву целиком.
+                                                Дополнительно можно кликать по звукам и по тайским словам.
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="information__section">
+                                        <h3 class="information__sub-heading title title--smaller">Люди</h3>
+                                        <ul class="people">
+                                            <li class="people__row">
+                                                <strong class="people__label">Разработка:&nbsp;</strong> Щукин Антон (<a class="link" href="https://t.me/cypher" target="_blank">Телеграм</a>)<br>
+                                            </li>
+                                            <li class="people__row">
+                                                <strong class="people__label">Озвучено:&nbsp;</strong> Муай Маша (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Инстаграм</a>)<br>
+                                            </li>
+                                            <li class="people__row">
+                                                <strong class="people__label">Благодарности:&nbsp;</strong> Ангелина, Мария, Ольга
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <section class="information__section">
+                                        <h3 class="information__sub-heading title title--smaller">Ссылки</h3>
+                                        <ul class="people">
+                                            <li class="people__row">
+                                                <a class="link" href="https://thaisu.notion.site/thai-alphabet-com-21-22-ca61bc7742f8445988a82cbf6a6a7f5d" target="_blank">Планы по развитию</a> &nbsp;—&nbsp; Оставить комментарий в онлайн-документе.
+                                            </li>
+                                            <li class="people__row">
+                                                <a class="link" href="#" target="_blank">Чат в телеграмме</a> &nbsp;—&nbsp; Сообщить об ошибке, предложить идею.
+                                            </li>
+                                            <li class="people__row">
+                                                <a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.
+                                            </li>
+
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -2125,8 +2209,11 @@
         <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
         <script src="vendors/outline/outline.js"></script>
         <script src="scripts/_bubble.js"></script>
-        <script src="scripts/_checklist.js"></script>
         <script src="scripts/_settings.js"></script>
+        <script src="scripts/_checklist.js"></script>
+        <script src="scripts/_information.js"></script>
+
+        <!-- Always the last one -->
         <script src="scripts/_audio.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

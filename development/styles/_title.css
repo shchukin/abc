@@ -13,6 +13,15 @@
     }
 
 
+.title--smaller {
+    font-size: 24px;
+    line-height: 32px;
+}
+    .title--secondary .explain {
+        margin: -4px -6px -8px -8px;
+    }
+
+
 .title--column {
     font-size: 18px;
     line-height: 20px;
