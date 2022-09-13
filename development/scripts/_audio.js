@@ -200,7 +200,12 @@
         /* Unsolvable conflict: when clicked into the bubble-handler.
          * From one side we should play sound wherever click. On antoher hand we should only show bubble.
          * Let's let disable sound always show bubble except the case of .letter__sound (because clickable area is small) */
-        if ( $(event.target).closest('.bubble-handler').length && !$(event.target).parents('.letter__sound').length ) {
+        if ( $(event.target).closest('.bubble-handler').length && !$(event.target).parents('.letter__sound').length) {
+            return;
+        }
+
+        /* In continuation of condition above.  */
+        if ( $(event.target).closest('.bubble-handler').length && $(event.target).parents('.letter__sound').length && $(event.target).parents('.letter--o-ang').length) {
             return;
         }
 
