@@ -14,6 +14,7 @@
             .information__heading {
                 margin-top: 0;
                 margin-bottom: 32px;
+                margin-left: -2px;
             }
 
             @media (max-device-width: 599px) {
@@ -39,6 +40,12 @@
                     .information__sub-heading {
                         margin-top: 0;
                         margin-bottom: 16px;
+                        margin-left: -1px;
+                    }
+
+                    .information__summary {
+                        margin-top: 0;
+                        margin-bottom: 0;
                     }
 
 

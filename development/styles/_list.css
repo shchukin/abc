@@ -1,0 +1,15 @@
+.list {
+    padding-left: 20px;
+}
+    .list__item {
+        margin-top: 6px;
+        padding-left: 4px;
+        font-size: var(--body-font);
+        line-height: var(--body-line);
+        color: var(--body-color);
+    }
+
+    .list__item:first-child {
+        margin-top: 0;
+    }
+

@@ -1,0 +1,35 @@
+.bookmarks {
+
+}
+    .bookmarks__body {
+        display: flex;
+        align-items: flex-start;
+    }
+        .bookmarks__preview {
+            flex-shrink: 0;
+            margin-right: 35px;
+            vertical-align: top;
+            background-color: var(--image-fallback);
+        }
+
+        .bookmarks__content {
+            margin-top: -4px;
+        }
+            .bookmarks__intro {
+                font-size: var(--body-font);
+                line-height: var(--body-line);
+                color: var(--body-color);
+            }
+
+            .bookmarks__platforms {
+                margin-top: 16px;
+                margin-bottom: 0;
+            }
+
+    .bookmarks__footer {
+        margin-top: 19px;
+        font-size: var(--body-font);
+        line-height: var(--body-line);
+        color: var(--body-color);
+    }
+

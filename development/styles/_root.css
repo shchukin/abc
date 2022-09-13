@@ -25,5 +25,11 @@
 
     --hover-in-letter: #EBEBEB;
 
+    --body-font: 15px;
+    --body-line: 22px;
+    --body-color: #333333;
+
+    --image-fallback: #FBFBFB;
+
 }
 /* stylelint-enable declaration-colon-space-after */

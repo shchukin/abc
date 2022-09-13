@@ -17,9 +17,9 @@
         }
             .letter-legend__line {
                 margin-top: 8px;
-                font-size: 15px;
-                line-height: 22px;
-                color: #333333;
+                font-size: var(--body-font);
+                line-height: var(--body-line);
+                color: var(--body-color);
             }
 
             .letter-legend__line:first-child {
@@ -42,7 +42,7 @@
 
     .letter-legend__footer {
         margin-top: 20px;
-        font-size: 15px;
-        line-height: 22px;
-        color: #333333;
+        font-size: var(--body-font);
+        line-height: var(--body-line);
+        color: var(--body-color);
     }
