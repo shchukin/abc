@@ -113,14 +113,24 @@
             'english': 'Example: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — TV series',
             'russian': 'Пример: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — сериал',
         },
-
-
-
-        'consonants-heading': {
-            'english': 'Vowels',
-            'russian': 'Гласные',
+        'ae-sound-keyboard-hint': {
+            'english': ''
+                + 'Although the writing is identical to the two of <span class="thai">เ</span>,<br>'
+                + 'it is still a separate key on the keyboard: <span class="thai">แ</span>.<br>'
+                + '<br>'
+                + 'Despite the fact that visually the result looks<br>'
+                + 'the same, correct character should still be used,<br>'
+                + 'so that the typing is validly read by apps such as<br>'
+                + 'autocomplition, translation, search and so on.',
+            'russian': ''
+                + 'Несмотря на то, что запись идентична двум <span class="thai">เ</span>,<br>'
+                + 'на клавиатуре это отдельный символ <span class="thai">แ</span>.<br>'
+                + '<br>'
+                + 'Хотя внешне результат и выглядит одинаково,<br>'
+                + 'всё же следует использовать именно этот символ,<br>'
+                + 'чтобы букву правильно считывали приложения<br>'
+                + 'для перевода, автодополнение, поиск и так далее.'
         },
-
         'consonant-egg': {
             'english': 'egg',
             'russian': 'яйцо',
@@ -129,6 +139,15 @@
             'english': '«cymbals  —<br> musical instrument',
             'russian': '«кастаньеты» —<br> муз. инструмент',
         },
+
+
+
+        'hint-with-colon': {
+            'english': 'Hint:',
+            'russian': 'Подсказка:',
+        },
+
+
 
     }
 
@@ -267,6 +286,32 @@
 
 
 
+
+    function changeLanguage() {
+        $('[data-i18n]').each(function () {
+
+            /* Берём оригинальный текст (английский): */
+            var i18n = $(this).data('i18n');
+
+            var currentLanguage;
+
+            if ($html.hasClass('display-language-english')) {
+                currentLanguage = 'english';
+            } else if ($html.hasClass('display-language-russian')) {
+                currentLanguage = 'russian';
+            }
+
+            /* Сформированную строку выводим в DOM */
+            $(this).html(translations[i18n][currentLanguage]);
+
+        });
+
+        /* По-идее здесь же надо перезапустить смену нотации поскольку в переводах все нотации дефолтны. */
+        /* Но смена нотации и так запускается с каждым display() */
+        // changeTonesNotation();
+    }
+
+
     /* Notation -- опции, которые не подхватываются стилями, а которые надо обновлять скриптом внутри DOM */
 
     function changeTonesNotation() {
@@ -374,34 +419,11 @@
             $(this).html(notation);
 
         });
-    }
-
-
-
-
-
-    function changeLanguage() {
-        $('[data-i18n]').each(function () {
-
-            /* Берём оригинальный текст (английский): */
-            var i18n = $(this).data('i18n');
-
-            var currentLanguage;
-
-            if ($html.hasClass('display-language-english')) {
-                currentLanguage = 'english';
-            } else if ($html.hasClass('display-language-russian')) {
-                currentLanguage = 'russian';
-            }
-
-            /* Сформированную строку выводим в DOM */
-            $(this).html(translations[i18n][currentLanguage]);
-
-            /* Запускаем смену нотации так как в загруженном переводе все нотации дефолтны */
-            changeTonesNotation();
-        });
 
     }
+
+
+
 
 
 
