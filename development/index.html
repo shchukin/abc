@@ -27,7 +27,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Тайский Алфавит</title>
+        <title data-i18n="site-title">Thai Alphabet</title>
         <script>
             if(localStorage.getItem('display')) {
                 document.querySelector('html').setAttribute('class', localStorage.getItem('display'));
@@ -74,33 +74,32 @@
 
         <!--[if IE]>
             <div class="browserupgrade">
-                Вы используете <strong>устаревший</strong> браузер. Для корректной работы этого сайта и большинства других
-                Вам необходимо <a href="http://browsehappy.com/?locale=ru_RU">обновить ваш браузер</a>.
+                You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
             </div>
         <![endif]-->
 
         <div class="page">
-            <h1 class="visuallyhidden">Тайский Алфавит</h1>
+            <h1 class="visuallyhidden" data-i18n="site-title">Thai Alphabet</h1>
             <div class="alphabet">
                 <div class="alphabet__vowels">
                     <section class="vowels">
-                        <h2 class="vowels__heading title">
-                            Гласные
+                        <h2 class="vowels__heading title" data-i18n="vowels">
+                            Vowels
                         </h2>
                         <div class="vowels__table-head">
                             <div class="vowels__column-heading title title--column">
-                                Краткие
-                                <span class="heading-note">(Мёртвый слог)</span>
+                                <span data-i18n="short-vowels">Short</span>
+                                <span class="heading-note">(<span data-i18n="dead-syllable-lowercase">dead syllable</span>)</span>
                             </div>
                             <div class="vowels__column-heading title title--column">
-                                Долгие
-                                <span class="heading-note">(Живой слог)</span>
+                                <span data-i18n="long-vowels">Long</span>
+                                <span class="heading-note">(<span data-i18n="live-syllable-lowercase">live syllable</span>)</span>
                             </div>
                         </div>
                         <div class="vowels__body">
                             <section class="vowels__section vowels__section--basic">
-                                <h3 class="vowels__sub-heading visuallyhidden">
-                                    Базовые гласные
+                                <h3 class="vowels__sub-heading visuallyhidden" data-i18n="basic-vowels">
+                                    Basic Vowels
                                 </h3>
                                 <div class="vowels__list listing">
                                     <div class="listing__item letter letter--a-short" data-audio="sara-a-short">
@@ -113,8 +112,8 @@
                                             <span class="explanation__arrow">
                                                 ←
                                             </span>
-                                            <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                            <span class="explanation__description" data-i18n="in-closed-syllable">
+                                                in closed<br> syllable
                                             </span>
                                         </div>
                                         <kbd class="letter__key">t</kbd>
@@ -159,8 +158,8 @@
                                             <span class="explanation__arrow">
                                                 ←
                                             </span>
-                                            <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                            <span class="explanation__description" data-i18n="in-closed-syllable">
+                                                in closed<br> syllable
                                             </span>
                                         </div>
                                         <kbd class="letter__key">n</kbd>
@@ -182,8 +181,8 @@
                                             <span class="explanation__arrow">
                                                 ←
                                             </span>
-                                            <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                            <span class="explanation__description" data-i18n="in-closed-syllable">
+                                                in closed<br> syllable
                                             </span>
                                         </div>
                                         <kbd class="letter__key">g<span class="placeholder">◌</span>t</kbd>
@@ -203,8 +202,8 @@
                                             <span class="explanation__arrow">
                                                 ←
                                             </span>
-                                            <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                            <span class="explanation__description" data-i18n="in-closed-syllable">
+                                                in closed<br> syllable
                                             </span>
                                         </div>
                                         <kbd class="letter__key">c<span class="placeholder">◌</span>t</kbd>
@@ -244,7 +243,7 @@
                                                     ←
                                                 </span>
                                                 <span class="explanation__description">
-                                                    невидима<br> в закрытом слоге<br> оканчивающимся<br> не на <span class="thai">ร</span>.
+                                                    <span data-i18n="in-closed-syllable-not-ro-ria">invisible in a<br> closed syllable<br> ending with<br>anything except <span class="thai">ร</span></span>
                                                     <span class="explain bubble-context">
                                                         <button class="explain__icon bubble-handler" type="button">
                                                             Подсказка:
@@ -276,8 +275,8 @@
                                             <span class="explanation__arrow">
                                                 ←
                                             </span>
-                                            <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                            <span class="explanation__description" data-i18n="in-closed-syllable">
+                                                in closed<br> syllable
                                             </span>
                                         </div>
                                         <kbd class="letter__key">g<span class="placeholder">◌</span>kt</kbd>
@@ -293,14 +292,14 @@
                                                 ←
                                             </span>
                                             <span class="explanation__description" style="margin-right: -8px">
-                                                невидима<br> в закрытом слоге<br> оканчивающимся<br> на <span class="thai">ร</span>
+                                                <span data-i18n="in-closed-syllable-with-ro-ria">invisible in a<br> closed syllable<br> ending with <span class="thai">ร</span></span>
                                                 <span class="explain bubble-context">
                                                     <button class="explain__icon bubble-handler" type="button">
                                                         Подсказка:
                                                     </button>
                                                     <span class="explain__popover bubble">
-                                                        <span class="bubble__body">
-                                                            Пример: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — сериал
+                                                        <span class="bubble__body" data-i18n="tv-series-example">
+                                                            Example: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — TV series
                                                         </span>
                                                         <i class="bubble__angle"></i>
                                                     </span>
@@ -325,9 +324,9 @@
                                                 <span class="explanation__arrow">
                                                     ←
                                                 </span>
-                                                <span class="explanation__description">
-                                                    в закрытом<br> слоге
-                                                </span>
+                                                <span class="explanation__description" data-i18n="in-closed-syllable">
+                                                in closed<br> syllable
+                                            </span>
                                             </div>
                                             <div class="explanation">
                                                 <span class="explanation__term vowel-long">
@@ -336,8 +335,8 @@
                                                 <span class="explanation__arrow">
                                                     ←
                                                 </span>
-                                                <span class="explanation__description">
-                                                    в закрытом<br> оканчив-ся на <span class="thai">ย</span>
+                                                <span class="explanation__description" data-i18n="in-closed-syllable-with-yo-yak">
+                                                    in closed syllable<br> ending with <span class="thai">ย</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -556,7 +555,9 @@
                                                 ←
                                             </span>
                                             <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                                 <span data-i18n="in-closed-syllable">
+                                                    in closed<br> syllable
+                                                </span>
                                                 <span class="explain bubble-context">
                                                     <button class="explain__icon bubble-handler" type="button">
                                                         Подсказка:
@@ -614,7 +615,7 @@
                                                 ←
                                             </span>
                                             <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                                <span data-i18n="in-closed-syllable">in closed<br> syllable</span>
                                                 <span class="explain bubble-context">
                                                     <button class="explain__icon bubble-handler" type="button">
                                                         Подсказка:
@@ -758,7 +759,7 @@
                                                 ←
                                             </span>
                                             <span class="explanation__description">
-                                                в закрытом<br> слоге
+                                                <span data-i18n="in-closed-syllable">in closed<br> syllable</span>
                                                 <span class="explain bubble-context">
                                                     <button class="explain__icon bubble-handler" type="button">
                                                         Подсказка:
@@ -835,7 +836,7 @@
                             <div class="consonants__body">
                                 <section class="consonants__section consonants__section--high">
                                     <h3 class="consonants__sub-heading title">
-                                        Согласные высокого класса <span class="heading-note">(мёртвый слог)</span>
+                                        Согласные высокого класса <span class="heading-note">(<span data-i18n="dead-syllable-lowercase">dead syllable</span>)</span>
                                     </h3>
                                     <div class="consonants__list">
                                         <div class="vlisting">
@@ -1058,7 +1059,7 @@
                                 </section>
                                 <section class="consonants__section consonants__section--middle">
                                     <h3 class="consonants__sub-heading title">
-                                        Согласные среднего класса <span class="heading-note">(мёртвый слог)</span>
+                                        Согласные среднего класса <span class="heading-note">(<span data-i18n="dead-syllable-lowercase">dead syllable</span>)</span>
                                     </h3>
                                     <div class="consonants__list">
                                         <div class="vlisting">
@@ -1251,7 +1252,7 @@
                                         <section class="consonants__sub-class consonants__sub-class--sonorant">
                                             <div class="consonants__sub-head">
                                                 <h4 class="consonants__alt-heading title title--secondary">
-                                                    Сонорные <span class="heading-note">(живой слог)</span>
+                                                    Сонорные <span class="heading-note">(<span data-i18n="live-syllable-lowercase">live syllable</span>)</span>
                                                 </h4>
                                                 <span class="consonants__heading-hint explain bubble-context">
                                                     <button class="explain__icon bubble-handler" type="button">
@@ -1469,7 +1470,7 @@
                                         <section class="consonants__sub-class consonants__sub-class--dead">
                                             <div class="consonants__sub-head">
                                                 <h4 class="consonants__alt-heading title title--secondary">
-                                                    Глухие <span class="heading-note">(мёртвый слог)</span>
+                                                    Глухие <span class="heading-note">(<span data-i18n="dead-syllable-lowercase">dead syllable</span>)</span>
                                                 </h4>
                                             </div>
                                             <div class="consonants__alt-list">

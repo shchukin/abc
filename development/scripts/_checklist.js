@@ -1,16 +1,79 @@
 (function ($) {
 
     var translations = {
-        'english' : {
-            'consonant-egg': 'egg',
-            'consonant-cymbals': '«cymbals  —<br> musical instrument',
-            'milk-example': 'Example: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — milk',
+        'site-title': {
+            'english': 'Thai Alphabet',
+            'russian': 'Тайский Алфавит',
         },
-        'russian': {
-            'consonant-egg': 'яйцо',
-            'consonant-cymbals': '«кастаньеты» —<br> муз. инструмент',
-            'milk-example': 'Пример: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — молоко',
+        'vowels': {
+            'english': 'Vowels',
+            'russian': 'Гласные',
         },
+        'short-vowels': {
+            'english': 'Short',
+            'russian': 'Краткие',
+        },
+        'long-vowels': {
+            'english': 'Long',
+            'russian': 'Долгие',
+        },
+        'basic-vowels': {
+            'english': 'Basic Vowels',
+            'russian': 'Базовые гласные',
+        },
+
+
+
+        
+        'dead-syllable-lowercase': {
+            'english': 'dead syllable',
+            'russian': 'мёртвый слог',
+        },
+        'live-syllable-lowercase': {
+            'english': 'live syllable',
+            'russian': 'живой слог',
+        },
+        'in-closed-syllable': {
+            'english': 'in closed<br> syllable',
+            'russian': 'в закрытом<br> слоге',
+        },
+        'in-closed-syllable-with-yo-yak': {
+            'english': 'in closed syllable<br> ending with <span class="thai">ย</span>',
+            'russian': 'в закрытом<br> оканчив-ся на <span class="thai">ย</span>',
+        },
+        'in-closed-syllable-not-ro-ria': {
+            'english': 'invisible in a<br> closed syllable<br> ending with<br>anything except <span class="thai">ร</span>',
+            'russian': 'невидима<br> в закрытом слоге<br> оканчивающимся<br> не на <span class="thai">ร</span>',
+        },
+        'milk-example': {
+            'english': 'Example: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — milk',
+            'russian': 'Пример: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — молоко',
+        },
+        'in-closed-syllable-with-ro-ria': {
+            'english': 'invisible in a<br> closed syllable<br> ending with <span class="thai">ร</span>',
+            'russian': 'невидима<br> в закрытом слоге<br> оканчивающимся<br> не на <span class="thai">ร</span>',
+        },
+        'tv-series-example': {
+            'english': 'Example: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — TV series',
+            'russian': 'Пример: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — сериал',
+        },
+
+
+
+        'consonants-heading': {
+            'english': 'Vowels',
+            'russian': 'Гласные',
+        },
+
+        'consonant-egg': {
+            'english': 'egg',
+            'russian': 'яйцо',
+        },
+        'consonant-cymbals': {
+            'english': '«cymbals  —<br> musical instrument',
+            'russian': '«кастаньеты» —<br> муз. инструмент',
+        },
+
     }
 
     var $html = $('html');
@@ -276,7 +339,7 @@
             }
 
             /* Сформированную строку выводим в DOM */
-            $(this).html(translations[currentLanguage][i18n]);
+            $(this).html(translations[i18n][currentLanguage]);
 
             /* Запускаем смену нотации так как в загруженном переводе все нотации дефолтны */
             changeTonesNotation();
