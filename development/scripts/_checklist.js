@@ -18,13 +18,69 @@
             'russian': 'Долгие',
         },
         'basic-vowels': {
-            'english': 'Basic Vowels',
+            'english': 'Basic vowels',
             'russian': 'Базовые гласные',
+        },
+        'complex-vowels': {
+            'english': 'Complex vowels',
+            'russian': 'Составные',
+        },
+        'finals': {
+            'english': 'Finals',
+            'russian': 'Финали',
+        },
+        'diphthongs': {
+            'english': 'Diphthongs',
+            'russian': 'Дифтонги',
+        },
+        'quasi-letters': {
+            'english': 'Quasi-letters',
+            'russian': 'Квазибуквы',
+        },
+        'consonants': {
+            'english': 'Consonants',
+            'russian': 'Согласные',
+        },
+        'high-class-consonants': {
+            'english': 'High class consonants',
+            'russian': 'Согласные высокого класса',
+        },
+        'middle-class-consonants': {
+            'english': 'Middle class consonants',
+            'russian': 'Согласные среднего класса',
+        },
+        'low-class-consonants': {
+            'english': 'Low class consonants',
+            'russian': 'Согласные низкого класса',
+        },
+        'sonorant-consonants': {
+            'english': 'Sonorant',
+            'russian': 'Сонорные',
+        },
+        'voiceless-consonants': {
+            'english': 'Voiceless',
+            'russian': 'Глухие',
+        },
+        'marks': {
+            'english': 'Marks',
+            'russian': 'Значки',
+        },
+        'digits': {
+            'english': 'Digits',
+            'russian': 'Цифры',
+        },
+        'tones': {
+            'english': 'Tones',
+            'russian': 'Тоны',
+        },
+        'other': {
+            'english': 'Voiceless',
+            'russian': 'Разное',
         },
 
 
 
-        
+
         'dead-syllable-lowercase': {
             'english': 'dead syllable',
             'russian': 'мёртвый слог',
