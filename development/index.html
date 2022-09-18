@@ -250,8 +250,8 @@
                                                             Подсказка:
                                                         </button>
                                                         <span class="explain__popover bubble">
-                                                            <span class="bubble__body">
-                                                                Пример: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — молоко
+                                                            <span class="bubble__body" data-i18n="milk-example">
+                                                                Example: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — milk
                                                             </span>
                                                             <i class="bubble__angle"></i>
                                                         </span>
@@ -848,7 +848,7 @@
                                                         <b class="letter__name">ไข่</b>
                                                         <i class="letter__script" data-notation="khay`">khay`</i>
                                                     </div>
-                                                    <span class="letter__translation">яйцо</span>
+                                                    <span class="letter__translation" data-i18n="consonant-egg">egg</span>
                                                     <kbd class="letter__key">-</kbd>
                                                 </div>
                                             </div>
@@ -894,7 +894,7 @@
                                                         <b class="letter__name">ฉิ่ง</b>
                                                         <i class="letter__script" data-notation="ching`">ching`</i>
                                                     </div>
-                                                    <span class="letter__translation">«кастаньеты» —<br> муз. инструмент</span>
+                                                    <span class="letter__translation" data-i18n="consonant-cymbals">«кастаньеты» —<br> муз. инструмент</span>
                                                     <kbd class="letter__key">C</kbd>
                                                 </div>
                                             </div>
@@ -1903,6 +1903,27 @@
                                     <span class="visuallyhidden">Закрыть</span>
                                 </button>
                                 <div class="settings__list">
+                                    <div class="settings__section">
+                                        <div class="label">
+                                            Язык интерфейса
+                                        </div>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="language" value="language-english" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">English</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="language" value="language-russian">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label">Russian</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div class="settings__section">
                                         <div class="settings__row">
                                             <div class="settings__column">

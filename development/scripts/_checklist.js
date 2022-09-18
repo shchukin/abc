@@ -1,5 +1,18 @@
 (function ($) {
 
+    var translations = {
+        'english' : {
+            'consonant-egg': 'egg',
+            'consonant-cymbals': '«cymbals  —<br> musical instrument',
+            'milk-example': 'Example: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — milk',
+        },
+        'russian': {
+            'consonant-egg': 'яйцо',
+            'consonant-cymbals': '«кастаньеты» —<br> муз. инструмент',
+            'milk-example': 'Пример: <span class="thai">นม</span> <span class="script" data-notation="nom¯">nom¯</span> — молоко',
+        },
+    }
+
     var $html = $('html');
     var $dispay = $('.display'); /* Все чекбоксы страницы */
 
@@ -14,7 +27,8 @@
             $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
         });
 
-        /* Триггерим обновление строк в notation  */
+        /* Обновляем DOM: язык, нотация */
+        changeLanguage();
         changeTonesNotation();
     }
 
@@ -33,10 +47,9 @@
         /* Сохраняем в Local Storage */
         localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
 
-        /* Триггерим обновление строк в notation */
-        if( $this.attr('name') === 'tones' ) {
-            changeTonesNotation();
-        }
+        /* Обновляем DOM: язык, нотация */
+        if( $this.attr('name') === 'language' ) { changeLanguage(); }
+        if( $this.attr('name') === 'tones' )    { changeTonesNotation(); }
     }
 
     /* Клик по чекбоксу */
@@ -138,6 +151,7 @@
     /* Notation -- опции, которые не подхватываются стилями, а которые надо обновлять скриптом внутри DOM */
 
     function changeTonesNotation() {
+
         $('[data-notation]').each(function() {
 
             /* Берём оригинальный текст (нотация thai.su и тоны символами): */
@@ -237,12 +251,39 @@
             }
             */
 
-        /* Сформированную строку выводим в DOM */
-        $(this).html(notation);
+            /* Сформированную строку выводим в DOM */
+            $(this).html(notation);
 
-    });
+        });
+    }
 
 
-}
+
+
+
+    function changeLanguage() {
+        $('[data-i18n]').each(function () {
+
+            /* Берём оригинальный текст (английский): */
+            var i18n = $(this).data('i18n');
+
+            var currentLanguage;
+
+            if ($html.hasClass('display-language-english')) {
+                currentLanguage = 'english';
+            } else if ($html.hasClass('display-language-russian')) {
+                currentLanguage = 'russian';
+            }
+
+            /* Сформированную строку выводим в DOM */
+            $(this).html(translations[currentLanguage][i18n]);
+
+            /* Запускаем смену нотации так как в загруженном переводе все нотации дефолтны */
+            changeTonesNotation();
+        });
+
+    }
+
+
 
 })(jQuery);
