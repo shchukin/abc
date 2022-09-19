@@ -643,6 +643,42 @@
                 + '</p>'
             ,
         },
+        'wo-weng-as-vowel': {
+            'english': ''
+                + '<p>'
+                    + 'Similar glyph also used for the variation<br>'
+                    + 'of vowel diphthong <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัว</span> <span class="script" data-notation="u:a">u:a</span>. Specifically<br>'
+                    + 'its variant in closed syllable <span class="placeholder placeholder--text-alike">◌</span><span class="thai">ว</span><span class="placeholder placeholder--text-alike">◌</span>.'
+                + '</p>'
+                + '<p>'
+                    + 'See this diphthong in the vowels column.<br>'
+                    + 'Here is another case.'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'Таким же символом записывается одна из<br>'
+                    + 'вариаций гласного дифтонга <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัว</span> <span class="script" data-notation="u:a">u:a</span>,<br>'
+                    + 'а именно его форма в закрытом слоге <span class="placeholder placeholder--text-alike">◌</span><span class="thai">ว</span><span class="placeholder placeholder--text-alike">◌</span>.'
+                + '</p>'
+                + '<p>'
+                    + 'Этот дифтонг смотри в табличке гласных.<br>'
+                    + 'Здесь иной случай.'
+                + '</p>'
+            ,
+        },
+        'wo-weng-as-final': {
+            'english': ''
+                + 'Similar to english <span class="script">w</span>:<br>'
+                + 'Wow, Moscow!<br>'
+                + 'Example: <span class="thai">ข้าว</span> <span class="script" data-notation="kha:uˆ">kha:uˆ</span> — rice.'
+            ,
+            'russian': ''
+                + 'Аналогично английскому <span class="script">w</span>:<br>'
+                + 'Wow, Moscow!<br>'
+                + 'Пример: <span class="thai">ข้าว</span> <span class="script" data-notation="kha:uˆ">kha:uˆ</span> — рис.'
+            ,
+        },
     }
 
     var $html = $('html');
