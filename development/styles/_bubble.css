@@ -26,6 +26,18 @@
         text-align: left;
         text-indent: 0;
     }
+        .bubble__body p {
+            margin-top: 9px;
+            margin-bottom: 9px;
+        }
+
+        .bubble__body p:first-child {
+            margin-top: 0;
+        }
+
+        .bubble__body p:last-child {
+            margin-bottom: 0;
+        }
 
     .bubble__angle {
 

@@ -115,50 +115,68 @@
         },
         'ae-sound-keyboard-hint': {
             'english': ''
-                + 'Although the writing is identical to the two of <span class="thai">เ</span>,<br>'
-                + 'it is still a separate key on the keyboard: <span class="thai">แ</span>.<br>'
-                + '<br>'
-                + 'Despite the fact that visually the result looks<br>'
-                + 'the same, correct character should still be used,<br>'
-                + 'so that the typing is validly read by apps such as<br>'
-                + 'autocomplition, translation, search and so on.',
+                + '<p>'
+                    + 'Although the writing is identical to the two of <span class="thai">เ</span>,<br>'
+                    + 'it is still a separate key on the keyboard: <span class="thai">แ</span>.'
+                + '</p>'
+                + '<p>'
+                    + 'Despite the fact that visually the result looks<br>'
+                    + 'the same, correct character should still be used,<br>'
+                    + 'so that the typing is validly read by apps such as<br>'
+                    + 'autocomplition, translation, search and so on.'
+                + '</p>'
+            ,
             'russian': ''
-                + 'Несмотря на то, что запись идентична двум <span class="thai">เ</span>,<br>'
-                + 'на клавиатуре это отдельный символ <span class="thai">แ</span>.<br>'
-                + '<br>'
-                + 'Хотя внешне результат и выглядит одинаково,<br>'
-                + 'всё же следует использовать именно этот символ,<br>'
-                + 'чтобы букву правильно считывали приложения<br>'
-                + 'для перевода, автодополнение, поиск и так далее.'
+                + '<p>'
+                    + 'Несмотря на то, что запись идентична двум <span class="thai">เ</span>,<br>'
+                    + 'на клавиатуре это отдельный символ <span class="thai">แ</span>.'
+                + '</p>'
+                + '<p>'
+                    + 'Хотя внешне результат и выглядит одинаково,<br>'
+                    + 'всё же следует использовать именно этот символ,<br>'
+                    + 'чтобы букву правильно считывали приложения<br>'
+                    + 'для перевода, автодополнение, поиск и так далее.'
+                + '</p>'
+            ,
         },
         'finals-hint': {
             'english': ''
-                + 'It\'s still long letters,<br>'
-                + 'and the reading rules.<br>'
-                + 'Но звук краткий как если бы буква<br>'
-                + 'была в левой колонке.<br>'
-                + '<br>'
-                + 'Наблюдение: встречаются только<br>'
-                + 'в открытых слогах. Всегда завершают<br>'
-                + 'слог. Другими словами согласной<br>'
-                + 'после быть не может.',
-            'russian': '' +
-                + 'Это по прежнему долгие буквы,<br>'
-                + 'и правила чтения по правой колонке.<br>'
-                + 'Но звук краткий как если бы буква<br>'
-                + 'была в левой колонке.<br>'
-                + '<br>'
-                + 'Наблюдение: встречаются только<br>'
-                + 'в открытых слогах. Всегда завершают<br>'
-                + 'слог. Другими словами согласной<br>'
-                + 'после быть не может.',
+                + '<p>'
+                    + 'These are still long letters and,<br>'
+                    + 'the reading rules are based on<br>'
+                    + 'the right column. But the sound<br>'
+                    + 'is short as if they were in<br>'
+                    + 'the left column.'
+                + '</p>'
+                + '<p>'
+                    + 'These letter can only be found<br>'
+                    + 'in open syllables. They always<br>'
+                    + 'ends syllable. In other words,<br>'
+                    + 'there can\'t be a consonant<br>'
+                    + ' after.'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'Это по прежнему долгие буквы,<br>'
+                    + 'и правила чтения по правой колонке.<br>'
+                    + 'Но звук краткий как если бы буква<br>'
+                    + 'была в левой колонке.'
+                + '</p>'
+                + '<p>'
+                    + 'Наблюдение: встречаются только<br>'
+                    + 'в открытых слогах. Всегда завершают<br>'
+                    + 'слог. Другими словами согласной<br>'
+                    + 'после быть не может.'
+                + '</p>'
+            ,
         },
         'short-doesnt-exist': {
             'english': 'Short variant<br> does not exist',
             'russian': 'Краткий вариант<br> не существует',
         },
         'long-letter-short-sound': {
-            'english': 'The letter and reading rules are long.<br> The sound is short.',
+            'english': 'The letter is long and reading<br> rules are based on right column.<br> The sound is short.',
             'russian': 'Буква и правила чтения — долгие.<br> Звук — короткий.',
         },
         'called-may-malay': {
