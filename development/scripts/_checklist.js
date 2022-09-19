@@ -758,6 +758,37 @@
         'tone-mayjattawa': {
             'english': '<span data-notation="ˇ">ˇ</span> for <b class="consonant-middle">middle</b>',
             'russian': '<span data-notation="ˇ">ˇ</span> для <b class="consonant-middle">ср</b>'
+        },
+        'other-thanthakhat': {
+            'english': 'Silenced letter',
+            'russian': 'Нечитаемая буква'
+        },
+        'other-mayyamok': {
+            'english': 'Word repetition',
+            'russian': 'Повтор слова'
+        },
+        'other-payyannoy': {
+            'english': 'Abbreviation',
+            'russian': 'Сокращение'
+        },
+        'other-payyanyay': {
+            'english': 'etc.',
+            'russian': 'и т.д.'
+        },
+        'other-bat': {
+            'english': 'Baht',
+            'russian': 'Бат'
+        },
+        'bat-hint': {
+            'english': ''
+                + 'Currency in Thailand.<br>'
+                + 'Example: <span class="thai">250฿</span><br>'
+                + 'Currency code: <span class="black">THB</span>'
+            ,
+            'russian': ''
+                + 'Валюта в Таиланде.<br>'
+                + 'Пример: <span class="thai">250฿</span><br>'
+                + 'Код валюты: <span class="black">THB</span>'
         }
     }
 
