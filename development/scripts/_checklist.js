@@ -550,6 +550,99 @@
                 '— доктор. Здесь к <span class="thai">ม</span> применяются<br> правила чтения высокого класса.'
             ,
         },
+        'o-ang-as-mark': {
+            'english': ''
+                + '<p>'
+                    + '• It can also work as a glyph that moves the<br>'
+                    + 'following consonant into a middle class.<br>'
+                    + 'There are only four words like that:<br>'
+                    + '- <span class="thai">อยู่</span> <span class="script" data-notation="yu:`">yu:`</span> — to be somewher<br>'
+                    + '- <span class="thai">อยาก</span> <span class="script" data-notation="ya:k`">ya:k`</span> — to want<br>'
+                    + '- <span class="thai">อย่า</span> <span class="script" data-notation="ya:`">ya:`</span> — do not<br>'
+                    + '- <span class="thai">อย่าง</span> <span class="script" data-notation="ya:ng`">ya:ng`</span> — type, kind, variety; like, as<br>'
+                    + 'In this example the middle class reading<br> rules apply to the <span class="thai">ย</span>.'
+                + '</p>'
+                + '<p>'
+                    + '• There is also a vowel with the same spelling.<br>'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + '• Так же может выступать в роли значка<br>'
+                    + 'для перевода последующей согласной <br>'
+                    + 'в средний класс. Таких слов всего четыре:<br>'
+                    + '- <span class="thai">อยู่</span> <span class="script" data-notation="yu:`">yu:`</span> — быть где-то<br>'
+                    + '- <span class="thai">อยาก</span> <span class="script" data-notation="ya:k`">ya:k`</span> — хотеть<br>'
+                    + '- <span class="thai">อย่า</span> <span class="script" data-notation="ya:`">ya:`</span> — выражение запрета<br>'
+                    + '- <span class="thai">อย่าง</span> <span class="script" data-notation="ya:ng`">ya:ng`</span> — род, вид, сорт; образ,<br>'
+                    + 'подобие, образец.<br>'
+                    + 'Здесь к <span class="thai">ย</span> применяются правила чтения<br> среднего класса.'
+                + '</p>'
+                + '<p>'
+                    + '• Существует гласная буква с идентичной<br> записью.<br>'
+                + '</p>'
+            ,
+        },
+        'o-ang-as-placeholder': {
+            'english': ''
+                + '<p>'
+                    + 'Silent consonant. In Thai writing, vowels<br>'
+                    + 'cannot go alone without consonants, i.e.<br>'
+                    + 'cannot form a syllable on their own. But<br>'
+                    + 'a syllable can begin with a vowel sound.<br>'
+                    + 'In such cases <span class="thai">อ</span> is used, and the<br>'
+                    + ' corresponding vowel is attached to it.<br>'
+                    + 'Example: <span class="thai">อะไร</span> <span class="script" data-notation="a`ray¯">a`ray¯</span> — question “what”.'
+                + '</p>'
+                + '<p>'
+                    + 'For the same reason, when writing vowels<br>'
+                    + 'in the alphabet, the letter <span class="thai">อ</span> is often used<br>'
+                    + 'instead of the placeholder symbol <span class="placeholder placeholder--text-alike">◌</span>.'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'Беззвучная согласная. В тайском<br>'
+                    + 'письме гласные буквы не могут идти<br>'
+                    + 'без согласных, т.е. не могут сами<br>'
+                    + 'образовать слог. Но с гласного звука<br>'
+                    + 'слог начинаться может. В таких случаях<br>'
+                    + 'используется <span class="thai">อ</span>, и соответствующая<br>'
+                    + 'гласная привязывается к нему.<br>'
+                    + 'Пример: <span class="thai">อะไร</span> <span class="script" data-notation="a`ray¯">a`ray¯</span> — вопрос «какой?».'
+                + '</p>'
+                + '<p>'
+                    + 'По этой же причине, при записи гласных<br>'
+                    + 'в алфавите, букву <span class="thai">อ</span> зачастую используют<br>'
+                    + 'вместо символа плейсхолдера <span class="placeholder placeholder--text-alike">◌</span>.'
+                + '</p>'
+            ,
+        },
+        'o-ang-ending': {
+            'english': ''
+                + '<p>'
+                    + 'Does not occur at the end<br>'
+                    + 'of a syllable.'
+                + '</p>'
+                + '<p>'
+                    + 'As a vowel it can be at the<br>'
+                    + 'end of an open syllable. In<br>'
+                    + 'this case, see the vowel <span class="thai">อ</span>.'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'В конце закрытого<br>'
+                    + 'слога не встречается.'
+                + '</p>'
+                + '<p>'
+                    + 'Как гласная может<br>'
+                    + 'завершать открытый<br>'
+                    + 'слог. В таком случае<br>'
+                    + 'смотри гласную <span class="thai">อ</span>.'
+                + '</p>'
+            ,
+        },
     }
 
     var $html = $('html');
@@ -725,7 +818,8 @@
             /* И опция за опцией реплейсим в нём символы: */
 
             if( $html.hasClass('display-letters-by-russian') ) {
-                notation = notation.split('kh').join('кх')
+                notation = notation
+                    .split('kh').join('кх')
                     .split('th').join('тх')
                     .split('ph').join('пх')
                     .split('ch').join('ч')
@@ -755,7 +849,8 @@
                     .split('ɔ').join('ɔ')
                     .split('ə').join('ə')
             } else if( $html.hasClass('display-letters-by-pro-language') ) {
-                notation = notation.split('kh').join('кх')
+                notation = notation
+                    .split('kh').join('kh')
                     .split('th').join('th')
                     .split('ph').join('ph')
                     .split('ch').join('ch')
