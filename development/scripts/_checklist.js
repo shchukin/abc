@@ -85,6 +85,16 @@
             'english': 'live syllable',
             'russian': 'живой слог',
         },
+        'about-sonorant-consonants': {
+            'english': ''
+                + '<p>These letters give sonorous sounds. When pronouncing such sounds, the voice (tone) is greater than the noise. For example in English language it is L, R, M, N, Y, W sounds.</p>'
+                +'<p>This is an important for learning the rules of reading. If the sonorant consonant is at the end of a syllable, then a live syllable is formed. All other consonants of all classes at the end of a syllable form a dead syllable.</p>'
+            ,
+            'russian': ''
+                + '<p>Дают сонорные звуки — звуки без глухой пары (например Б-П). При произнесении таких звуков, голоса (тона) больше, чем шума. В русском языке — это звуки Р, Л, М, Н, Й, например.</p>'
+                + '<p>Это важный момент для изучения правил чтения. Если сонорная согласная стоит в конце слога, то образуется живой слог. Все остальные согласные всех классов в конце слога дают мертвый слог.</p>'
+            ,
+        },
         'hint-with-colon': {
             'english': 'Hint:',
             'russian': 'Подсказка:',
