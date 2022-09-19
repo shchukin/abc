@@ -175,6 +175,10 @@
             'english': 'Short variant<br> does not exist',
             'russian': 'Краткий вариант<br> не существует',
         },
+        'long-doesnt-exist': {
+            'english': 'Long variant<br> does not exist',
+            'russian': 'Долгий вариант<br> не существует',
+        },
         'long-letter-short-sound': {
             'english': 'The letter is long and reading<br> rules are based on right column.<br> The sound is short.',
             'russian': 'Буква и правила чтения — долгие.<br> Звук — короткий.',
@@ -307,12 +311,42 @@
             english: 'Can be taken as an<br> abbreviation for <span class="thai">รือ</span>',
             russian: 'Можно воспринимать как<br> сокращенную запись <span class="thai">รือ</span>',
         },
-
         'ri-tones-hint': {
             'english': 'The high tone is because of<br> the reading rules of <span class="thai">รึ</span> / <span class="thai">ริ</span>',
             'russian': 'Высокий тон получается<br> из правил чтения <span class="thai">รึ</span> / <span class="thai">ริ</span>',
         },
-
+        'rohan-about': {
+            'english': ''
+                + '<p>'
+                    + 'The sound is identical to <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัน</span>.<br>'
+                    + 'Example: <span class="thai">กรรไกร</span> <span class="script" data-notation="kan¯kray¯">kan¯kray¯</span> — scissors'
+                + '</p>'
+                + '<p>'
+                    + 'The glyph is identical to the consonant <span class="thai">ร</span>.<br>'
+                + '</p>'
+                + '<p>'
+                    + 'Not to be confused with abbreviations:<br>'
+                    + '<span class="thai">ร.ร.</span> = โรงเรียน <span class="script">ro:ng¯ri:ən¯</span> — school,<br>'
+                    + '<span class="thai">รร.</span> = โรงแรม <span class="script">ro:ng¯rɛ:m¯</span> — hotel.'
+                + '</p>',
+            'russian': ''
+                + '<p>'
+                    + 'Звучание идентично <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัน</span>. Пример:<br>'
+                    + '<span class="thai">กรรไกร</span> <span class="script" data-notation="kan¯kray¯">kan¯kray¯</span> — ножницы'
+                + '</p>'
+                + '<p>'
+                    + 'Значок идентичен согласной <span class="thai">ร</span>.<br>'
+                + '</p>'
+                + '<p>'
+                    + 'Не путать с аббревиатурами:<br>'
+                    + '<span class="thai">ร.ร.</span> = โรงเรียน <span class="script">ro:ng¯ri:ən¯</span> — школа,<br>'
+                    + '<span class="thai">รร.</span> = โรงแรม <span class="script">ro:ng¯rɛ:m¯</span> — отель.'
+                + '</p>',
+        },
+        'rohan-examples': {
+            'english': 'Examples:<br> <span class="thai">กรรม</span> <span class="script" data-notation="kam¯">kam¯</span> — karma,<br> วรรค <span class="script" data-notation="wak´">wak´</span> — paragraph.',
+            'russian': 'Примеры:<br> <span class="thai">กรรม</span> <span class="script" data-notation="kam¯">kam¯</span> — карма,<br> วรรค <span class="script" data-notation="wak´">wak´</span> — абзац.'
+        },
         'consonant-egg': {
             'english': 'egg',
             'russian': 'яйцо',
