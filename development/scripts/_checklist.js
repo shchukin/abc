@@ -21,8 +21,16 @@
             'english': 'Basic vowels',
             'russian': 'Базовые гласные',
         },
+        'basic-vowels-single-word': {
+            'english': 'Basic',
+            'russian': 'Базовые',
+        },
         'complex-vowels': {
             'english': 'Complex vowels',
+            'russian': 'Составные',
+        },
+        'complex-vowels-single-word': {
+            'english': 'Complex',
             'russian': 'Составные',
         },
         'finals': {
@@ -53,6 +61,18 @@
             'english': 'Low class consonants',
             'russian': 'Согласные низкого класса',
         },
+        'high-class': {
+            'english': 'High class',
+            'russian': 'Высокий класс',
+        },
+        'middle-class': {
+            'english': 'Middle class',
+            'russian': 'Средний класс',
+        },
+        'low-class': {
+            'english': 'Low class',
+            'russian': 'Низкий класс',
+        },
         'sonorant-consonants': {
             'english': 'Sonorant',
             'russian': 'Сонорные',
@@ -74,7 +94,7 @@
             'russian': 'Тоны',
         },
         'other': {
-            'english': 'Voiceless',
+            'english': 'Other',
             'russian': 'Разное',
         },
         'dead-syllable-lowercase': {
@@ -789,7 +809,79 @@
                 + 'Валюта в Таиланде.<br>'
                 + 'Пример: <span class="thai">250฿</span><br>'
                 + 'Код валюты: <span class="black">THB</span>'
-        }
+        },
+        'show-settings': {
+            'english': 'Toggle settings',
+            'russian': 'Показать настройки'
+        },
+        'settings': {
+            'english': 'Settings',
+            'russian': 'Настройки'
+        },
+        'close': {
+            'english': 'Close',
+            'russian': 'Закрыть'
+        },
+        'letters-notation': {
+            'english': 'Letters notation',
+            'russian': 'Запись букв'
+        },
+        'letters-default': {
+            'english': 'Default',
+            'russian': 'По-умолчанию'
+        },
+        'letters-cyrillic': {
+            'english': 'Cyrillic',
+            'russian': 'Кириллица'
+        },
+        'tones-notation': {
+            'english': 'Tones notation',
+            'russian': 'Запись тонов'
+        },
+        'tones-marks': {
+            'english': 'Marks',
+            'russian': 'Значками'
+        },
+        'tones-digits': {
+            'english': 'Digits',
+            'russian': 'Числами'
+        },
+        'tones-letters': {
+            'english': 'Letters',
+            'russian': 'Буквами'
+        },
+        'example': {
+            'english': 'Example',
+            'russian': 'Пример'
+        },
+        'show-headings': {
+            'english': 'Show headings',
+            'russian': 'Показывать заголовки'
+        },
+        'sanskrit-consonants-heading': {
+            'english': 'Consonants from Pali/Sanskrit',
+            'russian': 'Согласные из Пали/Санскрита'
+        },
+        'sanskrit-consonants-description': {
+            'english': 'These are a lot less common. They differ from ordinary consonants in a more complex writing. You can devote less time to these letters. By hiding them, the alphabet becomes more transparent: 7 letters per class/subclass.<br> Full list: ษ ศ ฐ ฎ ฏ ฬ ณ ญ ฆ ฌ ธ ฑ ฒ ภ.',
+            'russian': 'Встречаются сильно реже. Отличаются более сложной записью. Можно уделить этим буквам меньше времени. Скрыв их, алфавит становится более прозрачным: по 7 букв в классе/подклассе. Список: ษ ศ ฐ ฎ ฏ ฬ ณ ญ ฆ ฌ ธ ฑ ฒ ภ.'
+        },
+        'group-by': {
+            'english': 'Group consonants',
+            'russian': 'Группировать согласные'
+        },
+        'group-by-classes': {
+            'english': 'By classes',
+            'russian': 'По классам'
+        },
+        'group-by-sounds': {
+            'english': 'By sounds',
+            'russian': 'По звукам'
+        },
+        'group-alphabetically': {
+            'english': 'Alphabetically',
+            'russian': 'В алфавитном порядке'
+        },
     }
 
     var $html = $('html');
