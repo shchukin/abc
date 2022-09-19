@@ -515,6 +515,41 @@
             'english': 'owl',
             'russian': 'филин',
         },
+        'ch-aspiration': {
+            'english': ''
+                + 'Technically <span class="thai">ฉ</span> read aspirated and the sound,<br>'
+                + 'should be written as <span class="script" data-notation="chh">chh</span>. But english <span class="script" data-notation="ch">ch</span><br>'
+                + 'already sounds soft, and when read <span class="thai">ฉ</span> it is<br>'
+                + 'not necessary to add an aspiration. So in<br>'
+                + 'transcription we don\'t add second <span class="script" data-notation="h">h</span>.'
+            ,
+            'russian': ''
+                + 'Технически <span class="thai">ฉ</span> читается с придыханием как,<br>'
+                + 'и остальные буквы высокого класса, и звук бы<br>'
+                + 'должен записываться как <span class="script" data-notation="chh">chh</span>. Но русский <span class="script" data-notation="ch">ch</span><br>'
+                + 'и так звучит мягко, и при чтении <span class="thai">ฉ</span> дополнительно<br>'
+                + 'добавлять предыхание не нужно. Соответственно<br>'
+                + '<span class="script" data-notation="h">h</span> в транскрипцию не записываем.'
+            ,
+        },
+        'dont-exist-end': {
+            'english': 'Does not occur at the<br> end of a syllable',
+            'russian': 'В конце слога<br> не встречается',
+        },
+        'ho-hip-as-mark': {
+            'english': ''
+                + 'It can also work as a glyph that moves the<br>'
+                + 'following consonant into a high class.<br> '
+                + 'Example: <span class="thai">หมอ</span> <span class="script" data-notation="mɔ:ˇ">mɔ:ˇ</span> — doctor. In this<br>'
+                + 'example the high class reading rules<br> apply to the <span class="thai">ม</span>.'
+            ,
+            'russian': ''
+                + 'Так же может выступать в роли значка<br>'
+                + 'для перевода последующей согласной <br>'
+                + 'в высокий класс. Пример: <span class="thai">หมอ</span> <span class="script" data-notation="mɔ:ˇ">mɔ:ˇ</span><br> ' +
+                '— доктор. Здесь к <span class="thai">ม</span> применяются<br> правила чтения высокого класса.'
+            ,
+        },
     }
 
     var $html = $('html');
