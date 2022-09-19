@@ -77,10 +77,6 @@
             'english': 'Voiceless',
             'russian': 'Разное',
         },
-
-
-
-
         'dead-syllable-lowercase': {
             'english': 'dead syllable',
             'russian': 'мёртвый слог',
@@ -88,6 +84,10 @@
         'live-syllable-lowercase': {
             'english': 'live syllable',
             'russian': 'живой слог',
+        },
+        'hint-with-colon': {
+            'english': 'Hint:',
+            'russian': 'Подсказка:',
         },
         'in-closed-syllable': {
             'english': 'in closed<br> syllable',
@@ -347,22 +347,174 @@
             'english': 'Examples:<br> <span class="thai">กรรม</span> <span class="script" data-notation="kam¯">kam¯</span> — karma,<br> วรรค <span class="script" data-notation="wak´">wak´</span> — paragraph.',
             'russian': 'Примеры:<br> <span class="thai">กรรม</span> <span class="script" data-notation="kam¯">kam¯</span> — карма,<br> วรรค <span class="script" data-notation="wak´">wak´</span> — абзац.'
         },
-        'consonant-egg': {
+        'word-khai': {
             'english': 'egg',
             'russian': 'яйцо',
         },
-        'consonant-cymbals': {
-            'english': '«cymbals  —<br> musical instrument',
+        'word-ching': {
+            'english': '“cymbals”  —<br> mus. instrument',
             'russian': '«кастаньеты» —<br> муз. инструмент',
         },
-
-        'hint-with-colon': {
-            'english': 'Hint:',
-            'russian': 'Подсказка:',
+        'word-sia': {
+            'english': 'tiger',
+            'russian': 'тигр',
         },
-
-
-
+        'word-risi': {
+            'english': 'hermit',
+            'russian': 'отшельник',
+        },
+        'word-sala': {
+            'english': 'pavilion',
+            'russian': 'беседка',
+        },
+        'word-thung': {
+            'english': 'sack, bag',
+            'russian': 'мешок, пакет',
+        },
+        'word-than': {
+            'english': 'base, pedestal',
+            'russian': 'основание,<br> пьедестал',
+        },
+        'word-phing': {
+            'english': 'bee',
+            'russian': 'пчела',
+        },
+        'word-fa': {
+            'english': 'lid',
+            'russian': 'крышка',
+        },
+        'word-hip': {
+            'english': 'chest, box',
+            'russian': 'сундук',
+        },
+        'word-kai': {
+            'english': 'chicken',
+            'russian': 'курица',
+        },
+        'word-jan': {
+            'english': 'plate',
+            'russian': 'тарелка',
+        },
+        'word-dek': {
+            'english': 'child',
+            'russian': 'ребенок',
+        },
+        'word-chada': {
+            'english': '“Chada” —<br> headdress',
+            'russian': '«чада» —<br> головной убор',
+        },
+        'word-tau': {
+            'english': 'turtle',
+            'russian': 'черепаха',
+        },
+        'word-patak': {
+            'english': 'goad, javelin',
+            'russian': 'палка погонщика<br> с острым концом',
+        },
+        'word-baimai': {
+            'english': 'leaf',
+            'russian': 'листок',
+        },
+        'word-pla': {
+            'english': 'fish',
+            'russian': 'рыба',
+        },
+        'word-ang': {
+            'english': 'basin, bowl,<br> bathtub, sink',
+            'russian': 'бадья, большая<br> ёмкость для воды',
+        },
+        'word-nu': {
+            'english': 'mouse',
+            'russian': 'мышь',
+        },
+        'word-nen': {
+            'english': '“Samanera” —<br> noviciate',
+            'russian': '«Шраманера» —<br> послушник',
+        },
+        'word-ngu': {
+            'english': 'snake',
+            'russian': 'змея',
+        },
+        'word-ma': {
+            'english': 'horse',
+            'russian': 'лошадь',
+        },
+        'word-yak': {
+            'english': '“Yaksha” — myth.<br> character, giant',
+            'russian': 'Як — миф.<br> персонаж,<br> великан',
+        },
+        'word-ying': {
+            'english': 'woman',
+            'russian': 'женщина',
+        },
+        'word-weng': {
+            'english': 'ring',
+            'russian': 'кольцо',
+        },
+        'word-ling': {
+            'english': 'monkey',
+            'russian': 'обезьяна',
+        },
+        'word-jula': {
+            'english': 'kite',
+            'russian': 'воздушный<br> змей',
+        },
+        'word-ria': {
+            'english': 'boat',
+            'russian': 'лодка',
+        },
+        'word-khwai': {
+            'english': 'buffalo',
+            'russian': 'буйвол',
+        },
+        'word-rakhang': {
+            'english': 'bell',
+            'russian': 'колокол',
+        },
+        'word-chang': {
+            'english': 'elephant',
+            'russian': 'слон',
+        },
+        'word-cho': {
+            'english': '“Cho” tree',
+            'russian': 'дерево «Че»',
+        },
+        'word-so': {
+            'english': 'chain',
+            'russian': 'цепь',
+        },
+        'word-thahan': {
+            'english': 'soldier',
+            'russian': 'солдат',
+        },
+        'word-thong': {
+            'english': 'flag',
+            'russian': 'флаг',
+        },
+        'word-montho': {
+            'english': 'Montho — <br> name of myth.<br> heroines',
+            'russian': 'Монтхо — имя<br> миф. героини',
+        },
+        'word-phuthau': {
+            'english': 'elder',
+            'russian': 'старик',
+        },
+        'word-phan': {
+            'english': '“Phan” — offering<br> bowl or tray<br>with pedestal',
+            'russian': '«Пхан» —<br> чаша, основание<br> для подношений',
+        },
+        'word-samphau': {
+            'english': 'ship',
+            'russian': 'корабль',
+        },
+        'word-fan': {
+            'english': 'teeth',
+            'russian': 'зуб',
+        },
+        'word-nokhu': {
+            'english': 'owl',
+            'russian': 'филин',
+        },
     }
 
     var $html = $('html');
