@@ -679,6 +679,60 @@
                 + 'Пример: <span class="thai">ข้าว</span> <span class="script" data-notation="kha:uˆ">kha:uˆ</span> — рис.'
             ,
         },
+        'ro-ria-readings': {
+            'english': ''
+                + '- In combinations <span class="thai">ศร</span>, <span class="thai">สร</span> or <span class="thai">จร</span> letter <span class="thai">ร</span> can be<br>'
+                + 'silent. Unreadable itselft and does not affect<br> reading rules:'
+
+                + '<span style="display: block; margin-top: 4px;">'
+                    + '• In the <span class="thai">ศร</span> it is always silent. Example <span class="thai">ศรี</span> <span class="script" data-notation="si:ˇ">si:ˇ</span><br>'
+                    + '— majesty; glory; honor; splendor\n'
+                + '</span>'
+
+                + '<span style="display: block; margin-top: 4px;">'
+                    + '• In the <span class="thai">สร</span> it is silent most of the time.<br>'
+                    + 'Example: <span class="thai">สระว่ายน้ำ</span> <span class="script" data-notation="sa`wa:yˆnam´">sa`wa:yˆnam´</span> — pool.'
+                + '</span>'
+
+                + '<span style="display: block; margin-top: 4px;">'
+                    + '• In the <span class="thai">จร</span> it is always silent. Thought there is<br>'
+                    + 'only one word exists: <span class="thai">จริง</span> <span class="script" data-notation="jing¯">jing¯</span> — truth; really?'
+                + '</span>'
+
+                + '<br>'
+                + '- Combination of <span class="thai">ทร</span> sometimes read as <span class="script" data-notation="s">s</span>.<br>'
+                + 'Example: <span class="thai">ทราบ</span> <span class="script" data-notation="sa:pˆ">sa:pˆ</span> — to know.'
+
+                + '<br><br>'
+                + '- Combination <span class="thai">รร</span> gives vowel sound. See this <br> vowel at the end of vowels column.'
+            ,
+            'russian': ''
+                + '- В комбинациях <span class="thai">ศร</span>, <span class="thai">สร</span> и <span class="thai">จร</span> буква <span class="thai">ร</span> бывает<br>'
+                + 'немой. Не читается и не влияет на правила чтения:'
+
+                + '<span style="display: block; margin-top: 4px;">'
+                    + '• В <span class="thai">ศร</span> всегда немая. Пример <span class="thai">ศรี</span> <span class="script" data-notation="si:ˇ">si:ˇ</span><br>'
+                    + '— превосходный, блестящий.'
+                + '</span>'
+
+                + '<span style="display: block; margin-top: 4px;">'
+                    + '• В <span class="thai">สร</span> немая в большинстве случаев.<br>'
+                    + 'Пример: <span class="thai">สระว่ายน้ำ</span> <span class="script" data-notation="sa`wa:yˆnam´">sa`wa:yˆnam´</span> — бассейн.'
+                + '</span>'
+
+                + '<span style="display: block; margin-top: 4px;">'
+                    + '• В <span class="thai">จร</span> всегда немая. Существует только одно<br>'
+                    + 'слово: <span class="thai">จริง</span> <span class="script" data-notation="jing¯">jing¯</span> — правда, истина.'
+                + '</span>'
+
+                + '<br>'
+                + '- Комбинация <span class="thai">ทร</span> иногда читается как <span class="script" data-notation="s">s</span>.<br>'
+                + 'Пример: <span class="thai">ทราบ</span> <span class="script" data-notation="sa:pˆ">sa:pˆ</span> — знать, сознавать.'
+
+                + '<br><br>'
+                + '- Комбинация <span class="thai">รร</span> даёт гласный звук. Смотри<br> соответствующую гласную в конце алфавита.'
+            ,
+        },
     }
 
     var $html = $('html');
