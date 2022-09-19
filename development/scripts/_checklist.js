@@ -88,7 +88,7 @@
         'about-sonorant-consonants': {
             'english': ''
                 + '<p>These letters give sonorous sounds. When pronouncing such sounds, the voice (tone) is greater than the noise. For example in English language it is L, R, M, N, Y, W sounds.</p>'
-                +'<p>This is an important for learning the rules of reading. If the sonorant consonant is at the end of a syllable, then a live syllable is formed. All other consonants of all classes at the end of a syllable form a dead syllable.</p>'
+                + '<p>This is an important for learning the rules of reading. If the sonorant consonant is at the end of a syllable, then a live syllable is formed. All other consonants of all classes at the end of a syllable form a dead syllable.</p>'
             ,
             'russian': ''
                 + '<p>Дают сонорные звуки — звуки без глухой пары (например Б-П). При произнесении таких звуков, голоса (тона) больше, чем шума. В русском языке — это звуки Р, Л, М, Н, Й, например.</p>'
@@ -743,6 +743,22 @@
                 + '- Комбинация <span class="thai">รร</span> даёт гласный звук. Смотри<br> соответствующую гласную в конце алфавита.'
             ,
         },
+        'tone-mayek': {
+            'english': '<span data-notation="`">`</span> for <b class="consonant-middle">middle</b> and <b class="consonant-high">high</b><br> <span data-notation="ˆ">ˆ</span> for <b class="consonant-low">low</b>',
+            'russian': '<span data-notation="`">`</span> для <b class="consonant-middle">ср</b> и <b class="consonant-high">вы</b><br> <span data-notation="ˆ">ˆ</span> для <b class="consonant-low">низ</b>'
+        },
+        'tone-maytho': {
+            'english': '<span data-notation="ˆ">ˆ</span> for <b class="consonant-middle">middle</b> and <b class="consonant-high">high</b><br> <span data-notation="´">´</span> for <b class="consonant-low">low</b>',
+            'russian': '<span data-notation="ˆ">ˆ</span> для <b class="consonant-middle">ср</b> и <b class="consonant-high">вы</b><br> <span data-notation="´">´</span> для <b class="consonant-low">низ</b>'
+        },
+        'tone-maytri': {
+            'english': '<span data-notation="´">´</span> for <b class="consonant-middle">middle</b>',
+            'russian': '<span data-notation="´">´</span> для <b class="consonant-middle">ср</b>'
+        },
+        'tone-mayjattawa': {
+            'english': '<span data-notation="ˇ">ˇ</span> for <b class="consonant-middle">middle</b>',
+            'russian': '<span data-notation="ˇ">ˇ</span> для <b class="consonant-middle">ср</b>'
+        }
     }
 
     var $html = $('html');
