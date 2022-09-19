@@ -882,6 +882,110 @@
             'english': 'Alphabetically',
             'russian': 'В алфавитном порядке'
         },
+        'show-about': {
+            'english': 'Show about info',
+            'russian': 'Показать информацию о проекте'
+        },
+        'about': {
+            'english': 'About',
+            'russian': 'О проекте'
+        },
+        'legend-screenshot': {
+            'english': '<img class="letter-legend__screenshot" srcset="content/letter-hints-en@2x.png 2x" src="content/letter-hints-en.png" width="182" height="168" alt="">',
+            'russian': '<img class="letter-legend__screenshot" srcset="content/letter-hints-ru@2x.png 2x" src="content/letter-hints-ru.png" width="182" height="168" alt="">'
+        },
+        'legend-letter': {
+            'english': 'Thai letter',
+            'russian': 'Тайская буква'
+        },
+        'legend-key': {
+            'english': 'Keyboard key',
+            'russian': 'Клавиша на клавиатуре'
+        },
+        'legend-sound': {
+            'english': 'Sound',
+            'russian': 'Звук'
+        },
+        'legend-ending-sound': {
+            'english': 'Sound if the letter is at the end of a syllable',
+            'russian': 'Звук, если буква в конце слога'
+        },
+        'legend-name': {
+            'english': 'Letter name',
+            'russian': 'Название буквы'
+        },
+        'legend-translation': {
+            'english': 'Translation of the letter name',
+            'russian': 'Перевод названия'
+        },
+        'ui-translated': {
+            'english': 'All elements on the page are voiced by a native speaker. Clicking on the tile reads the entire letter. Additionally, you can click on sounds and on Thai words.',
+            'russian': 'Все элементы интерфейса озвучены носителем языка. Клик по всей плитке читает букву целиком. Дополнительно можно кликать по звукам и по тайским словам.'
+        },
+        'bookmarks': {
+            'english': 'Bookmarks',
+            'russian': 'В закладки'
+        },
+        'bookmarks-description': {
+            'english': 'Add an “Alphabet” shortcut to home screen of your smartphone or computer for a app-like user experience.',
+            'russian': 'Добавьте ярлык «Алфавита» на домашний экран, и&nbsp;пользовательский опыт будет сравним с&nbsp;мобильным приложением.'
+        },
+        'bookmarks-ios-begins': {
+            'english': 'On <b>iOS</b> open site in <b>Safari</b>, tap <b><em>Share</em></b>',
+            'russian': 'На <b>iOS</b> откройте сайт в&nbsp;<b>Safari</b>, нажмите <b><em>Поделиться</em></b>'
+        },
+        'bookmarks-ios-ends': {
+            'english': 'scroll menu down below the main screen and choose menu item <b class="nobr"><em>Add to Home Screen</em></b>.',
+            'russian': 'прокрутите меню вниз, и&nbsp;выберите пункт <b class="nobr"><em>На экран «Домой»</em></b>.'
+        },
+        'bookmarks-android-begins': {
+            'english': 'On <b>Android</b> open site in&nbsp;<b>Chrome</b>, tap <b><em>More</em></b>',
+            'russian': 'На <b>Android</b> откройте сайт в&nbsp;<b>Chrome</b>, нажмите <b><em>Ещё</em></b>'
+        },
+        'bookmarks-android-ends': {
+            'english': 'and near the end of the list, find the menu item <b class="nobr"><em>Add to Home Screen</em></b>.',
+            'russian': 'и&nbsp;ближе к&nbsp;концу списка найдите пункт меню <b class="nobr"><em>Добавить на гл. экран</em></b>.'
+        },
+        'bookmarks-desktop-begins': {
+            'english': 'On desktops or laptops you can save a shortcut to the site page, so it will open a browser tab when run. In&nbsp;browsers such as <b>Chrome</b> or <b>Edge</b> click <b><em>More</em></b>',
+            'russian': 'На домашних компьютерах можно сохранить ярлык на страницу сайта, который откроет вкладку браузера при запуске. В&nbsp;браузерах <b>Chrome</b> или <b>Edge</b> нажмите <b><em>Ещё</em></b>'
+        },
+        'bookmarks-desktop-ends': {
+            'english': 'select <b><em>More Tools</em></b> and then <b><em>Create shortcut…</em></b>. Created shortcut can be dragged to any panel or dock. In <b>Safari</b> bookmark site to favorites, open new tab and drag the site icon from favorites to desktop or dock area next to the Trash.',
+            'russian': 'далее выберите <b><em>Дополнительные инструменты</em></b>, затем <b><em>Создать ярлык</em></b>. Получившийся ярлык можно перетащить на&nbsp;любую панель или в док. В&nbsp;<b>Safari</b> добавьте сайт в&nbsp;избранное, откройте новую вкладу и&nbsp;перетащите иконку сайта из&nbsp;избранного на&nbsp;рабочий стол или в&nbsp;область дока рядом с&nbsp;корзиной.'
+        },
+        'people': {
+            'english': 'People',
+            'russian': 'Люди'
+        },
+        'developed-by': {
+            'english': '<strong>Developed by:&nbsp;</strong> Anton Shchukin (<a class="link" href="https://t.me/cypher" target="_blank">Telegram</a>)',
+            'russian': '<strong>Разработка:&nbsp;</strong> Щукин Антон (<a class="link" href="https://t.me/cypher" target="_blank">Телеграм</a>)'
+        },
+        'voiced-by': {
+            'english': '<strong>Voiced by:&nbsp;</strong> Masha Muay (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Instagram</a>)',
+            'russian': '<strong>Озвучено:&nbsp;</strong> Муай Маша (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Инстаграм</a>)'
+        },
+        'special-thanks': {
+            'english': '<strong>Special thanks to:&nbsp;</strong> Angelina Masserovna (<a class="link" href="https://t.me/masserovna" target="_blank">Telegram</a>), Maria, Olga',
+            'russian': '<strong>Благодарности:&nbsp;</strong> Ангелина Массерова (<a class="link" href="https://t.me/masserovna" target="_blank">Телеграм</a>), Мария, Ольга'
+        },
+        'links': {
+            'english': 'Links',
+            'russian': 'Ссылки'
+        },
+        'roadmap': {
+            'english': '<a class="link" href="https://thaisu.notion.site/thai-alphabet-com-21-22-ca61bc7742f8445988a82cbf6a6a7f5d" target="_blank">Roadmap</a> &nbsp;—&nbsp; Leave a comment in an online document.',
+            'russian': '<a class="link" href="https://thaisu.notion.site/thai-alphabet-com-21-22-ca61bc7742f8445988a82cbf6a6a7f5d" target="_blank">Планы по развитию</a> &nbsp;—&nbsp; Оставить комментарий в онлайн-документе.'
+        },
+        'telegram-chat': {
+            'english': '<a class="link" href="https://t.me/thaisu" target="_blank">Telegram chat</a> &nbsp;—&nbsp; Report a bug, suggest an idea.',
+            'russian': '<a class="link" href="https://t.me/thaisurussian" target="_blank">Чат в телеграмме</a> &nbsp;—&nbsp; Сообщить об ошибке, предложить идею.'
+        },
+        'thai-su-link': {
+            'english': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.',
+            'russian': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.'
+        },
     }
 
     var $html = $('html');

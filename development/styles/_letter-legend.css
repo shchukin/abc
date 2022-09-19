@@ -5,12 +5,14 @@
         display: flex;
         align-items: flex-start;
     }
-        .letter-legend__screenshot {
-            vertical-align: top;
-            margin-left: -16px;
-            margin-top: -16px;
+        .letter-legend__preview {
             flex-shrink: 0;
         }
+            .letter-legend__screenshot {
+                vertical-align: top;
+                margin-left: -16px;
+                margin-top: -16px;
+            }
 
         .letter-legend__content {
             margin-left: 20px;
