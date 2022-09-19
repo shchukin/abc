@@ -187,6 +187,67 @@
             'english': 'Called<br> “May Muan”',
             'russian': 'Называется<br> «май муан»',
         },
+        'diphthongs-note': {
+            'english': ''
+                + '<p>'
+                    + 'Two vowel sounds merge. When<br>'
+                    + 'pronouncing, one smoothly turns<br>'
+                    + 'into the other.'
+                + '</p>'
+                + '<p>'
+                    + 'It does not affect the reading<br>'
+                    + 'rules though. You can think about<br>'
+                    + 'diphthongs as ordinary vowels.<br>'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'Сливаются два гласных звука.<br>'
+                    + 'При произношении один<br>'
+                    + 'плавно переходит в другой.'
+                + '</p>'
+                + '<p>'
+                    + 'На правила чтения это никак<br>'
+                    + 'не влияет. Воспринимать<br>'
+                    + 'и изучать дифтонги можно<br>'
+                    + 'как обычные гласные.'
+                + '</p>'
+            ,
+        },
+        'ia-reading-hint': {
+            'english': ''
+                + 'Example: <span class="thai">เรียน</span> — learn<br>'
+                + 'Supposed to be <span class="script" data-notation="ri:an¯">ri:an¯</span>,<br>'
+                + 'but reads as <span class="script" data-notation="ri:ən¯">ri:ən¯</span>.'
+            ,
+            'russian': ''
+                + 'Пример: <span class="thai">เรียน</span> — учиться<br>'
+                + 'Должно читаться <span class="script" data-notation="ri:an¯">ri:an¯</span>,<br>'
+                + 'но читается <span class="script" data-notation="ri:ən¯">ri:ən¯</span>.'
+            ,
+        },
+        'pristine-white-example': {
+            'english': 'Example: <span class="thai">ขาวจั๊วะ</span> — pristine white',
+            'russian': 'Пример: <span class="thai">ขาวจั๊วะ</span> — кипенно-белый',
+        },
+        'ua-difton-same-consonant': {
+            'english': ''
+                + 'Not to be confused with <span class="thai">ว</span> consonant.<br>'
+                + 'That one is just <span class="script" data-notation="w">w</span> or <span class="script" data-notation="u">u</span> if at the end<br>'
+                + 'of a syllable. And this one is the <span class="script" data-notation="u:a">u:a</span><br>'
+                + 'diphthong in between two consonants.<br>'
+                + 'Example: <span class="thai">สวน</span> <span class="script" data-notation="su:anˇ">su:anˇ</span> — park.'
+            ,
+            'russian': ''
+                + 'Не путать с согласной <span class="thai">ว</span> — там<br>'
+                + 'просто <span class="script" data-notation="w">w</span>, или <span class="script" data-notation="u">u</span> если в конце слога.<br>'
+                + 'А здесь именно дифтонг <span class="script" data-notation="u:a">u:a</span> между<br>'
+                + 'двумя согласными.<br>'
+                + 'Пример: <span class="thai">สวน</span> <span class="script" data-notation="su:anˇ">su:anˇ</span> — парк.'
+            ,
+        },
+
+
         'consonant-egg': {
             'english': 'egg',
             'russian': 'яйцо',
@@ -195,8 +256,6 @@
             'english': '«cymbals  —<br> musical instrument',
             'russian': '«кастаньеты» —<br> муз. инструмент',
         },
-
-
 
         'hint-with-colon': {
             'english': 'Hint:',
