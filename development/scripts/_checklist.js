@@ -246,7 +246,72 @@
                 + 'Пример: <span class="thai">สวน</span> <span class="script" data-notation="su:anˇ">su:anˇ</span> — парк.'
             ,
         },
+        'quasi-heading-hing': {
+            'english': 'These set up<br> whole syllable.',
+            'russian': 'По-сути обозначают<br> сразу целый слог.'
+        },
+        'quasi-ri-details': {
+            'english': ''
+                + '<p>'
+                    + 'Can be taken as an abbreviation<br>'
+                    + 'for <span class="thai">รึ</span> <span class="script" data-notation="rɯ´">rɯ´</span> or <span class="thai">ริ</span> <span class="script" data-notation="ri´">ri´</span>. Which one<br>'
+                    + 'exactly depends on the word.'
+                + '</p>'
+                + '<p>'
+                    + '• Examples with <span class="thai">รึ</span> <span class="script" data-notation="rɯ´">rɯ´</span>:<br>'
+                    + '<span class="thai">ฤดู</span> <span class="script" data-notation="rɯ´du:¯">rɯ´du:¯</span> — season,<br>'
+                    + '<span class="thai">พฤกษา</span> <span class="script" data-notation="phrɯk´sa:ˇ">phrɯk´sa:ˇ</span> — flora.'
+                + '</p>'
+                + '<p>'
+                    + '• Examples with <span class="thai">ริ</span> <span class="script" data-notation="ri´">ri´</span>:<br>'
+                    + '<span class="thai">อังกฤษ</span> <span class="script" data-notation="ang¯krit">ang¯krit`</span> — England,<br>'
+                    + '<span class="thai">ฤทธิ์</span> <span class="script" data-notation="rit´">rit´</span> — might.'
+                + '</p>'
+                + '<p>'
+                    + 'There is one more case that<br> stands out from the scheme<br>'
+                    + 'but uses the same glyph:<br> a long sound <span class="thai">เรอ</span> <span class="script" data-notation="rə:¯">rə:¯</span>.'
+                + '</p>'
+                + '<p>'
+                    + '• Example with <span class="thai">เรอ</span> <span class="script" data-notation="rə:¯">rə:¯</span>:<br>'
+                    + '<span class="thai">ฤกษ์</span> <span class="script" data-notation="rə:¯">rə:kˆ</span> — occasion.'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'Можно воспринимать как<br>'
+                    + 'сокращенную запись <span class="thai">รึ</span> <span class="script" data-notation="rɯ´">rɯ´</span> или <span class="thai">ริ</span> <span class="script" data-notation="ri´">ri´</span>.<br>'
+                    + 'Какую из — зависит от слова.'
+                + '</p>'
+                + '<p>'
+                    + '• Примеры с <span class="thai">รึ</span> <span class="script" data-notation="rɯ´">rɯ´</span>:<br>'
+                    + '<span class="thai">ฤดู</span> <span class="script" data-notation="rɯ´du:¯">rɯ´du:¯</span> — время года,<br>'
+                    + '<span class="thai">พฤกษา</span> <span class="script" data-notation="phrɯk´sa:ˇ">phrɯk´sa:ˇ</span> — Флора.'
+                + '</p>'
+                + '<p>'
+                    + '• Примеры с <span class="thai">ริ</span> <span class="script" data-notation="ri´">ri´</span>:<br>'
+                    + '<span class="thai">อังกฤษ</span>	<span class="script" data-notation="ang¯krit">ang¯krit`</span> — Англия,<br>'
+                    + '<span class="thai">ฤทธิ์</span>	<span class="script" data-notation="rit´">rit´</span> — доблесть.'
+                + '</p>'
+                + '<p>'
+                    + 'Ещё один вариант, выбивающийся<br>'
+                    + 'из общей схемы, но использующий <br>'
+                    + 'этот же значок — долгий звук <span class="thai">เรอ</span> <span class="script" data-notation="rə:¯">rə:¯</span>.'
+                + '</p>'
+                + '<p>'
+                    + '• Пример с <span class="thai">เรอ</span> <span class="script" data-notation="rə:¯">rə:¯</span>:<br>'
+                    + '<span class="thai">ฤกษ์</span> <span class="script" data-notation="rə:¯">rə:kˆ</span> — повод, обстоятельство.'
+                + '</p>'
+            ,
+        },
+        'quasi-ri-long-details': {
+            english: 'Can be taken as an<br> abbreviation for <span class="thai">รือ</span>',
+            russian: 'Можно воспринимать как<br> сокращенную запись <span class="thai">รือ</span>',
+        },
 
+        'ri-tones-hint': {
+            'english': 'The high tone is because of<br> the reading rules of <span class="thai">รึ</span> / <span class="thai">ริ</span>',
+            'russian': 'Высокий тон получается<br> из правил чтения <span class="thai">รึ</span> / <span class="thai">ริ</span>',
+        },
 
         'consonant-egg': {
             'english': 'egg',
