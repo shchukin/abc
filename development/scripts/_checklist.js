@@ -686,7 +686,7 @@
 
                 + '<span style="display: block; margin-top: 4px;">'
                     + '• In the <span class="thai">ศร</span> it is always silent. Example <span class="thai">ศรี</span> <span class="script" data-notation="si:ˇ">si:ˇ</span><br>'
-                    + '— majesty; glory; honor; splendor\n'
+                    + '— majesty; glory; honor; splendor'
                 + '</span>'
 
                 + '<span style="display: block; margin-top: 4px;">'
