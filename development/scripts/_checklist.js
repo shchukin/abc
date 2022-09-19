@@ -890,6 +890,10 @@
             'english': 'About',
             'russian': 'О проекте'
         },
+        'letter-legend': {
+            'english': 'Letter legend',
+            'russian': 'Описание буквы'
+        },
         'legend-screenshot': {
             'english': '<img class="letter-legend__screenshot" srcset="content/letter-hints-en@2x.png 2x" src="content/letter-hints-en.png" width="182" height="168" alt="">',
             'russian': '<img class="letter-legend__screenshot" srcset="content/letter-hints-ru@2x.png 2x" src="content/letter-hints-ru.png" width="182" height="168" alt="">'
