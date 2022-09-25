@@ -1,0 +1,12 @@
+.definitions {
+    font-size: var(--body-font);
+    line-height: var(--body-line);
+    color: var(--body-color);
+}
+    .definitions__section {
+        margin-top: 18px;
+    }
+
+    .definitions__section:first-child {
+        margin-top: 0;
+    }
