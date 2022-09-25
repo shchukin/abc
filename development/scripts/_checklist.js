@@ -172,46 +172,84 @@
         'finals-hint': {
             'english': ''
                 + '<p>'
-                    + 'These are still long letters and,<br>'
-                    + 'the reading rules are based on<br>'
-                    + 'the right column. But the sound<br>'
-                    + 'is short as if they were in<br>'
-                    + 'the left column.'
+                    + 'The vowels of this group<br>'
+                    + 'come with an additional<br>'
+                    + 'sound, as if they were<br>'
+                    + 'followed by an additional<br>'
+                    + 'consonant. So they always<br>'
+                    + 'make a closed syllable.<br>'
+                    + 'And there cannot be<br>'
+                    + 'another consonant after.'
                 + '</p>'
                 + '<p>'
-                    + 'These letter can only be found<br>'
-                    + 'in open syllables. They always<br>'
-                    + 'ends syllable. In other words,<br>'
-                    + 'there can\'t be a consonant<br>'
-                    + ' after.'
+                    + 'Reading rules remains<br>'
+                    + 'the same as for ordinary<br>'
+                    + 'closed syllables.'
                 + '</p>'
             ,
             'russian': ''
                 + '<p>'
-                    + 'Это по прежнему долгие буквы,<br>'
-                    + 'и правила чтения по правой колонке.<br>'
-                    + 'Но звук краткий как если бы буква<br>'
-                    + 'была в левой колонке.'
-                + '</p>'
-                + '<p>'
-                    + 'Наблюдение: встречаются только<br>'
-                    + 'в открытых слогах. Всегда завершают<br>'
-                    + 'слог. Другими словами согласной<br>'
+                    + 'Гласные этой группы идут<br>'
+                    + 'с дополнительным звуком,<br>'
+                    + 'как если бы они добавляли<br>'
+                    + 'после себя согласную. Т.е.<br>'
+                    + 'всегда образуют закрытый<br>'
+                    + 'слог. Ещё одной согласной<br>'
                     + 'после быть не может.'
                 + '</p>'
+                + '<p>'
+                    + 'Правила чтения как<br>'
+                    + 'у обычных закрытых слогов.'
+                + '</p>'
             ,
-        },
-        'short-doesnt-exist': {
-            'english': 'Short variant<br> does not exist',
-            'russian': 'Краткий вариант<br> не существует',
         },
         'long-doesnt-exist': {
             'english': 'Long variant<br> does not exist',
             'russian': 'Долгий вариант<br> не существует',
         },
-        'long-letter-short-sound': {
-            'english': 'The letter is long and reading<br> rules are based on right column.<br> The sound is short.',
-            'russian': 'Буква и правила чтения — долгие.<br> Звук — короткий.',
+        'am-hint': {
+            'english': 'Can be taken as an<br> abbreviation for <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัม</span>',
+            'russian': 'Можно воспринимать как<br> сокращённую запись <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัม</span>',
+        },
+        'am-reading-hint': {
+            'english': 'Additional sound <span class="script" data-notation="m">m</span> here<br> is kinda included into the<br> letter. As a result it gives<br> us a closed live syllable.',
+            'russian': 'Здесь дополнительный<br> звук <span class="script" data-notation="м">м</span> как бы включён<br> внутрь буквы. Получается<br> закрытый живой слог.',
+        },
+        'ay-hint': {
+            'english': 'Can be taken as an<br> abbreviation for <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัย</span>',
+            'russian': 'Можно воспринимать как<br> сокращённую запись <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัย</span>',
+        },
+        'ay-reading-hint': {
+            'english': 'Additional sound <span class="script" data-notation="y">y</span> here<br> is kinda included into the<br> letter. As a result it gives<br> us a closed live syllable.',
+            'russian': 'Здесь дополнительный<br> звук <span class="script" data-notation="y">y</span> как бы включён<br> внутрь буквы. Получается<br> закрытый живой слог.',
+        },
+        'au-hint': {
+            'english': ''
+                + '<p>'
+                    + 'Can be taken as an<br>'
+                    + 'abbreviation for <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ะ</span> + <span class="thai">ว</span>.'
+                + '</p>'
+                + '<p>'
+                    + 'In this hint it\'s separated<br>'
+                    + 'with plus for not being<br>'
+                    + 'mistaken with <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัว</span><br>'
+                    + 'diphthong (see above).'
+                + '</p>',
+            'russian': ''
+                + '<p>'
+                    + 'Можно воспринимать как<br>'
+                    + 'сокращённую запись <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ะ</span> + <span class="thai">ว</span>'
+                + '</p>'
+                + '<p>'
+                    + 'В этой подсказке запись<br>'
+                    + 'разделена плюсом чтобы<br>'
+                    + 'не путать с дифтонгом <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัว</span><br>'
+                    + '(смотри выше).'
+                + '</p>',
+        },
+        'au-reading-hint': {
+            'english': 'Additional sound <span class="script" data-notation="y">y</span> here<br> is kinda included into the<br> letter. As a result it gives<br> us a closed live syllable.',
+            'russian': 'Здесь дополнительный<br> звук <span class="script" data-notation="y">y</span> как бы включён<br> внутрь буквы. Получается<br> закрытый живой слог.',
         },
         'called-may-malay': {
             'english': 'Called<br> “May Malay”',
@@ -349,7 +387,7 @@
             'english': ''
                 + '<p>'
                     + 'The sound is identical to <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัน</span>.<br>'
-                    + 'Example: <span class="thai">กรรไกร</span> <span class="script" data-notation="kan¯kray¯">kan¯kray¯</span> — scissors'
+                    + 'Example: <span class="thai">กรรไกร</span> <span class="script" data-notation="kan¯kray¯">kan¯kray¯</span> — scissors.'
                 + '</p>'
                 + '<p>'
                     + 'The glyph is identical to the consonant <span class="thai">ร</span>.<br>'
@@ -362,7 +400,7 @@
             'russian': ''
                 + '<p>'
                     + 'Звучание идентично <span class="thai"><span class="placeholder placeholder--text-alike">◌</span>ัน</span>. Пример:<br>'
-                    + '<span class="thai">กรรไกร</span> <span class="script" data-notation="kan¯kray¯">kan¯kray¯</span> — ножницы'
+                    + '<span class="thai">กรรไกร</span> <span class="script" data-notation="kan¯kray¯">kan¯kray¯</span> — ножницы.'
                 + '</p>'
                 + '<p>'
                     + 'Значок идентичен согласной <span class="thai">ร</span>.<br>'
