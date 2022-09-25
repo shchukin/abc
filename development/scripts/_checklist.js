@@ -976,8 +976,6 @@
             'english': '<strong>Closed syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant + vowel.<br> For example <span class="thai">นาน</span> or <span class="thai">นัน</span>.',
             'russian': '<strong>Закрытый слог</strong> &nbsp;—&nbsp;слог формата: согласная + гласная + согласная.<br> Например <span class="thai">นาน</span> или <span class="thai">นัน</span>.'
         },
-
-
         'bookmarks': {
             'english': 'Bookmarks',
             'russian': 'В закладки'
@@ -1041,6 +1039,40 @@
         'thai-su-link': {
             'english': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.',
             'russian': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.'
+        },
+        'disclaimer': {
+            'english': 'Disclaimer',
+            'russian': 'Дисклеймер'
+        },
+        'disclaimer-text': {
+            'english': ''
+                + '<p>'
+                    + 'I\'m not a native Thai speaker. And not even a teacher (yet). At this momoment I\'m just a student. But it gives me the opportunity to see the process of language learning from the perspective of the student, and from the very beginning I use this advantage to create the <strong>well-structured</strong> materials.'
+                + '</p>'
+                + '<p>'
+                    + 'As an IT person and also as someone who is dummy with the humanities I emphasize <strong>structuring</strong> even more: rely less on memory, and more on logic.'
+                + '</p>'
+                + '<p>'
+                    + 'Unfortunately, this means there can be mistakes and inaccuracies in the app, including translation to the English. Also, our approaches may not match at something. In any case <a class="link" href="https://t.me/thaisu" target="_blank">please inform about it</a>.'
+                + '</p>'
+                + '<p>'
+                    + 'Anton.'
+                + '</p>'
+            ,
+            'russian': ''
+                + '<p>'
+                    + 'Я не носитель тайского языка, и даже не учитель (пока). Сейчас я просто студент. Но это даёт мне возможность видеть процесс изучения языка с перспективы ученика, и самого начала я использую это преимущество, чтобы создавать <strong>хорошо структурированый</strong> материал.'
+                + '</p>'
+                + '<p>'
+                    + 'Ещё больший <strong>упор на структурирование</strong> я делаю как айтишник, и как человек, который с гуманитарными науками на «вы»: меньше нагрузки на память, больше на логику.'
+                + '</p>'
+                + '<p>'
+                    + 'К сожалению это может означать наличие ошибок и неточностей в приложении, а в чём-то наши подходы могут немного не совпадать. В любом случае, пожалуйста, <a class="link" href="https://t.me/thaisurussian" target="_blank">сообщите об этом</a>.'
+                + '</p>'
+                + '<p>'
+                    + 'Антон.'
+                + '</p>'
+            ,
         },
     }
 
