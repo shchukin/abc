@@ -54,7 +54,7 @@
 @media (min-device-width: 600px) {
 
     .information {
-
+        padding-top: 0;
     }
         .information__handler {
             position: fixed;
