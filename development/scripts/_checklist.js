@@ -1078,6 +1078,18 @@
 
     var $html = $('html');
     var $dispay = $('.display'); /* Все чекбоксы страницы */
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)
+
+
+    function safariPlaceholder() {
+        if (isSafari) {
+            $('.placeholder').each(function (){
+                $(this).replaceWith('อ');
+            });
+        }
+    }
+
+    $(document).ready(safariPlaceholder);
 
 
     /* 0. При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
@@ -1234,6 +1246,8 @@
         /* По-идее здесь же надо перезапустить смену нотации поскольку в переводах все нотации дефолтны. */
         /* Но смена нотации и так запускается с каждым display() */
         // changeTonesNotation();
+
+        safariPlaceholder();
     }
 
 
@@ -1347,6 +1361,7 @@
 
         });
 
+        safariPlaceholder();
     }
 
 
