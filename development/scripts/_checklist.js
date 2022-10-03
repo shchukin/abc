@@ -1084,7 +1084,7 @@
     function safariPlaceholder() {
         if (isSafari) {
             $('.placeholder').each(function (){
-                $(this).replaceWith('อ');
+                $(this).replaceWith('–');
             });
         }
     }
