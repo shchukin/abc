@@ -8,6 +8,9 @@
         font-family: var(--font-thai);
         font-size: 16px;
     }
+        .explanation__term .placeholder {
+            color: #888888;
+        }
 
     .explanation__arrow {
         margin-left: 3px;
