@@ -1040,39 +1040,43 @@
             'english': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.',
             'russian': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.'
         },
-        'disclaimer': {
-            'english': 'Disclaimer',
-            'russian': 'Дисклеймер'
+        'safari-bug': {
+            'english': 'Bug in Safari',
+            'russian': 'Баг в Safari'
         },
-        'disclaimer-text': {
+        'safari-text': {
             'english': ''
                 + '<p>'
-                    + 'I\'m not a native Thai speaker. And not even a teacher (yet). At this momoment I\'m just a student. But it gives me the opportunity to see the process of language learning from the perspective of the student, and from the very beginning I use this advantage to create the <strong>well-structured</strong> materials.'
+                    + 'Unfortunately, recent updates to iOS 15 and macOS Monterey have broken part of Safari responsible for highlighting some glyphs in Thai language. You can see the bug on the test subdomain <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>. Superscript and subscript characters such as some vowels and tone marks disappear from the page.'
                 + '</p>'
                 + '<p>'
-                    + 'As an IT person and also as someone who is dummy with the humanities I emphasize <strong>structuring</strong> even more: rely less on memory, and more on logic.'
-                + '</p>'
-                + '<p>'
-                    + 'Unfortunately, this means there can be mistakes and inaccuracies in the app, including translation to the English. Also, our approaches may not match at something. In any case <a class="link" href="https://t.me/thaisu" target="_blank">please inform about it</a>.'
-                + '</p>'
-                + '<p>'
-                    + 'Anton.'
+                    + 'The best thing can be done for Safari is avoiding the bug by replacing the placeholder character with an en dash and canceling color highlight. This makes Safari a less preferred browser, but still a viable option.'
                 + '</p>'
             ,
             'russian': ''
                 + '<p>'
-                    + 'Я&nbsp;не&nbsp;носитель тайского языка, и&nbsp;даже не&nbsp;учитель (пока). Сейчас я&nbsp;просто студент. Но&nbsp;это даёт мне возможность видеть процесс изучения языка с&nbsp;перспективы ученика, и&nbsp;самого начала я&nbsp;использую это преимущество, чтобы создавать <strong>хорошо структурированый</strong> материал.'
+                    + 'К сожалению, последние обновления до iOS 15 и macOS Monterey сломали в Safari возможность выделять отдельные символы в тайском языке. Посмотреть на баг вживую можно на тестовом поддомене <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>. Надстрочные и подстрочные символы вроде гласных и тонов исчезают со страницы.'
                 + '</p>'
                 + '<p>'
-                    + 'Ещё больший <strong>упор на&nbsp;структурирование</strong> я&nbsp;делаю и как айтишник, и&nbsp;как человек, который с&nbsp;гуманитарными науками на&nbsp;&laquo;вы&raquo;: меньше нагрузки на&nbsp;память, больше на&nbsp;логику.'
-                + '</p>'
-                + '<p>'
-                    + 'К&nbsp;сожалению это может означать наличие ошибок и&nbsp;неточностей в&nbsp;приложении, а&nbsp;в&nbsp;чём-то наши подходы могут немного не&nbsp;совпадать. В&nbsp;любом случае, пожалуйста, <a class="link" href="https://t.me/thaisurussian" target="_blank">сообщите об&nbsp;этом</a>.'
-                + '</p>'
-                + '<p>'
-                    + 'Антон.'
+                    + 'Лучшее что можно сделать для Safari — это обойти баг заменив символ плейсхолдера на короткое тире без выделения цветом. Это делает Safari менее предпочтительным браузером, но всё ещё рабочим вариантом.'
                 + '</p>'
             ,
+        },
+        'safari-no-bug-image': {
+            'english': '<img class="safari-bug__screenshot" srcset="content/safari-no-bug-en@2x.png 2x" src="content/safari-no-bug-en.png" width="182" height="168" alt="">',
+            'russian': '<img class="safari-bug__screenshot" srcset="content/safari-no-bug-ru@2x.png 2x" src="content/safari-no-bug-ru.png" width="182" height="168" alt="">',
+        },
+        'safari-bug-image': {
+            'english': '<img class="safari-bug__screenshot" srcset="content/safari-bug-en@2x.png 2x" src="content/safari-bug-en.png" width="182" height="168" alt="">',
+            'russian': '<img class="safari-bug__screenshot" srcset="content/safari-bug-ru@2x.png 2x" src="content/safari-bug-ru.png" width="182" height="168" alt="">',
+        },
+        'safari-default': {
+            'english': 'How it looks by default.<br> Works in all browsers.',
+            'russian': 'Отображение по умолчанию. Работает во всех браузерах.',
+        },
+        'safari-in-safari': {
+            'english': 'How it looks in Safari',
+            'russian': 'Отображение в Safari',
         },
     }
 

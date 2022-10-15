@@ -1,0 +1,33 @@
+.safari-bug {
+
+}
+    .safari-bug__intro {
+
+    }
+
+    .safari-bug__preview {
+        margin-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+        .safari-bug__column {
+            margin: 0;
+            width: 210px;
+            text-align: center;
+        }
+            .safari-bug__screenshot {
+                vertical-align: top;
+                background-color: var(--image-fallback);
+            }
+
+            .safari-bug__caption {
+                font-style: italic;
+                font-size: var(--body-font);
+                line-height: var(--body-line);
+                color: var(--font-faded);
+                text-align: center;
+            }
+
