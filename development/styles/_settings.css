@@ -169,7 +169,14 @@
 
     }
         .settings-expanded .settings__handler {
+            background-color: #EAEAEA;
+            box-shadow: none;
+        }
 
+        @media (hover: hover) {
+            .settings-expanded .settings__handler:hover {
+                background-color: #EEE;
+            }
         }
             .settings-expanded .settings__handler::before {
                 animation: settings-cogwheel 0.4s ease forwards;

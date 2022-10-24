@@ -159,8 +159,16 @@
 
     }
         .information-expanded .information__handler {
-
+            background-color: #EAEAEA;
+            box-shadow: none;
         }
+
+        @media (hover: hover) {
+            .information-expanded .information__handler:hover {
+                background-color: #EEE;
+            }
+        }
+
             .information-expanded .information__handler::before {
                 animation: information-info 0.4s ease forwards;
             }
