@@ -1082,7 +1082,7 @@
 
     var $html = $('html');
     var $dispay = $('.display'); /* Все чекбоксы страницы */
-    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/)
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
 
     function safariPlaceholder() {
@@ -1092,8 +1092,6 @@
             });
         }
     }
-
-    $(document).ready(safariPlaceholder);
 
 
     /* 0. При открытии приложения нужно актуализировать все чекбоксы из Local Storage */
@@ -1106,11 +1104,12 @@
             $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
         });
 
-        /* Обновляем DOM: язык, нотация */
-        changeLanguage();
-        changeTonesNotation();
     }
 
+    /* Обновляем DOM: язык, нотация, баг в Safari */
+    changeLanguage();
+    changeTonesNotation();
+    safariPlaceholder();
 
 
     /* 1. Жонглирование классами видимости в зависимости от чекнутости чекбоксов */
