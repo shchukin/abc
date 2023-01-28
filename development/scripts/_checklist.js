@@ -1021,8 +1021,8 @@
             'russian': '<strong>Озвучено:&nbsp;</strong> Муай Маша (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Инстаграм</a>)'
         },
         'special-thanks': {
-            'english': '<strong>Special thanks to:&nbsp;</strong>Maria, Olga, <span class="nobr">Anton Kochenkov (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Telegram</a>)</span>, <span class="nobr">Angelina Masserovna (<a class="link" href="https://t.me/masserovna" target="_blank">Telegram</a>)</span>',
-            'russian': '<strong>Благодарности:&nbsp;</strong>Мария, Ольга, <span class="nobr">Антон Коченков (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Телеграм</a>)</span>, <span class="nobr">Ангелина Массерова (<a class="link" href="https://t.me/masserovna" target="_blank">Телеграм</a>)</span>'
+            'english': '<strong>Special thanks to:&nbsp;</strong>Maria, Olga, <span class="nobr">Anton Kochenkov (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Telegram</a>)</span>, <span class="nobr">Angelina Masserovna (<a class="link" href="https://t.me/masserovna" target="_blank">Telegram</a>)</span>, <span class="nobr">Alexandra Antukh (<a class="link" href="https://t.me/alealexal" target="_blank">Telegram</a>)</span>',
+            'russian': '<strong>Благодарности:&nbsp;</strong>Мария, Ольга, <span class="nobr">Антон Коченков (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Телеграм</a>)</span>, <span class="nobr">Ангелина Массерова (<a class="link" href="https://t.me/masserovna" target="_blank">Телеграм</a>)</span>, <span class="nobr">Александра Антух (<a class="link" href="https://t.me/alealexal" target="_blank">Телеграм</a>)</span>'
         },
         'links': {
             'english': 'Links',
