@@ -1082,11 +1082,13 @@
 
     var $html = $('html');
     var $dispay = $('.display'); /* Все чекбоксы страницы */
-    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 
+
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    var isIOS = ['iPad', 'iPhone', 'iPod', 'iPad Simulator', 'iPhone Simulator', 'iPod Simulator'].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document); // second part is iPad on iOS 13 detection
 
     function safariPlaceholder() {
-        if (isSafari) {
+        if (isSafari || isIOS) {
             $('.placeholder').each(function (){
                 $(this).replaceWith('–');
             });
