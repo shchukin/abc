@@ -1078,6 +1078,14 @@
             'english': 'How it looks in Safari',
             'russian': 'Отображение в Safari',
         },
+        'friends': {
+            'english': 'Friends',
+            'russian': 'Друзья',
+        },
+        'ruthai': {
+            'english': '<strong>RuThai</strong> &nbsp;—&nbsp; Russian Online Thai School',
+            'russian': '<strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://www.instagram.com/ruthai_org" target="_blank">Инстаграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>',
+        },
     }
 
     var $html = $('html');
