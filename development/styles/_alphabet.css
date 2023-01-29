@@ -2,7 +2,6 @@
     display: inline-flex;
     vertical-align: top;
     align-items: flex-start;
-    padding-bottom: 60px;
 }
     .alphabet__vowels {
         margin: 30px 20px;
@@ -36,7 +35,7 @@
 @media (min-device-width: 600px) {
 
     .alphabet {
-        padding: 15px 30px 90px;
+
     }
         .alphabet__vowels {
             margin: 30px;

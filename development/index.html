@@ -1965,462 +1965,462 @@
                             </div>
                         </section>
                     </div>
-                    <section class="settings">
-                        <button class="settings__handler" type="button" data-i18n="show-settings">
-                            Toggle settings
+                </div>
+            </div>
+            <section class="settings">
+                <button class="settings__handler" type="button" data-i18n="show-settings">
+                    Toggle settings
+                </button>
+                <div class="settings__panel">
+                    <div class="settings__body">
+                        <h2 class="settings__heading title" data-i18n="settings">
+                            Settings
+                        </h2>
+                        <button class="settings__close action action--close" type="button">
+                            <span class="visuallyhidden" data-i18n="close">Close</span>
                         </button>
-                        <div class="settings__panel">
-                            <div class="settings__body">
-                                <h2 class="settings__heading title" data-i18n="settings">
-                                    Settings
-                                </h2>
-                                <button class="settings__close action action--close" type="button">
-                                    <span class="visuallyhidden" data-i18n="close">Close</span>
-                                </button>
-                                <div class="settings__list">
-                                    <div class="settings__section">
-                                        <div class="label">
-                                            Language — Язык
-                                        </div>
-                                        <ul class="checklist">
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="language" value="language-english" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">English — Английский</span>
-                                                </label>
-                                            </li>
-                                            <li class="checklist__item">
-                                                <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="language" value="language-russian">
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label">Russian — Русский</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="settings__section">
-                                        <div class="settings__row">
-                                            <div class="settings__column">
-                                                <div class="label" data-i18n="letters-notation">
-                                                    Letters notation
-                                                </div>
-                                                <ul class="checklist">
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="radio" name="letters" value="letters-by-thai.su" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label"><span data-i18n="letters-default">Default</span>: <span class="script script--no-slashes">k t p i u ɯ</span></span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="radio" name="letters" value="letters-by-pro-language">
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label">ProLanguage: <span class="script script--no-slashes">k t p i u <u>u</u></span></span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="radio" name="letters" value="letters-by-russian">
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label"><span data-i18n="letters-cyrillic">Cyrillic</span>: <span class="script script--no-slashes">к т п и у ы</span></span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="settings__column">
-                                                <div class="label" data-i18n="tones-notation">
-                                                    Tones notation
-                                                </div>
-                                                <ul class="checklist">
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="radio" name="tones" value="tones-by-marks" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label"><span data-i18n="tones-marks">Marks</span>: <span class="script script--no-slashes">¯ ` ˆ ´ ˇ</span></span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="radio" name="tones" value="tones-by-digits">
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label"><span data-i18n="tones-digits">Digits</span>: <span class="script script--no-slashes">⁰ ¹ ² ³ ⁴</span></span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="radio" name="tones" value="tones-by-letters">
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label"><span data-i18n="tones-letters">Letters</span>: <span class="script script--no-slashes"><sup>M</sup> <sup>L</sup> <sup>F</sup> <sup>H</sup> <sup>R</sup></span></span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="settings__sample">
-                                            <span data-i18n="example">Example</span>: <span class="script script--no-slashes" data-notation="na:y¯kɛ:`mayˆchay´mɔ:ˇ">na:y⁰kɛ:¹may²chay³mɔ:⁴</span>
-                                        </div>
-                                    </div>
-                                    <div class="settings__section">
-                                        <label class="choice">
-                                            <input class="choice__widget display" type="checkbox" value="headings" checked>
-                                            <i class="choice__icon"></i>
-                                            <span class="choice__label" data-i18n="show-headings">Show headings</span>
-                                        </label>
-                                    </div>
-                                    <div class="settings__section">
-                                        <ul class="checklist checklist--horizontal checklist--letters">
-                                            <li class="checklist__item">
-                                                <label class="choice choice--as-heading choice--full-width">
-                                                    <input class="choice__widget display" type="checkbox" value="vowels" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label" data-i18n="vowels">Vowels</span>
-                                                </label>
-                                                <ul class="checklist">
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="vowels-basic" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="basic-vowels-single-word">Basic</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="vowels-complex" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="complex-vowels-single-word">Complex</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="vowels-short-sound" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="finals">Finals</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="vowels-diftongs" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="diphthongs">Diphthongs</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="vowels-quasi" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="quasi-letters">Quasi-letters</span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="checklist__item">
-                                                <label class="choice choice--as-heading choice--full-width">
-                                                    <input class="choice__widget display" type="checkbox" value="consonants" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label" data-i18n="consonants">Consonants</span>
-                                                </label>
-                                                <ul class="checklist">
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="consonants-high" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="high-class">High class</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="consonants-middle" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="middle-class">Middle class</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="consonants-low" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="low-class">Low class</span>
-                                                        </label>
-                                                        <ul class="checklist">
-                                                            <li class="checklist__item">
-                                                                <label class="choice choice--full-width">
-                                                                    <input class="choice__widget display" type="checkbox" value="consonants-low-sonorant" checked>
-                                                                    <i class="choice__icon"></i>
-                                                                    <span class="choice__label" data-i18n="sonorant-consonants">Sonorant</span>
-                                                                </label>
-                                                            </li>
-                                                            <li class="checklist__item">
-                                                                <label class="choice choice--full-width">
-                                                                    <input class="choice__widget display" type="checkbox" value="consonants-low-dead" checked>
-                                                                    <i class="choice__icon"></i>
-                                                                    <span class="choice__label" data-i18n="voiceless-consonants">Voiceless</span>
-                                                                </label>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="checklist__item">
-                                                <label class="choice choice--as-heading choice--full-width">
-                                                    <input class="choice__widget display" type="checkbox" value="marks" checked>
-                                                    <i class="choice__icon"></i>
-                                                    <span class="choice__label" data-i18n="marks">Marks</span>
-                                                </label>
-                                                <ul class="checklist">
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="marks-digits" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="digits">Digits</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="marks-tones" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="tones">Tones</span>
-                                                        </label>
-                                                    </li>
-                                                    <li class="checklist__item">
-                                                        <label class="choice choice--full-width">
-                                                            <input class="choice__widget display" type="checkbox" value="marks-other" checked>
-                                                            <i class="choice__icon"></i>
-                                                            <span class="choice__label" data-i18n="other">Other</span>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="settings__section">
+                        <div class="settings__list">
+                            <div class="settings__section">
+                                <div class="label">
+                                    Language — Язык
+                                </div>
+                                <ul class="checklist">
+                                    <li class="checklist__item">
                                         <label class="choice choice--full-width">
-                                            <input class="choice__widget display" type="checkbox" value="sanskrit" checked>
+                                            <input class="choice__widget display" type="radio" name="language" value="language-english" checked>
                                             <i class="choice__icon"></i>
-                                            <span class="choice__label">
-                                                <b class="choice__heading" data-i18n="sanskrit-consonants-heading">Consonants from Pali/Sanskrit</b>
-                                                <span class="choice__description" data-i18n="sanskrit-consonants-description">
-                                                    These are a lot less common. They differ from ordinary consonants in a more complex writing. You can devote less time to these letters. By hiding them, the alphabet becomes more transparent: 7 letters per class/subclass.<br> Full list: ษ ศ ฐ ฎ ฏ ฬ ณ ญ ฆ ฌ ธ ฑ ฒ ภ.
-                                                </span>
-                                            </span>
+                                            <span class="choice__label">English — Английский</span>
                                         </label>
-                                    </div>
-                                    <div class="settings__section">
-                                        <div class="label" data-i18n="group-by">
-                                            Group consonants by:
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="radio" name="language" value="language-russian">
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label">Russian — Русский</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settings__section">
+                                <div class="settings__row">
+                                    <div class="settings__column">
+                                        <div class="label" data-i18n="letters-notation">
+                                            Letters notation
                                         </div>
                                         <ul class="checklist">
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-class" checked>
+                                                    <input class="choice__widget display" type="radio" name="letters" value="letters-by-thai.su" checked>
                                                     <i class="choice__icon"></i>
-                                                    <span class="choice__label" data-i18n="group-by-classes">By classes</span>
+                                                    <span class="choice__label"><span data-i18n="letters-default">Default</span>: <span class="script script--no-slashes">k t p i u ɯ</span></span>
                                                 </label>
                                             </li>
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="by-sound">
+                                                    <input class="choice__widget display" type="radio" name="letters" value="letters-by-pro-language">
                                                     <i class="choice__icon"></i>
-                                                    <span class="choice__label" data-i18n="group-by-sounds">By sounds</span>
+                                                    <span class="choice__label">ProLanguage: <span class="script script--no-slashes">k t p i u <u>u</u></span></span>
                                                 </label>
                                             </li>
                                             <li class="checklist__item">
                                                 <label class="choice choice--full-width">
-                                                    <input class="choice__widget display" type="radio" name="consonants-view" value="alphabetically">
+                                                    <input class="choice__widget display" type="radio" name="letters" value="letters-by-russian">
                                                     <i class="choice__icon"></i>
-                                                    <span class="choice__label" data-i18n="group-alphabetically">Alphabetically</span>
+                                                    <span class="choice__label"><span data-i18n="letters-cyrillic">Cyrillic</span>: <span class="script script--no-slashes">к т п и у ы</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="settings__column">
+                                        <div class="label" data-i18n="tones-notation">
+                                            Tones notation
+                                        </div>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-marks" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label"><span data-i18n="tones-marks">Marks</span>: <span class="script script--no-slashes">¯ ` ˆ ´ ˇ</span></span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-digits">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label"><span data-i18n="tones-digits">Digits</span>: <span class="script script--no-slashes">⁰ ¹ ² ³ ⁴</span></span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="radio" name="tones" value="tones-by-letters">
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label"><span data-i18n="tones-letters">Letters</span>: <span class="script script--no-slashes"><sup>M</sup> <sup>L</sup> <sup>F</sup> <sup>H</sup> <sup>R</sup></span></span>
                                                 </label>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="settings__sample">
+                                    <span data-i18n="example">Example</span>: <span class="script script--no-slashes" data-notation="na:y¯kɛ:`mayˆchay´mɔ:ˇ">na:y⁰kɛ:¹may²chay³mɔ:⁴</span>
+                                </div>
+                            </div>
+                            <div class="settings__section">
+                                <label class="choice">
+                                    <input class="choice__widget display" type="checkbox" value="headings" checked>
+                                    <i class="choice__icon"></i>
+                                    <span class="choice__label" data-i18n="show-headings">Show headings</span>
+                                </label>
+                            </div>
+                            <div class="settings__section">
+                                <ul class="checklist checklist--horizontal checklist--letters">
+                                    <li class="checklist__item">
+                                        <label class="choice choice--as-heading choice--full-width">
+                                            <input class="choice__widget display" type="checkbox" value="vowels" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="vowels">Vowels</span>
+                                        </label>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="vowels-basic" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="basic-vowels-single-word">Basic</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="vowels-complex" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="complex-vowels-single-word">Complex</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="vowels-short-sound" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="finals">Finals</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="vowels-diftongs" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="diphthongs">Diphthongs</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="vowels-quasi" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="quasi-letters">Quasi-letters</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="choice choice--as-heading choice--full-width">
+                                            <input class="choice__widget display" type="checkbox" value="consonants" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="consonants">Consonants</span>
+                                        </label>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="consonants-high" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="high-class">High class</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="consonants-middle" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="middle-class">Middle class</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="consonants-low" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="low-class">Low class</span>
+                                                </label>
+                                                <ul class="checklist">
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="consonants-low-sonorant" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label" data-i18n="sonorant-consonants">Sonorant</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="checklist__item">
+                                                        <label class="choice choice--full-width">
+                                                            <input class="choice__widget display" type="checkbox" value="consonants-low-dead" checked>
+                                                            <i class="choice__icon"></i>
+                                                            <span class="choice__label" data-i18n="voiceless-consonants">Voiceless</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="choice choice--as-heading choice--full-width">
+                                            <input class="choice__widget display" type="checkbox" value="marks" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="marks">Marks</span>
+                                        </label>
+                                        <ul class="checklist">
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="marks-digits" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="digits">Digits</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="marks-tones" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="tones">Tones</span>
+                                                </label>
+                                            </li>
+                                            <li class="checklist__item">
+                                                <label class="choice choice--full-width">
+                                                    <input class="choice__widget display" type="checkbox" value="marks-other" checked>
+                                                    <i class="choice__icon"></i>
+                                                    <span class="choice__label" data-i18n="other">Other</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settings__section">
+                                <label class="choice choice--full-width">
+                                    <input class="choice__widget display" type="checkbox" value="sanskrit" checked>
+                                    <i class="choice__icon"></i>
+                                    <span class="choice__label">
+                                        <b class="choice__heading" data-i18n="sanskrit-consonants-heading">Consonants from Pali/Sanskrit</b>
+                                        <span class="choice__description" data-i18n="sanskrit-consonants-description">
+                                            These are a lot less common. They differ from ordinary consonants in a more complex writing. You can devote less time to these letters. By hiding them, the alphabet becomes more transparent: 7 letters per class/subclass.<br> Full list: ษ ศ ฐ ฎ ฏ ฬ ณ ญ ฆ ฌ ธ ฑ ฒ ภ.
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="settings__section">
+                                <div class="label" data-i18n="group-by">
+                                    Group consonants by:
+                                </div>
+                                <ul class="checklist">
+                                    <li class="checklist__item">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="radio" name="consonants-view" value="by-class" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="group-by-classes">By classes</span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="radio" name="consonants-view" value="by-sound">
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="group-by-sounds">By sounds</span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="radio" name="consonants-view" value="alphabetically">
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="group-alphabetically">Alphabetically</span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </section>
-                    <section class="information">
-                        <button class="information__handler" type="button" data-i18n="show-about">
-                            Show about info
+                    </div>
+                </div>
+            </section>
+            <section class="information">
+                <button class="information__handler" type="button" data-i18n="show-about">
+                    Show about info
+                </button>
+                <div class="information__panel">
+                    <div class="information__body">
+                        <h2 class="information__heading title" data-i18n="about">
+                            About
+                        </h2>
+                        <button class="information__close action action--close" type="button">
+                            <span class="visuallyhidden" data-i18n="close">Close</span>
                         </button>
-                        <div class="information__panel">
-                            <div class="information__body">
-                                <h2 class="information__heading title" data-i18n="about">
-                                    About
-                                </h2>
-                                <button class="information__close action action--close" type="button">
-                                    <span class="visuallyhidden" data-i18n="close">Close</span>
-                                </button>
-                                <div class="information__content">
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="letter-legend">Legend</h3>
-                                        <div class="letter-legend">
-                                            <div class="letter-legend__body">
-                                                <div class="letter-legend__preview" data-i18n="legend-screenshot">
-                                                    '<img class="letter-legend__screenshot" srcset="content/letter-hints-en@2x.png 2x" src="content/letter-hints-en.png" width="182" height="168" alt="">'
-                                                </div>
-                                                <div class="letter-legend__content">
-                                                    <div class="letter-legend__line">
-                                                        <b class="letter-legend__index">1</b> &nbsp;—&nbsp; <span data-i18n="legend-letter">Thai letter</span>
-                                                    </div>
-                                                    <div class="letter-legend__line">
-                                                        <b class="letter-legend__index">2</b> &nbsp;—&nbsp; <span data-i18n="legend-key">Keyboard key</span>
-                                                    </div>
-                                                    <div class="letter-legend__line">
-                                                        <b class="letter-legend__index">3</b> &nbsp;—&nbsp; <span data-i18n="legend-sound">Sound</span>
-                                                    </div>
-                                                    <div class="letter-legend__line">
-                                                        <b class="letter-legend__index">4</b> &nbsp;—&nbsp; <span data-i18n="legend-ending-sound">Sound if the letter is at the end of a syllable</span>
-                                                    </div>
-                                                    <div class="letter-legend__line">
-                                                        <b class="letter-legend__index">5</b> &nbsp;—&nbsp; <span data-i18n="legend-name">Letter name</span>
-                                                    </div>
-                                                    <div class="letter-legend__line">
-                                                        <b class="letter-legend__index">6</b> &nbsp;—&nbsp; <span data-i18n="legend-translation">Translation of the letter name</span>
-                                                    </div>
-                                                </div>
+                        <div class="information__content">
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="letter-legend">Legend</h3>
+                                <div class="letter-legend">
+                                    <div class="letter-legend__body">
+                                        <div class="letter-legend__preview" data-i18n="legend-screenshot">
+                                            '<img class="letter-legend__screenshot" srcset="content/letter-hints-en@2x.png 2x" src="content/letter-hints-en.png" width="182" height="168" alt="">'
+                                        </div>
+                                        <div class="letter-legend__content">
+                                            <div class="letter-legend__line">
+                                                <b class="letter-legend__index">1</b> &nbsp;—&nbsp; <span data-i18n="legend-letter">Thai letter</span>
                                             </div>
-                                            <div class="letter-legend__footer" data-i18n="ui-translated">
-                                                All elements on the page are voiced by a native speaker. Clicking on the tile reads the entire letter. Additionally, you can click on sounds and on Thai words.
+                                            <div class="letter-legend__line">
+                                                <b class="letter-legend__index">2</b> &nbsp;—&nbsp; <span data-i18n="legend-key">Keyboard key</span>
+                                            </div>
+                                            <div class="letter-legend__line">
+                                                <b class="letter-legend__index">3</b> &nbsp;—&nbsp; <span data-i18n="legend-sound">Sound</span>
+                                            </div>
+                                            <div class="letter-legend__line">
+                                                <b class="letter-legend__index">4</b> &nbsp;—&nbsp; <span data-i18n="legend-ending-sound">Sound if the letter is at the end of a syllable</span>
+                                            </div>
+                                            <div class="letter-legend__line">
+                                                <b class="letter-legend__index">5</b> &nbsp;—&nbsp; <span data-i18n="legend-name">Letter name</span>
+                                            </div>
+                                            <div class="letter-legend__line">
+                                                <b class="letter-legend__index">6</b> &nbsp;—&nbsp; <span data-i18n="legend-translation">Translation of the letter name</span>
                                             </div>
                                         </div>
-                                    </section>
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="definitions">
-                                            Definitions
-                                        </h3>
-                                        <div class="definitions">
-                                            <ul class="definitions__section list">
-                                                <li class="list__item" data-i18n="open-syllable-definition">
-                                                    <strong>Open syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant.<br> For example <span class="thai">นา</span> or <span class="thai">นะ</span>.
+                                    </div>
+                                    <div class="letter-legend__footer" data-i18n="ui-translated">
+                                        All elements on the page are voiced by a native speaker. Clicking on the tile reads the entire letter. Additionally, you can click on sounds and on Thai words.
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="definitions">
+                                    Definitions
+                                </h3>
+                                <div class="definitions">
+                                    <ul class="definitions__section list">
+                                        <li class="list__item" data-i18n="open-syllable-definition">
+                                            <strong>Open syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant.<br> For example <span class="thai">นา</span> or <span class="thai">นะ</span>.
+                                        </li>
+                                        <li class="list__item" data-i18n="closed-syllable-definition">
+                                            <strong>Closed syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant + vowel.<br> For example <span class="thai">นาน</span> or <span class="thai">นัน</span>.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="bookmarks">
+                                    Bookmarks
+                                </h3>
+                                <div class="bookmarks">
+                                    <div class="bookmarks__body">
+                                        <img class="bookmarks__preview"
+                                             srcset="content/ios-home-icon@2x.jpg 2x"
+                                             src="content/ios-home-icon.jpg"
+                                             width="150"
+                                             height="215"
+                                             alt=""
+                                        >
+                                        <div class="bookmarks__content">
+                                            <div class="bookmarks__intro" data-i18n="bookmarks-description">
+                                                Add an “Alphabet” shortcut to your home screen for a app-like user experience.
+                                            </div>
+                                            <ul class="bookmarks__platforms list">
+                                                <li class="list__item">
+                                                    <span data-i18n="bookmarks-ios-begins">On <b>iOS</b> open site in&nbsp;<b>Safari</b>, tap <b><em>Share</em></b></span>
+                                                    <svg height="18" viewBox="0 0 40 50" fill="#007AFF" xmlns="http://www.w3.org/2000/svg" style="vertical-align: top; margin: 0 2px;">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2 15.4867H34.4C36.9482 15.4867 39 17.5595 39 20.1084V44.3783C39 46.9272 36.9482 49 34.4 49H5.6C3.05178 49 1 46.9272 1 44.3783V20.1084C1 17.5595 3.05178 15.4867 5.6 15.4867H13.8V19.2975H5.6C5.16721 19.2975 4.8 19.6598 4.8 20.1084V44.3783C4.8 44.825 5.16527 45.1845 5.6 45.1845H34.4C34.838 45.1845 35.2 44.8269 35.2 44.3783V20.1084C35.2 19.6564 34.8346 19.2975 34.4 19.2975H26.2V15.4867ZM14.1473 11.5053L14.1418 11.5107C13.4027 12.233 12.2014 12.2575 11.4556 11.4823C10.7259 10.7398 10.7285 9.54148 11.4633 8.80224L18.6633 1.55888C19.4041 0.813705 20.6114 0.813705 21.3521 1.55888L28.5521 8.80224C29.2895 9.54409 29.2895 10.7483 28.5521 11.4901C28.5521 11.4901 28.5458 11.4965 28.5417 11.5006C28.5376 11.5046 28.531 11.5107 28.531 11.5107C28.1653 11.8576 27.6927 12.0438 27.2 12.0438C26.7344 12.0438 26.2403 11.8849 25.8479 11.4901L21.9 7.51845V30.8699C21.9 31.9166 21.0483 32.773 20 32.773C18.9517 32.773 18.1 31.9166 18.1 30.8699V7.52157L14.1473 11.5053Z"/>
+                                                    </svg>,
+                                                    <span data-i18n="bookmarks-ios-ends">scroll menu down and choose <b class="nobr"><em>Add to Home Screen</em></b>.</span>
                                                 </li>
-                                                <li class="list__item" data-i18n="closed-syllable-definition">
-                                                    <strong>Closed syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant + vowel.<br> For example <span class="thai">นาน</span> or <span class="thai">นัน</span>.
+                                                <li class="list__item">
+                                                    <span data-i18n="bookmarks-android-begins">On <b>Android</b> open site in&nbsp;<b>Chrome</b>, tap <b><em>More</em></b></span>
+                                                    <svg height="16" viewBox="0 0 11 45" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: top; margin: 3px 3px 0;">
+                                                        <circle cx="5.5" cy="5.5" r="5.5" fill="#3D3F41"/>
+                                                        <circle cx="5.5" cy="22.5" r="5.5" fill="#3D3F41"/>
+                                                        <circle cx="5.5" cy="39.5" r="5.5" fill="#3D3F41"/>
+                                                    </svg>
+                                                    <span data-i18n="bookmarks-android-ends">and near the end of the list, find the menu item <b class="nobr"><em>Add to Home Screen</em></b>.</span>
                                                 </li>
                                             </ul>
                                         </div>
-                                    </section>
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="bookmarks">
-                                            Bookmarks
-                                        </h3>
-                                        <div class="bookmarks">
-                                            <div class="bookmarks__body">
-                                                <img class="bookmarks__preview"
-                                                     srcset="content/ios-home-icon@2x.jpg 2x"
-                                                     src="content/ios-home-icon.jpg"
-                                                     width="150"
-                                                     height="215"
-                                                     alt=""
-                                                >
-                                                <div class="bookmarks__content">
-                                                    <div class="bookmarks__intro" data-i18n="bookmarks-description">
-                                                        Add an “Alphabet” shortcut to your home screen for a app-like user experience.
-                                                    </div>
-                                                    <ul class="bookmarks__platforms list">
-                                                        <li class="list__item">
-                                                            <span data-i18n="bookmarks-ios-begins">On <b>iOS</b> open site in&nbsp;<b>Safari</b>, tap <b><em>Share</em></b></span>
-                                                            <svg height="18" viewBox="0 0 40 50" fill="#007AFF" xmlns="http://www.w3.org/2000/svg" style="vertical-align: top; margin: 0 2px;">
-                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.2 15.4867H34.4C36.9482 15.4867 39 17.5595 39 20.1084V44.3783C39 46.9272 36.9482 49 34.4 49H5.6C3.05178 49 1 46.9272 1 44.3783V20.1084C1 17.5595 3.05178 15.4867 5.6 15.4867H13.8V19.2975H5.6C5.16721 19.2975 4.8 19.6598 4.8 20.1084V44.3783C4.8 44.825 5.16527 45.1845 5.6 45.1845H34.4C34.838 45.1845 35.2 44.8269 35.2 44.3783V20.1084C35.2 19.6564 34.8346 19.2975 34.4 19.2975H26.2V15.4867ZM14.1473 11.5053L14.1418 11.5107C13.4027 12.233 12.2014 12.2575 11.4556 11.4823C10.7259 10.7398 10.7285 9.54148 11.4633 8.80224L18.6633 1.55888C19.4041 0.813705 20.6114 0.813705 21.3521 1.55888L28.5521 8.80224C29.2895 9.54409 29.2895 10.7483 28.5521 11.4901C28.5521 11.4901 28.5458 11.4965 28.5417 11.5006C28.5376 11.5046 28.531 11.5107 28.531 11.5107C28.1653 11.8576 27.6927 12.0438 27.2 12.0438C26.7344 12.0438 26.2403 11.8849 25.8479 11.4901L21.9 7.51845V30.8699C21.9 31.9166 21.0483 32.773 20 32.773C18.9517 32.773 18.1 31.9166 18.1 30.8699V7.52157L14.1473 11.5053Z"/>
-                                                            </svg>,
-                                                            <span data-i18n="bookmarks-ios-ends">scroll menu down and choose <b class="nobr"><em>Add to Home Screen</em></b>.</span>
-                                                        </li>
-                                                        <li class="list__item">
-                                                            <span data-i18n="bookmarks-android-begins">On <b>Android</b> open site in&nbsp;<b>Chrome</b>, tap <b><em>More</em></b></span>
-                                                            <svg height="16" viewBox="0 0 11 45" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: top; margin: 3px 3px 0;">
-                                                                <circle cx="5.5" cy="5.5" r="5.5" fill="#3D3F41"/>
-                                                                <circle cx="5.5" cy="22.5" r="5.5" fill="#3D3F41"/>
-                                                                <circle cx="5.5" cy="39.5" r="5.5" fill="#3D3F41"/>
-                                                            </svg>
-                                                            <span data-i18n="bookmarks-android-ends">and near the end of the list, find the menu item <b class="nobr"><em>Add to Home Screen</em></b>.</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="bookmarks__footer">
-                                                <span data-i18n="bookmarks-desktop-begins">
-                                                    On desktops or laptops you can save a shortcut to the site page, so it will open a browser tab when run. In&nbsp;browsers such as <b>Chrome</b> or <b>Edge</b> click <b><em>More</em></b>
-                                                </span>
-                                                <svg width="6" height="14" viewBox="0 0 6 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: top; margin: 4px 2px 0;">
-                                                    <circle cx="3" cy="3" r="3" fill="#616366"/><circle cx="3" cy="13" r="3" fill="#616366"/><circle cx="3" cy="23" r="3" fill="#616366"/>
-                                                </svg>,
-                                                <span data-i18n="bookmarks-desktop-ends">select <b><em>More Tools</em></b> and then <b><em>Create shortcut…</em></b>. Created shortcut can be dragged to any panel or dock. In <b>Safari</b> bookmark site to favorites, open new tab and drag the site icon from favorites to desktop or dock area next to the Trash.</span>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="safari-bug">
-                                            Bug in Safari
-                                        </h3>
-                                        <div class="safari-bug">
-                                            <div class="safari-bug__intro wysiwyg" data-i18n="safari-text">
-                                                <p>
-                                                    Unfortunately, recent updates to iOS 15 and macOS Monterey have broken part of Safari responsible for highlighting some glyphs in Thai language. You can see the bug on the test subdomain <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>. Superscript and subscript characters such as some vowels and tone marks disappear from the page.
-                                                </p>
-                                                <p>
-                                                    The best thing can be done for Safari is avoiding the bug by replacing the placeholder character with an en dash and canceling color highlight. This makes Safari a less preferred browser, but still a viable option.
-                                                </p>
-                                            </div>
-                                            <div class="safari-bug__preview">
-                                                <figure class="safari-bug__column">
-                                                    <div data-i18n="safari-no-bug-image">
-                                                        <img class="safari-bug__screenshot" srcset="content/safari-no-bug-en@2x.png 2x" src="content/safari-no-bug-en.png" width="182" height="168" alt="">
-                                                    </div>
-                                                    <figcaption class="safari-bug__caption" data-i18n="safari-default">
-                                                        How it looks by default.<br> Works in all browsers.
-                                                    </figcaption>
-                                                </figure>
-                                                <figure class="safari-bug__column">
-                                                    <div data-i18n="safari-bug-image">
-                                                        <img class="safari-bug__screenshot" srcset="content/safari-bug-en@2x.png 2x" src="content/safari-bug-en.png" width="182" height="168" alt="">
-                                                    </div>
-                                                    <figcaption class="safari-bug__caption" data-i18n="safari-in-safari">
-                                                        How it looks in Safari
-                                                    </figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="people">People</h3>
-                                        <ul class="information__summary list">
-                                            <li class="list__item" data-i18n="developed-by">
-                                                <strong>Developed by:&nbsp;</strong> Anton Shchukin (<a class="link" href="https://t.me/cypher" target="_blank">Telegram</a>)
-                                            </li>
-                                            <li class="list__item" data-i18n="voiced-by">
-                                                <strong>Voiced by:&nbsp;</strong> Masha Muay (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Instagram</a>)
-                                            </li>
-                                            <li class="list__item" data-i18n="special-thanks">
-                                                <strong>Special thanks to:&nbsp;</strong>Maria, Olga, <span class="nobr">Anton Kochenkov (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Telegram</a>)</span>, <span class="nobr">Angelina Masserovna (<a class="link" href="https://t.me/masserovna" target="_blank">Telegram</a>)</span>, <span class="nobr">Alexandra Antukh (<a class="link" href="https://t.me/alealexal" target="_blank">Telegram</a>)</span>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="friends">Friends</h3>
-                                        <ul class="information__summary list">
-                                            <li class="list__item" data-i18n="ruthai">
-                                                <strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://www.instagram.com/ruthai_org" target="_blank">Инстаграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="information__section">
-                                        <h3 class="information__sub-heading title title--smaller" data-i18n="links">Links</h3>
-                                        <ul class="information__summary list">
-                                            <li class="list__item" data-i18n="roadmap">
-                                                <a class="link" href="https://thaisu.notion.site/thai-alphabet-com-21-22-ca61bc7742f8445988a82cbf6a6a7f5d" target="_blank">Roadmap</a> &nbsp;—&nbsp; Leave a comment in an online document.
-                                            </li>
-                                            <li class="list__item" data-i18n="telegram-chat">
-                                                <a class="link" href="https://t.me/thaisu" target="_blank">Telegram chat</a> &nbsp;—&nbsp; Report a bug, suggest an idea.
-                                            </li>
-                                            <li class="list__item" data-i18n="thai-su-link">
-                                                <a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.
-                                            </li>
-                                        </ul>
-                                    </section>
+                                    </div>
+                                    <div class="bookmarks__footer">
+                                        <span data-i18n="bookmarks-desktop-begins">
+                                            On desktops or laptops you can save a shortcut to the site page, so it will open a browser tab when run. In&nbsp;browsers such as <b>Chrome</b> or <b>Edge</b> click <b><em>More</em></b>
+                                        </span>
+                                        <svg width="6" height="14" viewBox="0 0 6 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: top; margin: 4px 2px 0;">
+                                            <circle cx="3" cy="3" r="3" fill="#616366"/><circle cx="3" cy="13" r="3" fill="#616366"/><circle cx="3" cy="23" r="3" fill="#616366"/>
+                                        </svg>,
+                                        <span data-i18n="bookmarks-desktop-ends">select <b><em>More Tools</em></b> and then <b><em>Create shortcut…</em></b>. Created shortcut can be dragged to any panel or dock. In <b>Safari</b> bookmark site to favorites, open new tab and drag the site icon from favorites to desktop or dock area next to the Trash.</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="safari-bug">
+                                    Bug in Safari
+                                </h3>
+                                <div class="safari-bug">
+                                    <div class="safari-bug__intro wysiwyg" data-i18n="safari-text">
+                                        <p>
+                                            Unfortunately, recent updates to iOS 15 and macOS Monterey have broken part of Safari responsible for highlighting some glyphs in Thai language. You can see the bug on the test subdomain <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>. Superscript and subscript characters such as some vowels and tone marks disappear from the page.
+                                        </p>
+                                        <p>
+                                            The best thing can be done for Safari is avoiding the bug by replacing the placeholder character with an en dash and canceling color highlight. This makes Safari a less preferred browser, but still a viable option.
+                                        </p>
+                                    </div>
+                                    <div class="safari-bug__preview">
+                                        <figure class="safari-bug__column">
+                                            <div data-i18n="safari-no-bug-image">
+                                                <img class="safari-bug__screenshot" srcset="content/safari-no-bug-en@2x.png 2x" src="content/safari-no-bug-en.png" width="182" height="168" alt="">
+                                            </div>
+                                            <figcaption class="safari-bug__caption" data-i18n="safari-default">
+                                                How it looks by default.<br> Works in all browsers.
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="safari-bug__column">
+                                            <div data-i18n="safari-bug-image">
+                                                <img class="safari-bug__screenshot" srcset="content/safari-bug-en@2x.png 2x" src="content/safari-bug-en.png" width="182" height="168" alt="">
+                                            </div>
+                                            <figcaption class="safari-bug__caption" data-i18n="safari-in-safari">
+                                                How it looks in Safari
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="people">People</h3>
+                                <ul class="information__summary list">
+                                    <li class="list__item" data-i18n="developed-by">
+                                        <strong>Developed by:&nbsp;</strong> Anton Shchukin (<a class="link" href="https://t.me/cypher" target="_blank">Telegram</a>)
+                                    </li>
+                                    <li class="list__item" data-i18n="voiced-by">
+                                        <strong>Voiced by:&nbsp;</strong> Masha Muay (<a class="link" href="https://www.instagram.com/muaymasha" target="_blank">Instagram</a>)
+                                    </li>
+                                    <li class="list__item" data-i18n="special-thanks">
+                                        <strong>Special thanks to:&nbsp;</strong>Maria, Olga, <span class="nobr">Anton Kochenkov (<a class="link" href="https://t.me/a_kochenkov" target="_blank">Telegram</a>)</span>, <span class="nobr">Angelina Masserovna (<a class="link" href="https://t.me/masserovna" target="_blank">Telegram</a>)</span>, <span class="nobr">Alexandra Antukh (<a class="link" href="https://t.me/alealexal" target="_blank">Telegram</a>)</span>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="friends">Friends</h3>
+                                <ul class="information__summary list">
+                                    <li class="list__item" data-i18n="ruthai">
+                                        <strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://www.instagram.com/ruthai_org" target="_blank">Инстаграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="information__section">
+                                <h3 class="information__sub-heading title title--smaller" data-i18n="links">Links</h3>
+                                <ul class="information__summary list">
+                                    <li class="list__item" data-i18n="roadmap">
+                                        <a class="link" href="https://thaisu.notion.site/thai-alphabet-com-21-22-ca61bc7742f8445988a82cbf6a6a7f5d" target="_blank">Roadmap</a> &nbsp;—&nbsp; Leave a comment in an online document.
+                                    </li>
+                                    <li class="list__item" data-i18n="telegram-chat">
+                                        <a class="link" href="https://t.me/thaisu" target="_blank">Telegram chat</a> &nbsp;—&nbsp; Report a bug, suggest an idea.
+                                    </li>
+                                    <li class="list__item" data-i18n="thai-su-link">
+                                        <a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Parent project with other tools for learning Thai.
+                                    </li>
+                                </ul>
+                            </section>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
 
         <!-- Scripts -->

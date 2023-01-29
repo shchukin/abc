@@ -1,0 +1,10 @@
+.page {
+    padding-bottom: 60px;
+}
+
+@media (min-device-width: 600px) {
+
+    .page {
+        padding: 15px 30px 90px;
+    }
+}

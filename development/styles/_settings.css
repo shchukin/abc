@@ -1,5 +1,5 @@
 .settings {
-
+    padding: 40px 30px 0;
 }
     .settings__handler {
         display: none;
@@ -70,7 +70,7 @@
 @media (min-device-width: 600px) {
 
     .settings {
-
+        padding: 0;
     }
         .settings__handler {
             position: fixed;
