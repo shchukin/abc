@@ -1041,24 +1041,42 @@
             'russian': '<a class="link" href="http://thai.su" target="_blank">thai.su</a> &nbsp;—&nbsp; Родительский проект с прочими инструментами для изучения тайского языка.'
         },
         'safari-bug': {
-            'english': 'Bug in Safari',
-            'russian': 'Баг в Safari'
+            'english': 'Bug on Apple devices',
+            'russian': 'Баг на устройствах от Apple'
         },
         'safari-text': {
             'english': ''
                 + '<p>'
-                    + 'Unfortunately, recent updates to iOS 15 and macOS Monterey have broken part of Safari responsible for highlighting some glyphs in Thai language. You can see the bug on the test subdomain <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>. Superscript and subscript characters such as some vowels and tone marks disappear from the page.'
+                    + 'Unfortunately, recent updates to Safari have broken the ability to highlight individual characters in Thai language. Superscript and subscript characters such as some vowels and tone marks just disappear from the page. You can see the bug in action on the test subdomain <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>.'
                 + '</p>'
                 + '<p>'
-                    + 'The best thing can be done for Safari is avoiding the bug by replacing the placeholder character with an en dash and canceling color highlight. This makes Safari a less preferred browser, but still a viable option.'
+                    + 'Whatʼs even more worse is the fact that all other browsers on Apple smartphones are forced to use the Safari engine, being nothing more than just itʼs reskin. So they also inherit the bug. Basically there is no choice on the iPhone but to live with this bug.'
+                + '</p>'
+                + '<p>'
+                    + 'On Apple computers, the situation is better. Only Safari is damaged. Other browsers use their own engines and work correctly. On a macbook, it would be better to use Chrome or, for example, Firefox.'
+                + '</p>'
+                + '<p>'
+                    + 'Apple is aware of the problem, but it is unknown if and when they plan to fix it.'
+                + '</p>'
+                + '<p>'
+                    + 'The best thing that can be done for Safari is avoiding the bug by replacing the placeholder character with an en dash and canceling color highlight. This is a less illustrative option, but at least it works:'
                 + '</p>'
             ,
             'russian': ''
                 + '<p>'
-                    + 'К сожалению, последние обновления до iOS 15 и macOS Monterey сломали в Safari возможность выделять отдельные символы в тайском языке. Посмотреть на баг вживую можно на тестовом поддомене <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>. Надстрочные и подстрочные символы вроде гласных и тонов исчезают со страницы.'
+                    + 'К сожалению, последние обновления Safari сломали возможность выделять отдельные символы в тайском языке. Надстрочные и подстрочные символы вроде гласных букв и тонов исчезают со страницы. Посмотреть на баг вживую можно на тестовом поддомене <a class="link" href="http://safari.thai-alphabet.com">safari.thai-alphabet.com</a>.'
                 + '</p>'
                 + '<p>'
-                    + 'Лучшее что можно сделать для Safari — это обойти баг заменив символ плейсхолдера на короткое тире без выделения цветом. Это делает Safari менее предпочтительным браузером, но всё ещё рабочим вариантом.'
+                    + 'Ситуация усугубляется тем, что все остальные браузеры на смартфонах Apple принуждены использовать движок Safari, т.е. по-сути являются не более чем его рескинами, и так же наследуют баг. Другими словами на iPhone нет выбора и придётся смириться с багом.'
+                + '</p>'
+                + '<p>'
+                    + 'На компьютерах Apple ситуация лучше. Повреждён только Safari. Другие браузеры используют свои движки и работают корректно. Т.е. на макбуке лучше использовать Chrome или, например, Firefox.'
+                + '</p>'
+                + '<p>'
+                    + 'Apple в курсе проблемы, но собирается ли её решать, и если собирается, то когда — неизвестно.'
+                + '</p>'
+                + '<p>'
+                    + 'Лучшее что можно сделать для Safari — это обойти баг заменив символ плейсхолдера на короткое тире и убрать выделения цветом. Это менее наглядный вариант, но тем не менее рабочий вариант:'
                 + '</p>'
             ,
         },
@@ -1071,12 +1089,12 @@
             'russian': '<img class="safari-bug__screenshot" srcset="content/safari-bug-ru@2x.png 2x" src="content/safari-bug-ru.png" width="182" height="168" alt="">',
         },
         'safari-default': {
-            'english': 'How it looks by default.<br> Works in all browsers.',
-            'russian': 'Отображение по умолчанию. Работает во всех браузерах.',
+            'english': 'How it looks by default.<br> Non-apple devices.',
+            'russian': 'Отображение по умолчанию.<br> Устройства не от Apple.',
         },
         'safari-in-safari': {
-            'english': 'How it looks in Safari',
-            'russian': 'Отображение в Safari',
+            'english': 'How it looks in Safari and on Apple smartphones.',
+            'russian': 'Отображение в Safari, и&nbsp;на&nbsp;смартфонах Apple',
         },
         'friends': {
             'english': 'Friends',
