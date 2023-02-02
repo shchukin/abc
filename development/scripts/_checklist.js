@@ -137,7 +137,7 @@
         },
         'in-closed-syllable-with-ro-ria': {
             'english': 'invisible in a<br> closed syllable<br> ending with <span class="thai">ร</span>',
-            'russian': 'невидима<br> в закрытом слоге<br> оканчивающимся<br> не на <span class="thai">ร</span>',
+            'russian': 'невидима<br> в закрытом слоге<br> оканчивающимся<br> на <span class="thai">ร</span>',
         },
         'tv-series-example': {
             'english': 'Example: <span class="thai">ละคร</span> <span class="script" data-notation="la´khɔ:n¯">la´khɔ:n¯</span> — TV series',
