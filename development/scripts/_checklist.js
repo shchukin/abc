@@ -969,12 +969,12 @@
             'russian': 'Определения'
         },
         'open-syllable-definition': {
-            'english': '<strong>Open syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant.<br> For example <span class="thai">นา</span> or <span class="thai">นะ</span>.',
-            'russian': '<strong>Открытый слог</strong> &nbsp;—&nbsp;слог формата: согласная + гласная.<br> Например <span class="thai">นา</span> или <span class="thai">นะ</span>.'
+            'english': '<strong>Open syllable</strong> — syllable containing: consonant + vowel.<br> For example <span class="thai">นา</span> or <span class="thai">นะ</span>.',
+            'russian': '<strong>Открытый слог</strong> — слог формата: согласная + гласная.<br> Например <span class="thai">นา</span> или <span class="thai">นะ</span>.'
         },
         'closed-syllable-definition': {
-            'english': '<strong>Closed syllable</strong> &nbsp;—&nbsp; syllable containing: vowel + consonant + vowel.<br> For example <span class="thai">นาน</span> or <span class="thai">นัน</span>.',
-            'russian': '<strong>Закрытый слог</strong> &nbsp;—&nbsp;слог формата: согласная + гласная + согласная.<br> Например <span class="thai">นาน</span> или <span class="thai">นัน</span>.'
+            'english': '<strong>Closed syllable</strong> — syllable containing: consonant + vowel + consonant.<br> For example <span class="thai">นาน</span> or <span class="thai">นัน</span>.',
+            'russian': '<strong>Закрытый слог</strong> — слог формата: согласная + гласная + согласная.<br> Например <span class="thai">นาน</span> или <span class="thai">นัน</span>.'
         },
         'bookmarks': {
             'english': 'Bookmarks',
