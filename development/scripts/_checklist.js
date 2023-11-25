@@ -1101,7 +1101,7 @@
             'russian': 'Друзья',
         },
         'ruthai': {
-            'english': '<strong>RuThai</strong> &nbsp;—&nbsp; Russian Online Thai School',
+            'english': '<strong>RuThai</strong> &nbsp;—&nbsp; Thai language online school for Russian speakers',
             'russian': '<strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://www.instagram.com/ruthai_org" target="_blank">Инстаграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>',
         },
     }
