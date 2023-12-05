@@ -1104,6 +1104,14 @@
             'english': '<strong>RuThai</strong> &nbsp;—&nbsp; Thai language online school for Russian speakers',
             'russian': '<strong>RuThai</strong> &nbsp;—&nbsp; Онлайн-школа тайского языка: <a class="link" href="https://www.instagram.com/ruthai_org" target="_blank">Инстаграм</a>, <a class="link" href="https://www.youtube.com/@ruthai_org" target="_blank">Ютуб</a>',
         },
+        'info-other': {
+            'english': 'Other',
+            'russian': 'Разное',
+        },
+        'info-thai-language': {
+            'english': 'Some translations are taken from the <a class="link" href="http://thai-language.com">thai-language.com</a>',
+            'russian': 'Некоторые переводы взяты с <a class="link" href="http://thai-language.com">thai-language.com</a>',
+        },
     }
 
     var $html = $('html');
