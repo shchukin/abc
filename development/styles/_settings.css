@@ -27,12 +27,11 @@
 
             }
                 .settings__section {
-                    margin-top: 20px;
-                    border-top: 1px solid var(--color-separator);
-                    padding-top: 20px;
+                    margin-top: 30px;
                 }
                     .settings__sample {
-                        margin-top: 6px;
+                        padding-top: 6px;
+                        padding-bottom: 6px;
                         font-size: 15px;
                         line-height: 20px;
                     }
