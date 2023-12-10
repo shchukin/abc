@@ -819,7 +819,7 @@
         },
         'other-thanthakhat': {
             'english': 'Silencing mark',
-            'russian': 'Нечитаемость буквы'
+            'russian': '<span style="font-size: 12px;">Нечитаемость буквы</span>'
         },
         'other-mayyamok': {
             'english': 'Word repetition',
