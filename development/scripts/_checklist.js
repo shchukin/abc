@@ -818,8 +818,8 @@
             'russian': '<span data-notation="ˇ">ˇ</span> для <b class="consonant-middle">ср</b>'
         },
         'other-thanthakhat': {
-            'english': 'Silenced letter',
-            'russian': 'Нечитаемая буква'
+            'english': 'Silencing mark',
+            'russian': 'Нечитаемость буквы'
         },
         'other-mayyamok': {
             'english': 'Word repetition',
