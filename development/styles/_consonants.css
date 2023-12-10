@@ -31,9 +31,9 @@
             margin-bottom: 0;
         }
 
-        html:not(.display-consonants-high)   .consonants__section--high   { display: none }
-        html:not(.display-consonants-middle) .consonants__section--middle { display: none }
-        html:not(.display-consonants-low)    .consonants__section--low    { display: none }
+        html:not(.display-consonants-high)   .consonants__section--high   { display: none; }
+        html:not(.display-consonants-middle) .consonants__section--middle { display: none; }
+        html:not(.display-consonants-low)    .consonants__section--low    { display: none; }
 
             .consonants__sub-heading {
                 margin-top: 0;
@@ -245,7 +245,7 @@
 
     }
         .display-alphabetically .consonants__section {
-            margin-bottom: 0
+            margin-bottom: 0;
         }
             .display-alphabetically .consonants__sub-heading {
                 display: none;

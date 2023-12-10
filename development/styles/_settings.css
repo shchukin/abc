@@ -94,7 +94,7 @@
 
         @media (hover: hover) {
             .settings__handler:hover {
-                background-color: #EEE;
+                background-color: #EEEEEE;
             }
         }
 
@@ -160,7 +160,7 @@
     }
 
     @keyframes settings-cogwheel {
-        from { transform: rotate(0) }
+        from { transform: rotate(0); }
         to   { transform: rotate(180deg); }
     }
 
@@ -174,7 +174,7 @@
 
         @media (hover: hover) {
             .settings-expanded .settings__handler:hover {
-                background-color: #EEE;
+                background-color: #EEEEEE;
             }
         }
             .settings-expanded .settings__handler::before {

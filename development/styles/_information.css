@@ -79,7 +79,7 @@
 
         @media (hover: hover) {
             .information__handler:hover {
-                background-color: #EEE;
+                background-color: #EEEEEE;
             }
         }
 
@@ -165,7 +165,7 @@
 
         @media (hover: hover) {
             .information-expanded .information__handler:hover {
-                background-color: #EEE;
+                background-color: #EEEEEE;
             }
         }
 
