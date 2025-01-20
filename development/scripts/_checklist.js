@@ -1138,11 +1138,14 @@
     }
 
     function safariPlaceholder() {
+        /* Заменить все инстансы <span class="placeholder">◌</span> на "–": */
         if ($html.hasClass('display-replace-placeholder-symbol') && (isSafari || isIOS)) {
             $('.placeholder').each(function (){
                 $(this).replaceWith('–');
             });
-        } else {
+        }
+        /* Заменить все тирешки "–" обратно на <span class="placeholder">◌</span>. Это специальная текстовая тирешка, НЕ минус. В html-коде она не встречается. */
+        else {
             $('*').contents().each(function () {
                 if (this.nodeType === Node.TEXT_NODE) {
                     $(this).replaceWith($(this).text().replace(/–/g, '<span class="placeholder">◌</span>'));
@@ -1182,10 +1185,16 @@
         /* Сохраняем в Local Storage */
         localStorage.setItem('display', $html.attr('class').replace(' settings-expanded', '').replace('settings-expanded', ''));
 
-        /* Обновляем DOM: язык, нотация */
-        if( $this.attr('name') === 'language' ) { changeLanguage(); }
-        if( $this.attr('name') === 'tones' )    { changeTonesNotation(); }
-        if( $this.attr('value') == 'replace-placeholder-symbol' )    { safariPlaceholder(); }
+        /* Обновляем DOM: язык, нотация, плейсхолдер */
+        if ($this.attr('name') === 'language') {
+            changeLanguage();
+        }
+        if ($this.attr('name') === 'tones') {
+            changeTonesNotation();
+        }
+        if ($this.attr('name') === 'replace-placeholder-symbol') {
+            safariPlaceholder();
+        }
     }
 
     /* Клик по чекбоксу */
@@ -1428,16 +1437,19 @@
 
 
     /* Ниже прям костыль.
-     * Надо переписать весь этот файл. Продумать как, и где хранить настройки.
+     * Надо бы вообще переписать весь этот файл. Продумать как, и где хранить настройки,
+     * а то сейчас слишком запутанно.
      *
-     * Проблема: может быть так, что пользователь открывает сайт после обновления,
+     * В общем, проблема: может быть так, что пользователь открывает сайт после обновления,
      * и у него устаревшие значения в Local Storage. Например, он ещё не выбирал опцию placeholder.
      * В таком случае скрипт выше отработает, ничего не увидит и анчекнет оба вариант в настройке placeholder.
+     * Получится так, что опция есть, а ничего не выбрано, даже дефолтное значение.
      */
 
-    const NewOptions = []; /* Опции, которые добавились с момента последнего открытия сайта */
+    /* Отловим и сохраним в массив все такие опции (значения name): */
+    const NewOptions = [];
 
-    /* Бежим по всем чекбоксам и радиокнопкам в настройках */
+    /* 1) Бежим по всем чекбоксам и радиокнопкам в настройках, заполняем массив */
     $dispay.each(function () {
         const $current = $(this);
         const name = $current.attr('name');
@@ -1458,20 +1470,27 @@
     });
 
 
-    // Step 2: Loop through NewOptions and apply hardcoded rules
+    /* 2) Бежим по этому массиву, вытаскиваем из него всего значения для name и вручную обрабатываем то,
+     * что было добавлено в последнее время. Должно работать и для чекбоксов, и для радиокнопок.
+     *
+
+     *
+     */
     NewOptions.forEach(optionName => {
         const $group = $dispay.filter(`[name="${optionName}"]`);
 
+       /* На текущий момент это только опция placeholder. Сейчас она выставлена в true, так всё ещё нужна
+        * большинству эппловых устройств. В 2026-ом, можно будет убрать её в false. Хотя в 2026-ом
+        * она уже и не понадобится, наверное. Врядли будет кто-то кто не заходил на сайт больше года.
+        */
         if (optionName === 'placeholder') {
-            // Find the radio button with value 'default' and check it
             $group.filter('[value="replace-placeholder-symbol"]').prop('checked', true);
         }
     });
 
+    /* Нужно применить то что было проставлено в этих чекбоксах (и там же сохранить новые значение в Local Storage) */
     if(NewOptions.length) {
         displayAll();
     }
-
-
 
 })(jQuery);
