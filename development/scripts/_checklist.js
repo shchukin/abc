@@ -1369,7 +1369,7 @@
                     .split('ə').join('<u>e</u>')
             }
 
-            /* default for letters:
+            /* commented because it is the default for letters:
             if( $html.hasClass('display-letters-by-thai.su') ) {
                 notation = notation;
             }
@@ -1392,7 +1392,7 @@
                         .split('ˇ').join('<sup>R</sup>')
             }
 
-            /* default for tones:
+            /* commented because it is the default for tones:
 
             if( $html.hasClass('display-tones-by-marks') ) {
                 notation = notation;
