@@ -930,7 +930,7 @@
         },
         'placeholder-symbol-description': {
             'english': 'TO DO: more details about safari bag in here',
-            'russian': 'TO DO: подробнее о баге в '
+            'russian': 'TO DO: подробнее о баге в Safari'
         },
         'show-about': {
             'english': 'Show about info',
