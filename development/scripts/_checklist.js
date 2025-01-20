@@ -924,6 +924,18 @@
             'english': 'Alphabetically',
             'russian': 'В алфавитном порядке'
         },
+        'placeholder-symbol': {
+            'english': 'Placeholder symbol',
+            'russian': 'Символ для плейсхолдера'
+        },
+        'placeholder-symbol-default': {
+            'english': 'Default: ◌',
+            'russian': 'По-умолчанию:'
+        },
+        'placeholder-symbol-alternative': {
+            'english': 'Alternative: –',
+            'russian': 'Альтернативный: –'
+        },
         'show-about': {
             'english': 'Show about info',
             'russian': 'Показать информацию о проекте'
@@ -1143,7 +1155,6 @@
         $dispay.each(function () {
             $(this).prop("checked", appState.indexOf( $(this).val() ) > -1);
         });
-
     }
 
     /* Обновляем DOM: язык, нотация, баг в Safari */
@@ -1409,6 +1420,51 @@
 
 
 
+    /* Ниже прям костыль.
+     * Надо переписать весь этот файл. Продумать как, и где хранить настройки.
+     *
+     * Проблема: может быть так, что пользователь открывает сайт после обновления,
+     * и у него устаревшие значения в Local Storage. Например, он ещё не выбирал опцию placeholder.
+     * В таком случае скрипт выше отработает, ничего не увидит и анчекнет оба вариант в настройке placeholder.
+     */
+
+    const NewOptions = []; /* Опции, которые добавились с момента последнего открытия сайта */
+
+    /* Бежим по всем чекбоксам и радиокнопкам в настройках */
+    $dispay.each(function () {
+        const $current = $(this);
+        const name = $current.attr('name');
+
+        // Skip if there's no `name` attribute
+        if (!name) return;
+
+        // Find all radio buttons with the same name in the $dispay array
+        const $group = $dispay.filter(`[name="${name}"]`);
+
+        // Check if any radio button in the group is checked
+        const hasCheckedValue = $group.is(':checked');
+
+        // If no radio button in the group is checked, add the name to NewOptions
+        if (!hasCheckedValue && !NewOptions.includes(name)) {
+            NewOptions.push(name);
+        }
+    });
+
+
+    // Step 2: Loop through NewOptions and apply hardcoded rules
+    NewOptions.forEach(optionName => {
+        const $group = $dispay.filter(`[name="${optionName}"]`);
+
+        if (optionName === 'placeholder') {
+            // Find the radio button with value 'default' and check it
+            $group.filter('[value="placeholder-default"]').prop('checked', true);
+        }
+        console.log(optionName)
+    });
+
+    if(NewOptions.length) {
+        displayAll();
+    }
 
 
 

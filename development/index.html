@@ -22,6 +22,7 @@
              display-language-english
              display-letters-by-thai.su
              display-tones-by-marks
+             display-placeholder-default
       "
 >
     <head>
@@ -2236,6 +2237,27 @@
                                             <input class="choice__widget display" type="radio" name="consonants-view" value="alphabetically">
                                             <i class="choice__icon"></i>
                                             <span class="choice__label" data-i18n="group-alphabetically">Alphabetically</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settings__section">
+                                <div class="label" data-i18n="placeholder-symbol">
+                                    Placeholder symbol:
+                                </div>
+                                <ul class="checklist">
+                                    <li class="checklist__item">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="radio" name="placeholder" value="placeholder-default" checked>
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="placeholder-symbol-default">Default: ◌</span>
+                                        </label>
+                                    </li>
+                                    <li class="checklist__item">
+                                        <label class="choice choice--full-width">
+                                            <input class="choice__widget display" type="radio" name="placeholder" value="placeholder-alternative">
+                                            <i class="choice__icon"></i>
+                                            <span class="choice__label" data-i18n="placeholder-symbol-alternative">Alternative: –</span>
                                         </label>
                                     </li>
                                 </ul>
