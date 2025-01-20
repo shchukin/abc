@@ -924,17 +924,13 @@
             'english': 'Alphabetically',
             'russian': 'В алфавитном порядке'
         },
-        'placeholder-symbol': {
-            'english': 'Placeholder symbol',
-            'russian': 'Символ для плейсхолдера'
+        'placeholder-symbol-replacement': {
+            'english': 'Replace placeholder with hyphen',
+            'russian': 'Заменить символ плейсхолдера на тире'
         },
-        'placeholder-symbol-default': {
-            'english': 'Default: ◌',
-            'russian': 'По-умолчанию:'
-        },
-        'placeholder-symbol-alternative': {
-            'english': 'Alternative: –',
-            'russian': 'Альтернативный: –'
+        'placeholder-symbol-description': {
+            'english': 'TO DO: more details about safari bag in here',
+            'russian': 'TO DO: подробнее о баге в '
         },
         'show-about': {
             'english': 'Show about info',
@@ -1137,10 +1133,20 @@
     var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
     var isIOS = ['iPad', 'iPhone', 'iPod', 'iPad Simulator', 'iPhone Simulator', 'iPod Simulator'].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document); // second part is iPad on iOS 13 detection
 
+    if(isSafari) {
+        $('body').addClass('safari-or-ios');
+    }
+
     function safariPlaceholder() {
-        if (isSafari || isIOS) {
+        if ($html.hasClass('display-replace-placeholder-symbol') && (isSafari || isIOS)) {
             $('.placeholder').each(function (){
                 $(this).replaceWith('–');
+            });
+        } else {
+            $('*').contents().each(function () {
+                if (this.nodeType === Node.TEXT_NODE) {
+                    $(this).replaceWith($(this).text().replace(/–/g, '<span class="placeholder">◌</span>'));
+                }
             });
         }
     }
@@ -1179,6 +1185,7 @@
         /* Обновляем DOM: язык, нотация */
         if( $this.attr('name') === 'language' ) { changeLanguage(); }
         if( $this.attr('name') === 'tones' )    { changeTonesNotation(); }
+        if( $this.attr('value') == 'replace-placeholder-symbol' )    { safariPlaceholder(); }
     }
 
     /* Клик по чекбоксу */
@@ -1457,9 +1464,8 @@
 
         if (optionName === 'placeholder') {
             // Find the radio button with value 'default' and check it
-            $group.filter('[value="placeholder-default"]').prop('checked', true);
+            $group.filter('[value="replace-placeholder-symbol"]').prop('checked', true);
         }
-        console.log(optionName)
     });
 
     if(NewOptions.length) {

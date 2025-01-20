@@ -29,6 +29,10 @@
                 .settings__section {
                     margin-top: 30px;
                 }
+
+                body:not(.safari-or-ios) .settings__section--safari-bug {
+                    display: none;
+                }
                     .settings__sample {
                         padding-top: 6px;
                         padding-bottom: 6px;

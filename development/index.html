@@ -22,7 +22,7 @@
              display-language-english
              display-letters-by-thai.su
              display-tones-by-marks
-             display-placeholder-default
+             display-replace-placeholder-symbol
       "
 >
     <head>
@@ -2241,26 +2241,19 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="settings__section">
-                                <div class="label" data-i18n="placeholder-symbol">
-                                    Placeholder symbol:
-                                </div>
-                                <ul class="checklist">
-                                    <li class="checklist__item">
-                                        <label class="choice choice--full-width">
-                                            <input class="choice__widget display" type="radio" name="placeholder" value="placeholder-default" checked>
-                                            <i class="choice__icon"></i>
-                                            <span class="choice__label" data-i18n="placeholder-symbol-default">Default: ◌</span>
-                                        </label>
-                                    </li>
-                                    <li class="checklist__item">
-                                        <label class="choice choice--full-width">
-                                            <input class="choice__widget display" type="radio" name="placeholder" value="placeholder-alternative">
-                                            <i class="choice__icon"></i>
-                                            <span class="choice__label" data-i18n="placeholder-symbol-alternative">Alternative: –</span>
-                                        </label>
-                                    </li>
-                                </ul>
+                            <div class="settings__section settings__section--safari-bug">
+                                <label class="choice choice--full-width">
+                                    <input class="choice__widget display" type="checkbox" value="replace-placeholder-symbol" checked>
+                                    <i class="choice__icon"></i>
+                                    <span class="choice__label">
+                                        <b class="choice__heading" data-i18n="placeholder-symbol-replacement">
+                                            Replace placeholder with hyphen (need page reload)
+                                        </b>
+                                        <span class="choice__description" data-i18n="placeholder-symbol-description">
+                                            TO DO: more details about safari bag in here (need page reload)
+                                        </span>
+                                    </span>
+                                </label>
                             </div>
                         </div>
                     </div>
